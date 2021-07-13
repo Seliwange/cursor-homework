@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1440px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 24px;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/*Header styles start*/
+.header{
+    background-color: #ED4C5C;
+    height: 500px;
+    display: block;
+}
+
+.header__info{
+    width: 445px;
+    display: inline-block;
+    margin-right: 81px;
+    margin-top: 122px;
+    vertical-align: top;
+}
+
+.header__title{
+    color: #FFFFFF;
+}
+
+.header__description{
+    color: #FFFFFF;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.header__list{
+
+}
+
+.header__list-item{
+
+}
+.header__slider{
+    width: 533px;
+    display: inline-block;
+    margin-top: 94px;
+}
+/*Header styles end*/
+
+/*Main styles start*/
+.main{
+    background-color: #FFFFFF;
+    height: 500px;
+    display: block;
+}
+
+.contact__info{
+    width: 445px;
+    display: inline-block;
+    padding-top: 117px;
+    margin-right: 114px;
+}
+
+.contact__content{
+    width: 540px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 117px;
+}
+
+.contact__form{
+
+}
+.contact__form-input{
+}
+.contact__form-phone{
+}
+.contact__form-service{
+}
+.contact__form-btn{
+}
+/*Main styles end*/
+
+/*Footer styles start*/
+.footer{
+    background-color: #FAFAFA;
+    height: 435px;
+    display: block;
+}
+.footer__address{
+    display: inline-block;
+    vertical-align: top;
+    width: 254px;
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.footer__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    padding-top: 85px;
+    margin-bottom: 33px;
+}
+
+.footer__services{
+    display: inline-block;
+    vertical-align: top;
+    width: 254px;
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.footer__list{
+}
+.footer__list-item{
+}
+.footer__list-link{
+}
+.footer__contacts{
+    display: inline-block;
+    vertical-align: top;
+    width: 254px;
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.footer__email{
+    display: block;
+    margin-bottom: 11px;
+}
+
+.footer__phone{
+    color: #121212;
+}
+
+.footer__social{
+}
+
+.footer__payment{
+    display: inline-block;
+    vertical-align: top;
+    width: 254px;
+    margin-right: 30px;
+}
+
+.footer__copy{
+    display: block;
+}
+/*Footer styles end*/
