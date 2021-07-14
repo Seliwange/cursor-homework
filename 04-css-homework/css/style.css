@@ -9,6 +9,11 @@ body{
     padding: 0 15px;
     max-width: 1440px;
     background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 button{
@@ -16,7 +21,6 @@ button{
 }
 
 .title{
-    font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 110px;
     line-height: 133px;
@@ -27,15 +31,10 @@ button{
 
 /*First banner styles start*/
 .banner-first{
+    max-width: 1440px;
+    min-height: 72px;
     background-color: #0B2239;
-    width: 1440px;
-    height: 72px;
     margin: 24px 0px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 20px;
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
@@ -44,26 +43,23 @@ button{
 }
 
 .banner-first__wrap{
-    width: 1200px;
-    left: calc(50% - 1200px/2);
-    top: calc(50% - 40px/2);
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
+    margin: 16px 120px;
 }
 
 .banner-first__text{
     margin-right: 32px;
-    width: 922px;
 }
 
 .banner-first__link{
+    min-width: 106px;
     font-weight: 600;
     font-size: 12px;
     text-decoration-line: underline;
     color: #4AD295;
-    width: 106px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -72,17 +68,15 @@ button{
 }
 
 .banner-first__btn{
+    min-width: 130px;
+    max-height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 12px;
-    font-style: normal;
     background-color: #4AD295;
     border-radius: 2px;
-    width: 130px;
-    height: 36px;
     color: #FFFFFF;
     border: 1px solid #4AD295;
     padding: 8px 10px;
@@ -92,16 +86,8 @@ button{
 
 /*Second banner styles start*/
 .banner-second{
-    width: 1440px;
-    height: 52px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 20px;
+    max-width: 1440px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     color: #FFFFFF;
     background-color: #2B2627;
@@ -109,14 +95,20 @@ button{
     margin-bottom: 72px;
 }
 
+.banner-second__wrapper{
+    display: flex;
+    margin: 16px auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner-second__pic{
     width: 16px;
-    height: 16px;
 }
 
 .banner-second__text{
     margin: 0px 20px 0px 8px;
-    width: 689px;
 }
 
 .banner-second__link{
@@ -126,19 +118,15 @@ button{
 
 /*Third banner styles start*/
 .banner-third{
+    max-width: 560px;
+    min-height: 72px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 14px;
-    line-height: 20px;
     color: #0D0C22;
     padding: 16px;
-    width: 560px;
-    height: 72px;
     background-color: #FFFFFF;
     box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
     border-radius: 16px;
@@ -153,7 +141,6 @@ button{
 
 .banner-third__text{
     margin: 0px 10px;
-    width: 347px;
 }
 
 .banner-third__link{
@@ -162,9 +149,7 @@ button{
 }
 
 .banner-third__btn{
-    height: 28px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
+    max-height: 28px;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
@@ -191,8 +176,7 @@ button{
 
 /*Fourth banner styles start*/
 .banner-fourth{
-    width: 560px;
-    height: 64px;
+    max-width: 560px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -203,16 +187,11 @@ button{
     border-radius: 10px;
     margin-right: 10px;
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
     margin-bottom: 72px;
 }
 
 .banner-fourth__text{
-    width: 469px;
     margin-right: 10px;
 }
 
@@ -222,6 +201,8 @@ button{
 }
 
 .banner-fourth__btn{
+    min-width: 49px;
+    max-height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,20 +210,14 @@ button{
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
-    width: 49px;
-    height: 28px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
     cursor: pointer;
 }
 /*Fourth banner styles end*/
 
 /*Fifth banner styles start*/
 .container{
-    width: 760px;
+    max-width: 760px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -251,7 +226,7 @@ button{
 }
 
 .banner-fifth{
-    width: 360px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -261,10 +236,8 @@ button{
     border-radius: 6px;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
 }
 
 .banner-fifth__title{
@@ -296,8 +269,9 @@ button{
 }
 
 .banner-fifth__btn{
+    min-width: 85px;
+    max-height: 32px;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -306,8 +280,6 @@ button{
     justify-content: center;
     align-items: center;
     padding: 8px 20px;
-    width: 85px;
-    height: 32px;
     background: #09B3AF;
     box-shadow: 0px 2px 2px -2px rgba(34, 38, 50, 0.3);
     border-radius: 6px;
@@ -319,19 +291,17 @@ button{
 
 /*Sixth banner styles start*/
 .banner-sixth{
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
-    width: 360px;
     background: #FFFFFF;
     box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
     border-radius: 16px;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
 }
 
 .banner-sixth__title{
@@ -354,8 +324,9 @@ button{
 }
 
 .banner-sixth__btn{
+    min-width: 160px;
+    max-height: 32px;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -366,8 +337,6 @@ button{
     border: 1px #EAF0F4;
     color: #687F8C;
     padding: 8px;
-    width: 160px;
-    height: 32px;
     cursor: pointer;
 }
 
@@ -381,7 +350,7 @@ button{
 
 /*Seventh banner styles start*/
 .wrapper{
-    width: 680px;
+    max-width: 680px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -390,7 +359,7 @@ button{
 }
 
 .banner-seventh{
-    width: 320px;
+    max-width: 320px;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -399,9 +368,6 @@ button{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.87%, rgba(255, 255, 255, 0.15) 100%), #FFFFFF;
     box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     border-radius: 20px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -421,6 +387,8 @@ button{
 }
 
 .banner-seventh__btn{
+    /*min-width: 121px;
+    max-height: 44px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,21 +396,17 @@ button{
     background: #4A7EFF;
     border-radius: 43px;
     border: 1px solid #4A7EFF;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    width: 121px;
-    height: 44px;
     cursor: pointer;
 }
 /*Seventh banner styles end*/
 
 /*Eighth banner styles start*/
 .banner-eighth{
-    width: 320px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -451,10 +415,8 @@ button{
     box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     border-radius: 4px;
     font-family: 'Lato', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
     color: #000000;
 }
 
@@ -479,6 +441,8 @@ button{
 }
 
 .banner-eighth__btn{
+    min-width: 64px;
+    max-height: 33px;
     background: #6666FF;
     border-radius: 4px;
     border: 1px solid #6666FF;
@@ -488,13 +452,10 @@ button{
     padding: 8px;
     color: #FFFFFF;
     font-family: 'Lato', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    width: 64px;
-    height: 33px;
     cursor: pointer;
 }
 /*Eighth banner styles end*/
