@@ -7,7 +7,6 @@
 body{
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1440px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -22,15 +21,25 @@ body{
     line-height: 43px;
     margin-bottom: 24px;
 }
-.container{
-    max-width: 1110px;
+
+.wrapper{
+    max-width: 1440px;
+    min-height: 500px;
+    padding: 0 165px;
     margin: 0 auto;
+}
+
+.container{
+    padding: 122px 0 111px;
 }
 
 /*Content styles start*/
 .content{
-    min-height: 500px;
-    background-color: #ED4C5C;
+    background: #ED4C5C;
+}
+
+.content__inner{
+    width: 100%;
     display: block;
     color: #FFFFFF;
 }
@@ -39,7 +48,6 @@ body{
     max-width: 445px;
     display: inline-block;
     margin-right: 81px;
-    margin-top: 122px;
     vertical-align: top;
 }
 
@@ -59,24 +67,30 @@ body{
     margin-right: 23px;
 }
 
+.content__list-pic:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
 .content__slider{
     max-width: 533px;
     display: inline-block;
-    margin-top: 94px;
 }
 /*Content styles end*/
 
 /*Contacts styles start*/
 .contact{
-    min-height: 500px;
     background-color: #FFFFFF;
+}
+
+.contact__inner{
+    width: 100%;
     display: block;
 }
 
 .contact__info{
     max-width: 445px;
     display: inline-block;
-    padding-top: 117px;
     margin-right: 114px;
 }
 
@@ -84,7 +98,6 @@ body{
     max-width: 540px;
     display: inline-block;
     vertical-align: top;
-    padding-top: 117px;
 }
 
 .contact__form{
@@ -140,8 +153,12 @@ body{
 .footer{
     min-height: 435px;
     background-color: #FAFAFA;
-    display: block;
     position: relative;
+}
+
+.footer__inner{
+    width: 100%;
+    display: block;
 }
 
 .footer__content{
@@ -157,7 +174,6 @@ body{
     font-size: 18px;
     line-height: 22px;
     color: #101010;
-    padding-top: 85px;
     margin-bottom: 33px;
 }
 
@@ -216,6 +232,11 @@ body{
     max-width: 100%;
 }
 
+.footer__social-img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
 .footer__payment{
     max-width: 240px;
     min-width: 0px;
@@ -223,6 +244,6 @@ body{
 
 .footer__copy{
     display: block;
-    padding: 86px 0;
+    padding-top: 86px;
 }
 /*Footer styles end*/
