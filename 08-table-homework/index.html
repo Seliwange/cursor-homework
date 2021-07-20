@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#8 Table Input</title>
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <table class="table">
+                    <colgroup class="table__group">
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead class="table__head">
+                        <tr class="table__column">
+                            <th class="table__row table__name">Name</th>
+                            <th class="table__row" colspan="2">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__column">
+                            <td class="table__row">File.pdf</td>
+                            <td class="table__row">3 min ago</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row">File.pdf</td>
+                            <td class="table__row">Yestarday</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row">File.pdf</td>
+                            <td class="table__row">June 1st, 2019</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <colgroup class="table__group">
+                        <col>
+                        <col span="2">
+                    </colgroup>
+                    <thead class="table__head">
+                        <tr class="table__column">
+                            <th class="table__row table__name">
+                                <form class="form-ckeckbox" action="">
+                                    <input class="checkbox-input input__name" type="checkbox" name="name" id="name"> 
+                                    <label for="name">Name</label>
+                                </form>
+                            </th>
+                            <th class="table__row" colspan="2">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__column">
+                            <td class="table__row">
+                                <form class="form-ckeckbox" action="">
+                                    <input class="checkbox-input" type="checkbox" name="name" id="name"> 
+                                    <label for="name">File.pdf</label>
+                                </form>
+                            </td>
+                            <td class="table__row">3 min ago</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row">
+                                <form class="form-ckeckbox" action="">
+                                    <input class="checkbox-input" type="checkbox" name="name" id="name" checked> 
+                                    <label for="name">File.pdf</label>
+                                </form>
+                            </td>
+                            <td class="table__row">Yestarday</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row">
+                                <form class="form-ckeckbox" action="">
+                                    <input class="checkbox-input" type="checkbox" name="name" id="name"> 
+                                    <span class="checkbox-style"></span>
+                                    <label for="name">File.pdf</label>
+                                </form>
+                            </td>
+                            <td class="table__row">June 1st, 2019</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table">
+                    <colgroup class="table__group">
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead class="table__head">
+                        <tr class="table__column table__column-search">
+                            <th class="table__row table__name">
+                                Name
+                            </th>
+                            <th class="table__row">Date</th>
+                            <th class="table__row table__row-search">
+                                <form class="form-search" action="">
+                                    <input class="input-search" type="search" name="search" id="search" placeholder="Search">
+                                    <label for="search"></label>
+                                </form>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr class="table__column">
+                            <td class="table__row table__img">
+                                File.pdf
+                            </td>
+                            <td class="table__row">3 min ago</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row table__img">
+                                File.pdf
+                            </td>
+                            <td class="table__row">Yestarday</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                        <tr class="table__column">
+                            <td class="table__row table__img">
+                                File.pdf
+                            </td>
+                            <td class="table__row">June 1st, 2019</td>
+                            <td class="table__row table__dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+                    
+    <script>
+        let checkbox = document.getElementById("name");
+        checkbox.indeterminate = true;
+    </script>
+</body>
+</html>
