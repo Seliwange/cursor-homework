@@ -5,14 +5,17 @@
 }
 
 body{
-    max-width: 1440px;
-    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #111111;
+}
+
+.grid{
+    max-width: 1440px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     grid-template-rows: repeat(3, auto);
@@ -31,6 +34,7 @@ body{
 }
 
 .btn{
+    min-width: max-content;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -43,7 +47,12 @@ body{
     box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
     border-radius: 25px;
     border: 0;
-    min-width: max-content;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: linear-gradient(89.77deg, #FFB039 0.2%, #FF7A00 99.82%);
+    border: 0;
 }
 
 .title{
@@ -77,10 +86,9 @@ body{
 /*Header styles start*/
 .header{
     grid-area: header;
-    margin-bottom: 63px;
 }
 
-.wrapper__inner{
+.header__inner{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -93,21 +101,11 @@ body{
     align-items: center;
 }
 
-.logo {
-}
-.logo__link {
-}
-.logo__img {
-}
-.menu {
-}
 .menu__list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     list-style: none;
-}
-.menu__list-item {
 }
 
 .menu__list-link{
@@ -123,12 +121,12 @@ body{
 }
 
 .header__contacts{
-    /* display: flex; */
     justify-content: space-between;
     display: inline-grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
 }
+
 .address{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -138,7 +136,8 @@ body{
     display: flex;
 }
 
-.header__email{
+.header__email,
+.header__phone{
     text-decoration: none;
     color: #FFFFFF;
     display: flex;
@@ -151,41 +150,32 @@ body{
     padding-right: 10px;
 }
 
-.header__phone{
-    text-decoration: none;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    margin-right: 25px;
-}
-
 .header__phone::before{
     content: url(../assets/header_phone-icon.svg);
     padding-right: 10px;
-}
-
-.header__contacts-btn {
 }
 /*Header styles end*/
 
 /*Main styles start*/
 .main{
     grid-area: main;
+    z-index: 1;
 }
 
 /*Intro styles start*/
 .intro{
     background: url(../assets/intro-img.png) no-repeat;
     background-position: right center;
-    margin-bottom: 67px;
 }
 
 .intro__inner{
-
+    padding: 143px 0 164px 0;
 }
 
-.intro__info {
+.intro__info{
+    max-width: 413px;
 }
+
 .intro__title{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -199,11 +189,6 @@ body{
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 60px;
-}
-
-.intro__btn {
-}
-.intro__img {
 }
 /*Intro styles end*/
 
@@ -240,12 +225,6 @@ body{
 /*Cards styles end*/
 
 /*Apartment styles start*/
-.apartment {
-}
-.apartment__title{
-
-}
-
 .apartment__cards{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -382,9 +361,6 @@ body{
     margin-bottom: 100px;
 }
 
-.about-us__title {
-}
-
 .about-us__cards{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -404,10 +380,6 @@ body{
 
 .about-us__card-pic{
     margin-right: 20px;
-}
-
-.about-us__card-desc{
-
 }
 
 .about-us__card-title{
@@ -430,11 +402,6 @@ body{
     margin-bottom: 100px;
 }
 
-.border-bg{
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
 /*Contacts styles start*/
 .contacts{
     margin-bottom: 160px;
@@ -449,9 +416,6 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-}
-
-.contacts__title {
 }
 
 .contacts__address{
@@ -522,7 +486,6 @@ body{
     background: url(../assets/upper-quote.svg) no-repeat;
     background-position: 1200px 40px;
     background-color: #2B7AF1;
-    margin-bottom: 100px;
 }
 
 .reviews__inner{
@@ -533,8 +496,6 @@ body{
 .reviews__title{
     line-height: 130%;
     color: #FFFFFF;
-}
-.reviews__slider {
 }
 
 .reviews__cards{
@@ -612,11 +573,13 @@ body{
 
 /*Feedback styles start*/
 .feedback{
-
+    max-height: 354px;
 }
 
 .feedback__wrapper{
     display: flex;
+    position: relative;
+    bottom: -97px;
 }
 
 .feedback__form{
@@ -628,6 +591,7 @@ body{
     padding: 40px;
     filter: drop-shadow(0px -5px 20px rgba(41, 41, 42, 0.2));
     margin-right: 84px;
+    margin-left: 108px;
 }
 
 .feedback__form-title{
@@ -649,9 +613,6 @@ body{
     resize: none;
     height: 115px;
     margin-bottom: 24px;
-}
-
-.feedback__form-btn {
 }
 
 .feedback__wrap{
@@ -689,28 +650,110 @@ body{
 
 /*Footer styles start*/
 .footer{
+    min-height: 557px;
     grid-area: footer;
     background: url(../assets/footer-img.jpg) no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: end;
+}
+
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.5);
+    opacity: 1;
+}
+
+.footer > *{
+    position: relative;
+}
+
+.footer__wrapper{
+    padding-bottom: 22px;
 }
 
 .footer__inner{
-
+    padding-bottom: 20px;
+    padding-top: 254px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid #C4C4C4;
+    margin-bottom: 20px;
 }
 
-.footer__contacts {
+.footer__navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
-.footer__socials {
+
+.footer__menu-link{
+    color: #FFFFFF;
 }
-.social__list {
+
+.footer__menu-link:hover{
+    border-bottom: 2px solid #FFFFFF;
 }
-.social__item {
+
+.footer__address{
+    justify-content: flex-end;
 }
-.social__link {
+
+.footer__email,
+.footer__phone{
+    color: #FFFFFF;
+    margin-right: 20px;
 }
-.social__img {
+
+.footer__contacts{
+    justify-content: space-between;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
 }
-.copyright {
+
+.social__list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
-.copyright__link {
+
+.social__item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social__img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.copyright{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.copyright__text{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.copyright__link{
+    text-decoration: none;
+    color: #FFFFFF;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
 }
 /*Footer styles end*/
