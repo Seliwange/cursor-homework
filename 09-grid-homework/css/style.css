@@ -510,6 +510,22 @@ body{
     border-radius: 10px;
     padding: 40px;
     position: relative;
+    background-image: url(../assets/review_star.svg), 
+                      url(../assets/review_star.svg),
+                      url(../assets/review_star.svg),
+                      url(../assets/review_star.svg),
+                      url(../assets/review_star.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 470px 40px, 495px 40px, 520px 40px, 545px 40px, 570px 40px;           
+}
+
+.review__card-four-star{
+    background-image: url(../assets/review_star.svg), 
+                      url(../assets/review_star.svg),
+                      url(../assets/review_star.svg),
+                      url(../assets/review_star.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 495px 40px, 520px 40px, 545px 40px, 570px 40px; 
 }
 
 .review__title{
