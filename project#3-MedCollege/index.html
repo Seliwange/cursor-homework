@@ -15,33 +15,57 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="logo">
-                <a class="logo__link" href="#">
-                    <img class="logo__img" src="" alt="logo">
-                </a>
-            </div>
-            <div class="routs">
-                <ul class="routs__list">
-                    <li class="routs__item">
-                        <a class="routs__link" href="#">
-                            Вступнику
-                        </a>
-                    </li>
-                    <li class="routs__item">
-                        <a class="routs__link" href="#">
-                            Студенту
-                        </a>
-                    </li>
-                    <li class="routs__item">
-                        <a class="routs__link" href="#">
-                            Випускнику
-                        </a>
-                    </li>
-                </ul>            
+            <div class="header__layout">
+                <div class="logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="routs">
+                    <ul class="routs__list">
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Вступнику
+                            </a>
+                        </li>
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Студенту
+                            </a>
+                        </li>
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Випускнику
+                            </a>
+                        </li>
+                    </ul>            
+                </div>
                 <button class="header__btn btn">
                     Вхід / Реєстрація
                 </button>
+                <div class="header__lang">
+                    <ul class="lang__list">
+                        <li class="lang__item lang__item--active">
+                            <a class="lang__link" href="">
+                                УКР
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link" href="">
+                                ENG
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="toogle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
+            </div>
+        <hr>
+        <div class="wrapper">
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
@@ -81,55 +105,98 @@
     <main class="main">
         <section class="hero">
             <div class="wrapper">
-                <div class="hero__info">
-                    <h1 class="hero__title">
-                        Львівський медичний фаховий коледж післядипломної освіти
-                    </h1>
-                    <div class="hero__info-wrap">
-                        <img class="hero__info-img" src="./assets/class_chairs.png" width="807px" height="617px" alt="class chairs">
-                        <p class="hero__info-text">Відвідай наш коледж, не виходячи з дому, просто натиснувши кнопку для перегляду.</p>
-                        <a class="hero__info-link" href="#">
-                            <img class="hero__link-img" src="./assets/play-icon.svg" width="223px" height="120px" alt="play">
-                            <h6 class="hero__link-text">Віртуальний тур</h6>
-                        </a>
+                <div class="hero__inner">
+                    <div class="hero__info">
+                        <h1 class="hero__title title">
+                            Львівський медичний фаховий коледж післядипломної освіти
+                        </h1>
+                        <div class="hero__border-img"></div>
+                        <div class="hero__info-wrap">
+                            <img class="hero__info-img" src="./assets/class_chairs.png" width="807px" height="617px" alt="class chairs">
+                            <p class="hero__info-text">Відвідай наш коледж, не виходячи з дому, просто натиснувши кнопку для перегляду.</p>
+                        </div>
+                        <div class="hero__info-wrap">
+                            <a class="hero__info-link" href="#">
+                                <img class="hero__link-img" src="./assets/play-icon.svg" width="223px" height="120px" alt="play">
+                                <h6 class="hero__link-text">Віртуальний тур</h6>
+                            </a>
+                        </div>
+                        <div class="hero__border-img"></div>
                     </div>
+                    <!-- <img class="hero__img" src="./assets/college.jpg" alt="college"> -->
                 </div>
-                <img class="hero__img" src="./assets/college.jpg" alt="college">
             </div>
         </section>
         <section class="programs">
             <div class="wrapper">
-                <h2 class="programs__title">
-                    Наші освітні програми
-                </h2>
-                <div class="programs__cards">
-                    <div class="program__card">
-                        <!-- <h4 class="program__card-title">
-                            Медсестринство
-                        </h4> -->
-                        <table class="program__table">
-                            <caption class="program__table-title">Медсестринство</caption>
-                            <colgroup class="program__table-group">
-                                <col>
-                                <col>
-                            </colgroup>
-                            <thead class="program__table-head">
-                                <tr class="program__table-row">
-                                    <th class="program__table-column">Освітній ступінь</th>
-                                    <th class="program__table-column">Термін навчання</th>
-                                </tr>
-                            </thead>
-                            <tbody class="program__table-body">
-                                <tr class="program__table-row">
-                                    <td class="program__table-column">Фаховий молодший бакалавр<br>
-                                    Бакалавр </td>
-                                    <td class="program__table-column">4 роки</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button class="program__card-btn">
-                            Детальніше
-                        </button>
+                <div class="programs__inner">
+                    <h2 class="programs__title">
+                        Наші освітні програми
+                    </h2>
+                    <div class="programs__cards">
+                        <div class="program__card-nursing program__card">
+                            <!-- <h4 class="program__card-title">
+                                Медсестринство
+                            </h4> -->
+                            <div class="program__card-inner">
+                                <table class="program__table">
+                                    <caption class="program__table-title title">Медсестринство</caption>
+                                    <colgroup class="program__table-group">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead class="program__table-head">
+                                        <tr class="program__table-row">
+                                            <th class="program__table-column">Освітній ступінь</th>
+                                            <th class="program__table-column">Термін навчання</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="program__table-body">
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column">Фаховий молодший бакалавр</td>
+                                            <td class="program__table-column">4 роки</td>
+                                        </tr>
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column">Бакалавр</td>
+                                            <td class="program__table-column"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button class="program__card-btn">
+                                    Детальніше
+                                </button>
+                            </div>
+                        </div>
+                        <div class="program__card-pharmacy program__card">
+                            <div class="program__card-inner">
+                                <table class="program__table">
+                                    <caption class="program__table-title title">Фармація</caption>
+                                    <colgroup class="program__table-group">
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead class="program__table-head">
+                                        <tr class="program__table-row">
+                                            <th class="program__table-column">Освітній ступінь</th>
+                                            <th class="program__table-column">Термін навчання</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="program__table-body">
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column" rowspan="2">Фаховий молодший бакалавр</td>
+                                            <td class="program__table-column">3 роки</td>
+                                        </tr>
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column"></td>
+                                            <td class="program__table-column"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button class="program__card-btn">
+                                    Детальніше
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,7 +389,7 @@
                     <input class="consultation__form-input" type="text" name="name" id="name" placeholder="Ім’я">
                     <label for="phone"></label>
                     <input class="consultation__form-input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефону">
-                    <button class="consultation__form-btn dtn">
+                    <button class="consultation__form-btn btn">
                         Відправити заявку
                     </button>
                 </form>
@@ -541,5 +608,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- <script>
+        $(function() {
+            $(".toogle").click(function() {
+                $(this).addClass("toogle--toogled");
+            });
+        });
+    </script> -->
 </body>
 </html>
