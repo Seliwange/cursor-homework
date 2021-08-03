@@ -50,6 +50,7 @@ body{
 .header{
     background: url(../assets/header_bg.png) #F4F6F9 no-repeat;
     background-position: center right;
+    background-size: contain;
 }
 
 .header__inner{
@@ -403,6 +404,20 @@ body{
 
 /*Media 1220px styles start*/
 @media (max-width: 1220px){
+    .header{
+        background-size: 65%; /*936px / 1440px*/
+        object-fit: contain;
+        background-repeat: no-repeat;
+    }
+
+    .header__logo{
+        margin-bottom: 5.875%;
+    }
+
+    .header__inner{
+        padding: 2% 0 5%;
+    }
+
     .what-it-does__info{
         width: 100%;
     }
@@ -420,21 +435,49 @@ body{
         padding-right: 20px;
     }
 
+    .get-started{
+        background-size: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+    }
+
     .feedback__card:nth-child(2){
         display: none;
     }
 }
 /*Media 1220px styles end*/
 
-/*Media 825px styles start*/
-@media (max-width: 825px){
+/*Media 1100px styles start*/
+@media (max-width: 1100px){
+    .what-it-does__video{
+        left: 60px;
+        top: -20px;
+    }
+}
+/*Media 1100px styles end*/
+
+/*Media 935px styles start*/
+@media (max-width: 935px){
     .header{
         background-image: none;
     }
     .header__info{
         width: 100%;
-    }    
-    
+    }
+
+    .what-it-does__score{
+        top: 40px;
+        left: -60px;
+    }
+
+    .get-started__inner{
+        padding: 5.375% 0 5.267857%;
+    }
+}
+/*Media 935px styles end*/
+
+/*Media 825px styles start*/
+@media (max-width: 825px){
     .what-it-does{
         padding: 0 20px;
     }
@@ -459,6 +502,14 @@ body{
     }
     .what-it-does__inner-img::before{
         background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+    }
+    .what-it-does__score{
+        top: 60px;
+        left: -93px;
+    }
+    .what-it-does__video{
+        left: 90px;
+        top: -40px;
     }
 
     .get-started{
@@ -579,6 +630,19 @@ body{
 }
 /*Media 760px styles end*/
 
+/*Media 460px styles start*/
+@media (max-width: 460px){
+    .what-it-does__score{
+        top: 50px;
+        left: -60px;
+    }
+    .what-it-does__video{
+        left: 70px;
+        top: -20px;
+    }
+}
+/*Media 460px styles end*/
+
 /*Media 360px styles start*/
 @media (max-width: 360px){
     body{
@@ -589,7 +653,9 @@ body{
         display: none;
     }
     .what-it-does__score{
-        width: 100%;  
+        width: 100%;
+        top: 60px;
+        left: -93px; 
     }
     .what-it-does__inner-img::before{
         background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
