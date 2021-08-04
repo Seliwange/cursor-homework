@@ -323,7 +323,7 @@ body{
 }
 
 .channel__link:not(:last-child){
-    margin-right: 7.053571428571429%; /*79px / 1120px * 100%*/
+    /* margin-right: 7.053571428571429%; 79px / 1120px * 100% */
 }
 /*Channels styles end*/
 
@@ -496,7 +496,6 @@ body{
         width: 100%;
     }
     .what-it-does__img{
-        width: 100%;
         top: -10px;
         left: 90px;
     }
@@ -630,18 +629,53 @@ body{
 }
 /*Media 760px styles end*/
 
-/*Media 460px styles start*/
-@media (max-width: 460px){
+/*Media 635px styles start*/
+@media (max-width: 635px){
     .what-it-does__score{
         top: 50px;
-        left: -60px;
+        left: -50px;
     }
+}
+/*Media 635px styles end*/
+
+/*Media 530px styles start*/
+@media (max-width: 530px){
     .what-it-does__video{
         left: 70px;
         top: -20px;
     }
 }
+/*Media 530px styles end*/
+
+/*Media 460px styles start*/
+@media (max-width: 460px){
+    .what-it-does__score{
+        top: 45px;
+        left: -50px;
+    }
+    .what-it-does__video{
+        left: 40px;
+        top: 0px;
+    }
+}
 /*Media 460px styles end*/
+
+/*Media 390px styles start*/
+@media (max-width: 390px){
+    .what-it-does__score{
+        top: 50px;
+        left: -60px;
+    }
+    .what-it-does__video{
+        left: 50px;
+        top: -5px;
+    }
+
+    .get-started__img{
+        max-width: 320px;
+    }
+}
+/*Media 390px styles end*/
 
 /*Media 360px styles start*/
 @media (max-width: 360px){
@@ -655,7 +689,7 @@ body{
     .what-it-does__score{
         width: 100%;
         top: 60px;
-        left: -93px; 
+        left: -60px; 
     }
     .what-it-does__inner-img::before{
         background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
