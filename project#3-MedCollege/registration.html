@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project#3 MedCollege</title>
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__layout">
+                <div class="logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="routs">
+                    <ul class="routs__list">
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Вступнику
+                            </a>
+                        </li>
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Студенту
+                            </a>
+                        </li>
+                        <li class="routs__item">
+                            <a class="routs__link" href="#">
+                                Випускнику
+                            </a>
+                        </li>
+                    </ul>            
+                </div>
+                <button class="header__btn btn">
+                    Вхід / Реєстрація
+                </button>
+                <div class="header__lang">
+                    <ul class="lang__list">
+                        <li class="lang__item lang__item--active">
+                            <a class="lang__link" href="">
+                                УКР
+                            </a>
+                        </li>
+                        <li class="lang__item">
+                            <a class="lang__link" href="">
+                                ENG
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="toogle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__border-img"></div>
+        <div class="wrapper">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Освіта
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Післядипломна освіта
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Симуляційно-тренінговий центр
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Медсестринська спільнота
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Новини
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="modal__holder">
+            <h2 class="modal__title title">
+                Реєстрація
+            </h2>
+            <button class="modal__close">
+                <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+            </button>
+            <div class="modal__content">
+                <form class="modal__registration">
+                    <p class="modal__entry">
+                        Вже маєте акаунт?
+                        <a class="modal__entry-link" href="#">Увійти</a>
+                    </p>
+                    <input class="modal__input" type="text" id="name" name="name" placeholder="Ім’я">
+                    <label for="name"></label>
+                    <input class="modal__input" type="text" id="surname" name="surname" placeholder="Прізвище">
+                    <label for="surname"></label>
+                    <input class="modal__input" type="number" min="10" max="10" id="personal-number" name="personal-number" placeholder="Персональний номер">
+                    <label class="modal__label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                    <input class="email modal__input" type="email" id="email" name="email" placeholder="Email">
+                    <label for="email"></label>
+                    <input class="password modal__input" type="password" id="password" name="password" placeholder="Пароль">
+                    <label for="password"></label>
+                    <button class="modal__btn btn">
+                        Створити акаунт
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__inner">
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Освіта
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Післядипломна освіта
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Симуляційно-тренінговий центр
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Медсестринська спільнота
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Новини
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__wrap">
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Вступнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    День відкритих дверей
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спеціальності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Приймальна комісія
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Рейтингові списки вступників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Накази про зарахування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Студенту
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Палітра студентського життя
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Розклад занять
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Розклад екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Державна кваліфікаційна атестація
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Електронний журнал успішності
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Перелік питань до екзаменів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Дистанційне навчання
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Силабуси
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Каталог вибіркових дисциплів
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Працевлаштування випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Оплата навчання
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content">
+                        <ul class="footer__content-list">
+                            <li class="footer__content-item">
+                                Випускнику
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Історія успіху
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Спільнота випускників
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Про фонд
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Події
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Документи для скачування
+                                </a>
+                            </li>
+                            <li class="footer__content-item">
+                                <a class="footer__content-link" href="#">
+                                    Нормативні документи
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__border-img border-img"></div>
+                <div class="footer__contacts">
+                    <address class="address">
+                        <p>м. Львів, вул. Миколайчука, 9</p>
+                        <div class="phones">
+                            <a class="phone" href="tel:0322520305">(032) 252-03-05</a>
+                            <a class="phone" href="tel:0322587471">(032) 258-74-71</a>
+                            <a class="phone" href="tel:0322587395">(032) 258-73-95</a>
+                        </div>
+                    </address>
+                    <div class="footer__socials">
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <img class="footer__social-img" src="./assets/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2021 Львівський медичний фаховий коледж післядипломної освіти</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
