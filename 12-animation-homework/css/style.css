@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:after, :before {
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    min-height: 350px;
+    padding-top: 130px;
+}
+
+/*Swords styles start*/
+.swords{
+    background: black;
+    margin-top: 150px;
+}
+
+.sword{
+    position: relative;
+    background-color: #fff;
+    width: 80px;
+    height: 4px;
+    margin-bottom: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.sword span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    height: 4px;
+    width: 10px;
+    background-color: black;
+}
+
+.sword:nth-child(2) span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 60px;
+    height: 4px;
+    width: 10px;
+    background-color: black;
+}
+
+.swords__inner{
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 10px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.swords__inner:hover{
+    cursor: pointer;
+}
+
+.swords__inner:hover .sword:nth-child(1){
+    opacity: 0;
+}
+
+.swords__inner:hover .sword:nth-child(2){
+    transform: rotate(45deg);
+    box-shadow: 0 0 .2rem rgb(233, 146, 146),
+    0 0 .2rem rgb(233, 146, 146),
+    0 0 2rem #f01717b2,
+    0 0 0.8rem #f01717b2,
+    0 0 2.8rem #f01717b2,
+    inset 0 0 1.3rem #f01717b2;
+}
+
+.swords__inner:hover .sword:nth-child(3){
+    transform: rotate(-45deg);
+    box-shadow: 0 0 .2rem rgb(112, 247, 124),
+    0 0 .2rem rgb(112, 247, 124),
+    0 0 2rem #31f331f8,
+    0 0 0.8rem #31f331f8,
+    0 0 2.8rem #31f331f8,
+    inset 0 0 1.3rem #31f331f8;
+    top: -25px;
+}
+/*Swords styles end*/
+
+
+/*Ticker styles start*/
+.ticker{
+    background: rgb(250, 242, 242);
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.ticker__inner{
+    display: flex;
+    justify-content: center;
+}
+
+.ticker__item{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ticker__item:nth-child(1){
+    background-color: rgb(87, 87, 112);
+}
+.ticker__item:nth-child(2){
+    background-color: rgb(87, 87, 112);
+}
+.ticker__item:nth-child(3){
+    background: linear-gradient(to right, rgb(87, 87, 112) 40%, rgb(94, 94, 121));
+}
+.ticker__item:nth-child(4){
+    background: linear-gradient(to right, rgb(94, 94, 121) 20%, rgb(116, 36, 36));
+}
+.ticker__item:nth-child(5){
+    background: linear-gradient(to right, rgb(116, 36, 36) 20%, rgb(165, 42, 42));
+}
+.ticker__item:nth-child(6){
+    background-color: rgb(165, 42, 42);
+}
+.ticker__item:nth-child(7){
+    background-color: rgb(165, 42, 42);
+}
+
+.ticker__item::after{
+    content: '';
+    background: inherit;
+    filter: blur(4px) opacity(0.1);
+    width: 90%;
+    height: 20%;
+    position: absolute;
+    bottom: -70px;
+    border-radius: 50%;
+}
+
+.ticker__item:nth-child(1){
+    animation: first-ball ease-in-out 1s 0s infinite;
+}
+
+.ticker__item:nth-child(7){
+    animation: last-ball ease-in-out 1s 0.5s infinite;
+}
+
+.ticker__item:nth-child(1)::after{
+    animation: first-shadow linear 1s 0s infinite;
+}
+
+.ticker__item:nth-child(7)::after{
+    animation: last-shadow linear 1s 0.5s infinite;
+}
+  
+@keyframes first-ball {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(-50px, -50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes last-ball {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(50px, -50px);
+        /* transform: translate(100%, -100%) rotate(-60deg); */
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes first-shadow{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }        
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes last-shadow{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*Ticker styles end*/
