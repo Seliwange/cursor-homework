@@ -61,13 +61,6 @@ a{
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
-
-    /* font-family: 'Comfortaa', cursive;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #4D4680; */
 }
 
 .border-img{
@@ -82,14 +75,6 @@ a{
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-
-/* .toogle--toogled svg{
-    transform: rotate(-180deg);
-}
-
-.toogle svg{
-    transition: all .3s linear;
-} */
 
 /*Header styles start*/
 .header{
@@ -582,8 +567,11 @@ a{
     padding: 20px 40px;
 }
 
+.news__inner{
+    padding: 64px 0;
+}
+
 .news__title-main{
-    padding-top: 64px;
     margin-bottom: 32px;
 }
 
@@ -806,12 +794,11 @@ a{
 /*Modal form styles start*/
 .modal__holder{
     width: 572px;
-    height: 622px;
     background: url(../assets/illustration_cross.png) no-repeat;
     background-position: left top;
     background-color: #FAFAFA;
     border-radius: 8px;
-    padding: 40px 100px;
+    padding: 40px 100px 48px;
     position: relative;
 }
 
@@ -869,14 +856,18 @@ a{
     color: rgba(0, 0, 0, 0.5);
 }
 
+.modal__input-wrap{
+    margin-bottom: 24px;
+}
+
 .email{
-    margin-top: 24px;
 }
 .password{
     margin-bottom: 32px;
 }
 
 .modal__btn{
-    padding: 20px 104px;
+    width: 100%;
+    padding: 20px;
 }
 /*Modal form styles end*/
