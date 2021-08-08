@@ -83,6 +83,11 @@ body{
     inset 0 0 1.3rem #f01717b2;
 }
 
+.sword:nth-child(3){
+    top: 0;
+    transition-duration: 1s;
+}
+
 .swords__inner:hover .sword:nth-child(3){
     transform: rotate(-45deg);
     box-shadow: 0 0 .2rem rgb(112, 247, 124),
