@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#13 Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nor.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/logo.svg" alt="logo" width="105" height="30">
+                    </a>
+                    <form class="header__form d-flex">
+                        <input class="header__form-input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.1768 22H14.5175C14.1171 22 13.7666 21.6795 13.7666 21.3132V15.6816C13.7666 14.4912 12.7654 13.5754 11.4638 13.5754C10.1623 13.5754 9.16106 14.4912 9.16106 15.6816V21.3132C9.16106 21.6795 8.81064 22 8.41016 22H0.750907C0.350423 22 0 21.6795 0 21.3132V10.5536C0 10.3704 0.100121 10.1873 0.200242 10.0499L10.9632 0.206035C11.2636 -0.0686785 11.7141 -0.0686785 12.0145 0.206035L22.7775 10.0499C22.9778 10.2331 23.0779 10.5536 22.9277 10.7825C22.9277 10.8283 22.8776 10.8283 22.8776 10.8741V21.3132C22.9277 21.6795 22.5773 22 22.1768 22ZM15.2684 20.6264H21.4259V10.7367L11.5139 1.67118L1.50181 10.8283V20.6264H7.65925V15.6816C7.65925 13.7128 9.31125 12.2019 11.4638 12.2019C13.6164 12.2019 15.2684 13.7128 15.2684 15.6816V20.6264Z" fill="#262626"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__item nav-item">
+                                <a class="header__link--active nav-link" href="#">
+                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21.5131 0H0.460947C0.0399037 0 -0.147226 0.509019 0.133469 0.786666L7.61868 8.09803L10.1917 18.6486C10.2853 19.0651 10.8467 19.1113 11.0338 18.7874L21.9341 0.694117C22.1213 0.370196 21.8874 0 21.5131 0ZM2.75329 1.38823H18.4254L8.69468 6.7098C8.50755 6.80234 8.27363 6.75607 8.13329 6.61725L2.75329 1.38823ZM11.0338 16.1035L9.1625 8.42195C9.11572 8.23685 9.20928 8.00548 9.39641 7.91293L19.174 2.54509L11.0338 16.1035Z" fill="#262626"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C17.0851 0 22 4.91489 22 11C22 17.0851 17.0851 22 11 22C4.91489 22 0 17.0851 0 11C0 4.91489 4.91489 0 11 0ZM11 20.5957C16.2894 20.5957 20.5957 16.2894 20.5957 11C20.5957 5.71064 16.2894 1.40426 11 1.40426C5.71064 1.40426 1.40426 5.71064 1.40426 11C1.40426 16.2894 5.71064 20.5957 11 20.5957ZM8.94043 9.50213C9.08085 9.26808 9.26808 9.08085 9.50213 8.94043L16.4298 5.14894C16.5702 5.10213 16.7106 5.10213 16.8043 5.19574C16.8979 5.28936 16.9447 5.42979 16.8511 5.57021L13.0596 12.4979C12.9191 12.7319 12.7319 12.9191 12.4979 13.0596L5.57021 16.8511C5.42979 16.8979 5.28936 16.8979 5.19574 16.8043C5.10213 16.7106 5.05532 16.5702 5.14894 16.4298L8.94043 9.50213ZM11.8426 11.8426L13.8553 8.19149L10.2043 10.2043L11.8426 11.8426Z" fill="#262626"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8213 0C12.4979 0 11 2.4561 11 2.4561C11 2.4561 9.50213 0 6.17872 0C2.7617 0 0 2.96585 0 6.62683C0 10.2878 2.85532 12.3732 5.71064 14.8756C10.017 18.6756 10.2979 19 11 19C11.7021 19 11.983 18.6756 16.2894 14.8756C19.1915 12.3268 22 10.2415 22 6.62683C22 2.96585 19.2383 0 15.8213 0ZM15.3532 13.8098C12.8255 16.0341 11.4681 17.2854 11 17.5634C10.5319 17.239 8.84681 15.7561 6.64681 13.8098C4.07234 11.539 1.40426 9.63902 1.40426 6.58049C1.40426 3.70732 3.55745 1.3439 6.17872 1.3439C8.09787 1.3439 9.12766 2.27073 9.8766 3.29024C11.5617 5.65366 10.4383 5.65366 12.1234 3.29024C12.8723 2.27073 13.9021 1.3439 15.8213 1.3439C18.4426 1.3439 20.5957 3.70732 20.5957 6.58049C20.5957 9.68537 17.9277 11.5854 15.3532 13.8098Z" fill="#262626"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="11" cy="11" r="11" fill="#4094EF"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="card mb-3" style="max-width: 942px;">
+                <div class="row g-0">
+                    <div class="hero__img col-md-4">
+                        <img src="./assets/hero-icon.png" class="img-fluid rounded-start" alt="foto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <div class="hero__card">
+                                <h5 class="hero__card-title card-title">name</h5>
+                                <button class="hero__btn-follow btn btn-primary" type="submit">Follow</button>
+                                <button class="hero__btn-arrow btn btn-primary" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                    </svg>
+                                </button>
+                                <i class="hero__dots bi bi-three-dots"></i>
+                            </div>
+                        <div class="hero__card-followers">
+                            <p>79 posts</p>
+                            <p>379 followers</p>
+                            <p>179 following</p>
+                        </div>
+                        <div class="hero__card-info">
+                            <h6 class="card-title">Name</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <a class="hero__card-link card-link" href="#">bit.ly/35Ce3mX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story">
+        <div class="container">
+            <div class=" story__row row">
+                <div class="story__card card" style="width: 87px;">
+                    <img src="./assets/foto-story.png" class="story__card-img card-img-top" width="87px" height="87px" alt="foto">
+                    <h6 class="story__card-title card-title">Name</h6>
+                </div>
+                <div class="story__card card" style="width: 87px;">
+                    <img src="./assets/foto-story.png" class="story__card-img card-img-top" width="87px" height="87px" alt="foto">
+                    <h6 class="story__card-title card-title">Name</h6>
+                </div>
+                <div class="story__card card" style="width: 87px;">
+                    <img src="./assets/foto-story.png" class="story__card-img card-img-top" width="87px" height="87px" alt="foto">
+                    <h6 class="story__card-title card-title">Name</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-menu">
+        <div class="container">
+            <div class="content-menu__wrap">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="content-menu__item content-menu__item--active nav-item">
+                        <a class="content-menu__link content-menu__link--active nav-link" aria-current="page" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="content-menu__pic bi bi-grid-3x3" viewBox="0 0 16 16">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+                            </svg>  
+                            POSTS
+                        </a>
+                    </li>
+                    <li class="content-menu__item nav-item">
+                        <a class="content-menu__link nav-link" href="#" tabindex="-1" aria-disabled="true">
+                            <svg class="content-menu__pic" width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.59575 1.18066H6.99787C6.88085 1.18066 6.76383 1.1339 6.67021 1.04038L5.73404 0.105207C5.59362 -0.0350691 5.38298 -0.0350691 5.24255 0.105207L4.30638 1.04038C4.21277 1.1339 4.09574 1.18066 3.97872 1.18066H1.40426C0.631915 1.18066 0 1.8119 0 2.58342V9.59724C0 10.3688 0.631915 11 1.40426 11H9.59575C10.3681 11 11 10.3688 11 9.59724V2.58342C11 1.8119 10.3681 1.18066 9.59575 1.18066ZM2.71489 10.2986C2.57447 10.2986 2.45745 10.1583 2.48085 10.0181C2.64468 9.26993 3.3 8.70882 4.07234 8.70882H6.88085C7.6766 8.70882 8.33191 9.26993 8.47234 10.0181C8.49574 10.1583 8.37872 10.2986 8.2383 10.2986H2.71489ZM10.2979 9.59724C10.2979 9.99469 9.99362 10.2986 9.59575 10.2986H9.45532C9.3383 10.2986 9.24468 10.2051 9.22128 10.0882C9.08085 8.91923 8.09787 8.00744 6.90426 8.00744H4.09574C2.90213 8.00744 1.89574 8.91923 1.77872 10.0882C1.75532 10.2051 1.6617 10.2986 1.54468 10.2986H1.40426C1.00638 10.2986 0.702128 9.99469 0.702128 9.59724V2.58342C0.702128 2.18597 1.00638 1.88204 1.40426 1.88204H4.00213C4.30638 1.88204 4.61064 1.76514 4.82128 1.53135L5.5 0.853347L6.17872 1.53135C6.38936 1.74176 6.69362 1.88204 6.99787 1.88204H9.59575C9.99362 1.88204 10.2979 2.18597 10.2979 2.58342V9.59724ZM5.5 2.81722C4.25957 2.81722 3.25319 3.82253 3.25319 5.06164C3.25319 6.30074 4.25957 7.30606 5.5 7.30606C6.74043 7.30606 7.74681 6.30074 7.74681 5.06164C7.74681 3.82253 6.74043 2.81722 5.5 2.81722ZM5.5 6.5813C4.65745 6.5813 3.95532 5.90329 3.95532 5.03826C3.95532 4.1966 4.63404 3.49522 5.5 3.49522C6.36596 3.49522 7.04468 4.17322 7.04468 5.03826C7.04468 5.87991 6.34255 6.5813 5.5 6.5813Z"/>
+                            </svg>
+                            TAGGED
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                      <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
