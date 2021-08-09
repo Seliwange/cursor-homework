@@ -32,7 +32,7 @@ body{
 }
 
 .navbar-nav{
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .nav-item:not(:last-child){
@@ -40,7 +40,7 @@ body{
 }
 
 .header{
-    border-bottom: 1px solid #DBDBDB;
+    /* border-bottom: 1px solid #DBDBDB; */
     background: none;
     margin-bottom: 29px;
 }
@@ -95,9 +95,9 @@ body{
 }
 
 .hero__card{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 24px; */
 }
 
 .hero__card-title{
@@ -117,7 +117,7 @@ body{
 .hero__dots{
     font-size: 25px;
     color: #262626;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 
 .hero__btn-follow{
@@ -125,19 +125,19 @@ body{
     font-size: 14px;
     line-height: 17px;
     padding: 5px 26px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 
 .hero__btn-arrow{
     width: 33px;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 .hero__card-followers{
     font-weight: 500;
     line-height: 21px;
-    display: flex;
+    /* display: flex; */
 }
 
 .hero__card-followers > p:not(:last-child){
@@ -185,7 +185,7 @@ body{
 }
 
 .content-menu__wrap{
-    border-top: 1px solid #DBDBDB;
+    /* border-top: 1px solid #DBDBDB; */
 }
 
 .content-menu__item{
@@ -218,7 +218,3 @@ body{
     margin-right: 5px;
 }
 /*Content-menu styles end*/
-
-.posts{
-    margin-bottom: 20px;
-}

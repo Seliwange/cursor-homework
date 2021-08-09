@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header border-bottom">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -28,7 +28,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav flex-row">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">
                                     <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,17 +79,17 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <div class="hero__card">
+                            <div class="hero__card d-flex align-items-center mb-4">
                                 <h5 class="hero__card-title card-title">name</h5>
-                                <button class="hero__btn-follow btn btn-primary" type="submit">Follow</button>
-                                <button class="hero__btn-arrow btn btn-primary" type="submit">
+                                <button class="hero__btn-follow btn btn-primary me-2" type="submit">Follow</button>
+                                <button class="hero__btn-arrow d-flex align-items-center btn btn-primary" type="submit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
                                     </svg>
                                 </button>
-                                <i class="hero__dots bi bi-three-dots"></i>
+                                <i class="hero__dots ms-3 bi bi-three-dots"></i>
                             </div>
-                        <div class="hero__card-followers">
+                        <div class="hero__card-followers d-flex">
                             <p>79 posts</p>
                             <p>379 followers</p>
                             <p>179 following</p>
@@ -124,8 +124,8 @@
     </section>
     <section class="content-menu">
         <div class="container">
-            <div class="content-menu__wrap">
-                <ul class="navbar-nav justify-content-center">
+            <div class="content-menu__wrap border-top">
+                <ul class="navbar-nav flex-row justify-content-center">
                     <li class="content-menu__item content-menu__item--active nav-item">
                         <a class="content-menu__link content-menu__link--active nav-link" aria-current="page" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="content-menu__pic bi bi-grid-3x3" viewBox="0 0 16 16">
@@ -146,9 +146,9 @@
             </div>
         </div>
     </section>
-    <section class="posts">
+    <section class="posts mb-4">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-md-4 g-sm-2">
                 <div class="col">
                   <div class="card">
                     <img class="posts__img" src="./assets/posts-foto.png" alt="foto">
@@ -184,5 +184,5 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
