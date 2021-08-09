@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -109,33 +109,44 @@
                     <h2 class="timetable__title title">
                         Розклад занять
                     </h2>
-                    <div class="timetable__pharmacy">
-                        <div class="pharmacy__header">
-                            <h2 class="pharmacy__title title">
+                    <div class="timetable__course">
+                        <div class="course__header">
+                            <h2 class="course__title title">
                                 226 Фармація, промислова фармація
                             </h2>
                         </div>
                         <div class="timetable__accordion">
                             <div class="accordion__item">
-                                <div class="accordion__header">
-                                    <button class="accordion__button">
-                                        І курс
-                                    </button>
-                                    <a class="accordion__link" href="#">
-                                        Завантажити розклад
-                                        <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
-                                    </a>
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            І курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="accordion__body">
-                                    <div>
-                                        <div class="timetable__calendar">
-                                            <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
-                                            <p>Пн, 01.03 - Пт, 05.03</p>
-                                            <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
-                                            <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
-                                        </div>
-                                        <div class="timetable__group">
-
+                                    <div class="timetable__wrap">
+                                        <div class="timetable__info">
+                                            <div class="timetable__calendar">
+                                                <img class="calendar__img" src="./assets/calendar.svg" alt="calendar">
+                                                <p class="calendar__date">Пн, 01.03 - Пт, 05.03</p>
+                                                <img class="calendar__arrow-left" src="./assets/calendar_arrow-left.svg" alt="arrow-left">
+                                                <img class="calendar__arrow-right" src="./assets/calendar_arrow-right.svg" alt="arrow-right">
+                                            </div>
+                                            <div class="timetable__group">
+                                                <ul class="timetable__group-list">
+                                                    <li class="timetable__group-item timetable__group-item--active">
+                                                        <a class="timetable__group-link" href="#">I Група</a>
+                                                    </li>
+                                                    <li class="timetable__group-item">
+                                                        <a class="timetable__group-link" href="#">II Група</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                     <table class="timetable__table">
@@ -192,7 +203,96 @@
                                            </tr>
                                        </tbody>
                                     </table>
-                                    <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    <div class="timetable__wrap">
+                                        <p class="timetable__speaker">Перша долікарська допомога - Якимець Л.П.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            ІI курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            ІII курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timetable__course">
+                        <div class="course__header">
+                            <h2 class="course__title title">
+                                223 Медсестринство
+                            </h2>
+                        </div>
+                        <div class="timetable__accordion">
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            І курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            ІI курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            ІII курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <div class="timetable__wrap">
+                                    <div class="accordion__header">
+                                        <button class="accordion__button">
+                                            ІV курс
+                                        </button>
+                                        <a class="accordion__link" href="./css/nor.css" download>
+                                            Завантажити розклад
+                                            <img class="accordion__img" src="./assets/pdf.svg" alt="pdf">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +383,7 @@
                                 Студенту
                             </li>
                             <li class="footer__content-item">
-                                <a class="footer__content-link" href="#">
+                                <a class="footer__content-link" href="gallery.html">
                                     Палітра студентського життя
                                 </a>
                             </li>

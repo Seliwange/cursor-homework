@@ -132,7 +132,8 @@ a{
 /*Header styles end*/
 
 /*Main styles start*/
-.main {
+.main{
+    margin-bottom: 120px;
 }
 
 /*Hero styles start*/
@@ -568,7 +569,7 @@ a{
 }
 
 .news__inner{
-    padding: 64px 0;
+    padding: 64px 0 0;
 }
 
 .news__title-main{
@@ -613,7 +614,7 @@ a{
 
 /*Consultation styles start*/
 .consultation{
-    margin-bottom: 120px;
+
 }
 
 .consultation__info{
@@ -871,3 +872,229 @@ a{
     padding: 20px;
 }
 /*Modal form styles end*/
+
+/*Timetable page styles start*/
+.timetable{
+
+}
+
+.timetable__inner{
+    padding-top: 48px;
+}
+
+.timetable__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.timetable__course:not(:last-child){
+    margin-bottom: 48px;
+}
+
+.course__header{
+    background: #4F478F;
+    border-radius: 8px 8px 0px 0px;
+    padding: 12px 0;
+}
+
+.course__title{
+    font-size: 18px;
+    line-height: 134.77%;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+}
+
+.timetable__wrap{
+    padding: 0 24px;
+}
+
+.timetable__accordion{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.accordion__item {
+}
+
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.accordion__button{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.86);
+    border: none;
+    background-color: transparent;
+}
+
+.accordion__link{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    align-items: center;
+}
+
+.accordion__img{
+    padding-left: 8px;
+}
+
+.accordion__body{
+    margin: 16px 0 48px;
+}
+
+.timetable__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.timetable__calendar{
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.calendar__img{
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.calendar__date{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1F3841;
+    margin-right: 16px;
+}
+
+.calendar__arrow-left{
+    width: 32px;
+    height: 32px;
+}
+.calendar__arrow-right{
+    width: 32px;
+    height: 32px;
+}
+.timetable__group {
+}
+
+.timetable__group-list{
+    display: flex;
+}
+
+.timetable__group-item{
+    background: #FFFFFF;
+    box-shadow: inset -1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;
+    padding: 5px 16px;
+}
+
+.timetable__group-item:first-child{
+    border-radius: 4px 0px 0px 4px;
+}
+
+.timetable__group-item:last-child{
+    border-radius: 0px 4px 4px 0px;
+}
+
+.timetable__group-item--active{
+    border: 1px solid #4F478F;
+}
+
+.timetable__group-link{
+
+}
+
+.timetable__table{
+    width: 100%;
+    background: #FCFCFC;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+.timetable__table-group{
+
+}
+
+.timetable__table-head,
+.timetable__table-body{
+    line-height: 22px;
+}
+
+.timetable__table-head .timetable__table-column{
+    text-align: left;
+    font-weight: 600;
+    padding: 13px 8px 13px 16px;
+}
+
+.timetable__table-body .timetable__table-column{
+    border: 1px solid #DADADA;
+    padding: 13px 8px 13px 16px;
+    text-align: left;
+    border-left: none;
+}
+
+.timetable__speaker{
+    text-align: right;
+}
+/*Timetable page styles end*/
+
+/*Gallery page styles start*/
+.gallery__header{
+    min-height: 617px;
+    background: #181342;
+    background-image: url(../assets/gallery_header-photos.png), url(../assets/gallery_cross-big.svg), url(../assets/gallery_cross-big.svg), url(../assets/gallery_cross-small.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: center center, center left, top right, 60.8411111111% bottom;
+    background-size: contain, auto, auto, auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 104px;
+}
+
+.gallery__title{
+    max-width: 483px;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 62px;/* or 111% */
+    color: #FFFFFF;
+    margin-top: 77px;
+}
+
+.gallery__collection {
+}
+.gallery__images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+    grid-gap: 24px;
+}
+
+.gallery__wrap {
+}
+.gallery__img {
+}
+
+.gallery__img-desc{
+    line-height: 22px;/* or 157% */
+    color: #000000;
+}
+/*Gallery page styles end*/
