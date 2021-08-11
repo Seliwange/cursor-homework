@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+$base-color: #505F98;
+$title-color: #091133;
+$text-color: #6F7CB2;
+$button-bg: #111B47;
+$white-color: #FFFFFF;
+$price-color: #222F65;
+$logo-color: #37447E;
+$copyright-color: #939EA4;
+$menuf-color: #929ECC;
+$border-color: #CDD1D4;
+$subtext-color: #5D6970;
+$footer-bg: #E7ECFF;
+
+$section-width: 570px;
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1100px;
+}
+
+.btn-primary{
+    color: $white-color;
+    background: $button-bg;
+    border-radius: 2px;
+    border: 1px solid $button-bg;
+}
+
+.btn-outline-primary{
+    color: $title-color;
+    border: 2px solid $title-color;
+    border-radius: 2px;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba(111, 124, 178, 0.5);
+}
+
+.btn-primary:hover, 
+.btn-primary:active,
+.btn-primary:focus,
+.btn-outline-primary:hover, 
+.btn-outline-primary:active {
+    color: $white-color;
+    background-color: $text-color;
+    border-color: $text-color;
+}
+
+.header{
+    background: url(./assets/header-bg.png) no-repeat;
+    background-position: right center;
+    background-size: contain;
+    
+    &__info{
+        min-height: 1060px;
+    }
+}
+
+.panel{
+    min-height: $section-width;
+}
+
+.price{
+    min-height: 805px;
+    background: rgba(231, 236, 255, 0.5);
+    mix-blend-mode: normal;
+    position: relative;
+    
+    &__wrap{
+        display: inline-block;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 1440px;
+            background: white;
+            border-radius: 0px 0px 21400px 21400px/0px 0px 3000px 3000px;
+            display: inline-block;
+        }
+    }
+}
+
+.footer{
+    background: $footer-bg;
+
+    &__inner{
+        padding: 61px 0 32px;
+    }
+}
+
+.socials{
+    &__item{
+        transition: all 0.5s linear;
+    
+        &:hover{
+            background: $menuf-color;
+            border-radius: 90%;
+        }
+    }
+    
+    &__img{
+        transition: all 0.5s linear;
+    
+        &:hover{
+            fill: $base-color;
+        }
+    }
+}
