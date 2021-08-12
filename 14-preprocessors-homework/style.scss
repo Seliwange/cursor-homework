@@ -1,57 +1,106 @@
+@use 'base';
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
-$base-color: #505F98;
-$title-color: #091133;
-$text-color: #6F7CB2;
-$button-bg: #111B47;
-$white-color: #FFFFFF;
-$price-color: #222F65;
-$logo-color: #37447E;
-$copyright-color: #939EA4;
-$menuf-color: #929ECC;
-$border-color: #CDD1D4;
-$subtext-color: #5D6970;
-$footer-bg: #E7ECFF;
+%font-stack{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.625; /*26px / 16px*/
+    color: #6F7CB2;
+}
 
-$section-width: 570px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::after, 
+::before{
+    box-sizing: border-box;
+}
 
 body{
     max-width: 1440px;
     margin: 0 auto;
+    @extend %font-stack; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.25rem; /*36px / 16*/
+    line-height: 1.3333333333333; /*48px / 36px*/
+    color: base.$title-color;
 }
 
 .container{
     max-width: 1100px;
 }
 
-.btn-primary{
-    color: $white-color;
-    background: $button-bg;
+.card{
+    border: none;
+}
+
+.btn{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.625; /*26px / 16px*/
+    color: base.$white-color;
     border-radius: 2px;
-    border: 1px solid $button-bg;
+    transition: all 0.5s linear;
+}
+
+.btn-primary{
+    background: base.$button-bg;
+    border: 1px solid base.$button-bg;
+
+    &:focus,
+    &:active:focus{
+        box-shadow: 0 0 0 0.25rem rgba(111, 124, 178, 0.5);
+    }
+    &:hover, 
+    &:active,
+    &:focus{
+        color: base.$white-color;
+        background-color: base.$text-color;
+        border-color: base.$text-color;
+    }
 }
 
 .btn-outline-primary{
-    color: $title-color;
-    border: 2px solid $title-color;
-    border-radius: 2px;
+    color: base.$title-color;
+    border: 2px solid base.$title-color;
+
+    &:focus,
+    &:active:focus{
+        box-shadow: 0 0 0 0.25rem rgba(111, 124, 178, 0.5);
+    }
+    &:hover, 
+    &:active,
+    &:focus{
+        color: base.$white-color;
+        background-color: base.$text-color;
+        border-color: base.$text-color;
+    }
 }
 
-.btn-primary:focus,
-.btn-primary:active:focus,
-.btn-outline-primary:focus,
-.btn-outline-primary:active:focus {
-    box-shadow: 0 0 0 0.25rem rgba(111, 124, 178, 0.5);
-}
-
-.btn-primary:hover, 
-.btn-primary:active,
-.btn-primary:focus,
-.btn-outline-primary:hover, 
-.btn-outline-primary:active {
-    color: $white-color;
-    background-color: $text-color;
-    border-color: $text-color;
+a{
+    &:hover,
+    &:active,
+    &:focus{
+        color: base.$text-color;
+    }
 }
 
 .header{
@@ -61,11 +110,77 @@ body{
     
     &__info{
         min-height: 1060px;
+        align-items: center;
+    }
+
+    &__title{
+        font-size: 3.125rem; /*50px / 16*/
+        line-height: 1.32; /*66px / 50px*/
+        letter-spacing: 1px;
+    }
+
+    &__text{
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.6666666; /*30px / 18px*/
+        color: base.$base-color;
+    }
+}
+
+.logo{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: base.$logo-color;
+}
+
+.navbar{
+    &__list{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__item{
+        &:hover{
+            border-bottom: 1px solid base.$title-color;
+        }
+    }
+
+    &__link{
+        color: base.$base-color;
+
+        &:hover,
+        &:focus{
+            color: base.$title-color;
+        }
     }
 }
 
 .panel{
-    min-height: $section-width;
+    min-height: base.$section-width;
+
+    img{
+        max-width: 520px;
+        width: 100%;
+    }
+}
+
+.review{
+    .card__title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .card__text{
+        font-size: 12px;
+        line-height: 18px;
+        color: base.$subtext-color;
+    }
+
+    &-img{
+        width: 100%;
+    }
 }
 
 .price{
@@ -83,19 +198,52 @@ body{
             top: 0;
             left: 0;
             height: 50px;
-            width: 1440px;
+            max-width: 1440px;
+            width: 100%;
             background: white;
             border-radius: 0px 0px 21400px 21400px/0px 0px 3000px 3000px;
             display: inline-block;
         }
     }
+
+    &__card-title{
+        font-size: 3.125rem; /*50px / 16*/
+        line-height: 1.32; /*66px / 50px*/
+        letter-spacing: 1px;
+        color: base.$price-color;
+    }
+
+    &__card-text{
+        color: base.$logo-color;
+    }
+
+    &__btn-text{
+        font-size: 14px;
+        line-height: 24px;
+        color: base.$subtext-color;
+    }
 }
 
 .footer{
-    background: $footer-bg;
+    background: base.$footer-bg;
 
     &__inner{
         padding: 61px 0 32px;
+    }
+
+    .copyright{
+        color: base.$copyright-color;
+    }
+
+    .navbar{
+        &__link{
+            color: base.$menuf-color;
+
+            &:hover,
+            &:focus{
+                color: base.$title-color;
+            }
+        }
     }
 }
 
@@ -104,7 +252,7 @@ body{
         transition: all 0.5s linear;
     
         &:hover{
-            background: $menuf-color;
+            background: base.$menuf-color;
             border-radius: 90%;
         }
     }
@@ -113,7 +261,33 @@ body{
         transition: all 0.5s linear;
     
         &:hover{
-            fill: $base-color;
+            fill: base.$base-color;
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .header{
+        background-position: right top;
+        margin-bottom: 60px;
+
+        &__info{
+            align-items: flex-end;
+        }
+    }
+    
+    .main{
+        section:not(:last-child){
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header{
+        &__info{
+            min-height: 960px;
         }
     }
 }
