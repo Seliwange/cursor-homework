@@ -69,6 +69,28 @@ a{
     border-radius: 4px;
 }
 
+.input{
+    width: 373px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.label{
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;/* identical to box height, or 154% */
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .toogle{
     border: none;
     background-color: transparent;
@@ -260,8 +282,7 @@ a{
     text-align: left;
     margin-bottom: 8px;
 }
-.program__table-group {
-}
+
 .program__table-head{
     font-weight: 600;
     font-size: 12px;
@@ -872,29 +893,13 @@ a{
 }
 
 .modal__input{
-    width: 373px;
-    height: 40px;
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.5);
-    background: #FFFFFF;
     border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 10px 25px;
     margin-bottom: 24px;
 }
 
 .modal__label{
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;/* identical to box height, or 154% */
-    color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__input-wrap{
@@ -957,7 +962,8 @@ a{
     border-radius: 0px 0px 8px 8px;
 }
 
-.accordion__item {
+.accordion__item:not(:first-child){
+    border-top: 1px solid #D9D9D9;
 }
 
 .accordion__header{
@@ -1468,3 +1474,265 @@ a{
 /*Meeting styles end*/
 /*Content styles end*/
 /*About page styles end*/
+
+/*Payment page styles start*/
+/*Cost styles start*/
+.cost{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 64px;
+}
+
+.cost__inner{
+    padding: 48px 0 0;
+}
+
+.cost__title{
+    margin-bottom: 32px;
+}
+
+.cost__btn{
+    padding: 20px 40px;
+    margin-bottom: 32px;
+}
+
+.cost__btn-link {
+}
+
+.cost__table{
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    background: #FFFFFF;
+    border-spacing: 0;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.cost__table-head{
+    background: #ECE9FF;
+}
+
+.cost__table-body{
+    border: 1px solid #E0E0E0;
+}
+
+.cost__table-head .cost__table-column {
+    text-align: left;
+    font-weight: 500;
+    padding: 13px 8px 13px 16px;
+}
+
+.cost__table-body .cost__table-column{
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: left;
+    padding: 13px 8px 13px 16px;
+}
+
+.cost__table-body .cost__table-column:first-child{
+    border-left: 1px solid #E0E0E0;
+}
+
+.cost__table-head .cost__table-column:first-child{
+    border-radius: 8px 0px 0px 0px;
+}
+.cost__table-head .cost__table-column:last-child{
+    border-radius: 0px 8px 0px 0px;
+}
+.cost__table-body .cost__table-row:last-child .cost__table-column:first-child{
+    border-radius: 0px 0px 0px 8px;
+}
+.cost__table-body .cost__table-row:last-child .cost__table-column:last-child{
+    border-radius: 0px 0px 8px 0px;
+}
+
+.cost__table-column:last-child{
+    text-align: right;
+}
+
+.cost__desc{
+    max-width: 869px;
+}
+
+.cost__text{
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.cost__text:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.cost__text--dark{
+    color: #1F3841;
+}
+
+.cost__text-link{
+    color: #786CD9;
+}
+/*Cost styles end*/
+
+/*Paymen styles start*/
+.payment {
+}
+
+.payment__header{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 32px;
+}
+
+.payment__title{
+    margin-right: 32px;
+}
+
+.payment__list{
+    display: flex;
+}
+
+.payment__item:not(:last-child){
+    margin-right: 24px;
+}
+.payment__link {
+}
+.payment__img {
+}
+
+.payment__body{
+    width: 720px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 48px 48px 56px;
+}
+
+.payment__form{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7D7D7D;
+}
+
+.payment__input{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 16px;
+}
+
+.payment__input-wrap{
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+}
+
+.payment__label{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.payment__specialty-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.payment__period-wrap{
+    margin-bottom: 40px;
+}
+
+.payment__title-radio{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.payment__radio-label{
+    position: relative;
+    padding-left: 24px;
+}
+
+.payment__radio-label .payment__radio-input:checked ~ .checkmark{
+    border: 1px solid #4F478F;
+}
+
+.payment__radio-label .payment__radio-input:checked ~ .checkmark::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4F478F;
+}
+
+.payment__radio-input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin-right: 8px;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+}
+
+
+.payment__specialty-label:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.payment__period-label:not(:last-child){
+    margin-right: 24px;
+}
+
+.payment__sum{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.payment__sum-label{
+    font-size: 16px;
+    margin-right: 108px;
+}
+
+.payment__sum-price{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #786CD9;
+}
+
+.payment__form-btns{
+    display: flex;
+    align-items: center;
+}
+
+.payment__btn{
+    padding: 20px 139px;
+    margin-right: 38px;
+}
+
+.liqpay__link {
+}
+.liqpay__img {
+}
+/*Paymen styles end*/
+/*Payment page styles end*/

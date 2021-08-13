@@ -17,7 +17,7 @@
         <div class="wrapper">
             <div class="header__layout">
                 <div class="logo">
-                    <a class="logo__link" href="#">
+                    <a class="logo__link" href="index.html">
                         <img class="logo__img" src="./assets/logo.svg" alt="logo">
                     </a>
                 </div>
@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                        <a class="menu__list-link" href="about.html">
                             Медсестринська спільнота
                         </a>
                     </li>
@@ -105,18 +105,151 @@
     <main class="main">
         <section class="cost">
             <div class="wrapper">
-                <h2 class="cost__title title">
-                    Вартість навчання за контрактом для вступників 2021 року
-                </h2>
-                <button class="cost__btn btn">
-                    <a class="cost__btn-link" href="#"></a>
-                </button>
+                <div class="cost__inner">
+                    <h2 class="cost__title title">
+                        Вартість навчання за контрактом для вступників 2021 року
+                    </h2>
+                    <button class="cost__btn btn">
+                        <a class="cost__btn-link" href="#">Оплатити онлайн</a>
+                    </button>
+                    <table class="cost__table">
+                        <colgroup class="cost__table-group">
+                            <col>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead class="cost__table-head">
+                            <tr class="cost__table-row">
+                                <th class="cost__table-column">
+                                    Освітній ступінь
+                                </th>
+                                <th class="cost__table-column">
+                                    Спеціальність
+                                </th>
+                                <th class="cost__table-column">
+                                    Вартість першого року навчання (грн.)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="cost__table-body">
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    223 Медсестринство
+                                </td>
+                                <td class="cost__table-column">
+                                    18 400
+                                </td>
+                            </tr>
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Фаховий молодший бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    223 Медсестринство
+                                </td>
+                                <td class="cost__table-column">
+                                    14 600
+                                </td>
+                            </tr>
+                            <tr class="cost__table-row">
+                                <td class="cost__table-column">
+                                    Фаховий молодший бакалавр
+                                </td>
+                                <td class="cost__table-column">
+                                    226 Фармація, промислова фармація
+                                </td>
+                                <td class="cost__table-column">
+                                    16 200
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cost__desc">
+                        <p class="cost__text">
+                            Оплата за навчання може проводитись один раз на рік (до початку навчання), двічі на рік (до початку кожного семестру).
+                        </p>
+                        <p class="cost__text cost__text--dark">
+                            Вступники з високими балами ЗНО можуть претендувати на стипендії, які повністю покривають їх вартість навчання. <br>
+                            Детальніше  про стипендії та ліцензовані обсяги прийому <a class="cost__text-link" href="#">за посиланням</a>.
+                    </div>
+                    </p>
+                </div>
             </div>
         </section>
         <section class="payment">
-            <h2 class="payment__title title">
-                Оплата за навчання
-            </h2>
+            <div class="wrapper">
+                <div class="payment__header">
+                    <h2 class="payment__title title">
+                        Оплата за навчання
+                    </h2>
+                    <ul class="payment__list">
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/mastercard.svg" alt="mastercard">
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/visa.svg" alt="visa">
+                            </a>
+                        </li>
+                        <li class="payment__item">
+                            <a class="payment__link" href="#">
+                                <img class="payment__img" src="./assets/privat24.svg" alt="privat24">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="payment__body">
+                    <form class="payment__form" action="">
+                        <input class="payment__input input" type="text" id="name" name="name" placeholder="Ім’я">
+                        <label for="name"></label>
+                        <input class="payment__input input" type="text" id="surname" name="surname" placeholder="Прізвище">
+                        <label for="surname"></label>
+                        <div class="payment__input-wrap">
+                            <input class="payment__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="payment__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                        </div>
+                        <div class="payment__specialty-wrap">
+                            <p class="payment__title-radio">Спеціальність :</p>
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio1"><input class="payment__radio-input" type="radio" id="specialty-radio1" name="specialty-radio" value="223 Медсестринство (бакалавр)" checked>
+                            223 Медсестринство (бакалавр)<span class="checkmark"></span></label>
+                            
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio2"><input class="payment__radio-input" type="radio" id="specialty-radio2" name="specialty-radio" value="223 Медсестринство (Фаховий молодший бакалавр)">
+                            223 Медсестринство (Фаховий молодший бакалавр)<span class="checkmark"></span></label>
+
+                            <label class="payment__specialty-label payment__radio-label" for="specialty-radio3"><input class="payment__radio-input" type="radio" id="specialty-radio3" name="specialty-radio" value="226 Фармація, промислова фармація (Фаховий молодший бакалавр)">
+                            226 Фармація, промислова фармація (Фаховий молодший бакалавр)<span class="checkmark"></span></label>
+                        </div>
+                        <div class="payment__period-wrap">
+                            <p class="payment__title-radio">Оплата :</p>
+                            <label class="payment__period-label payment__radio-label" for="period-radio1"><input class="payment__radio-input" type="radio" id="period-radio1" name="period-radio" value="Рік">
+                            Рік<span class="checkmark"></span></label>
+
+                            <label class="payment__period-label payment__radio-label" for="period-radio2"><input class="payment__radio-input" type="radio" id="period-radio2" name="period-radio" value="Пів року" checked>Пів року<span class="checkmark"></span></label>
+                        </div>
+                        <div class="payment__sum">
+                            <p class="payment__sum-label">
+                                До оплати :
+                            </p>
+                            <p class="payment__sum-price">
+                                <span>9 200 грн.</span>
+                            </p>
+                        </div>
+                        <div class="payment__form-btns">
+                            <button class="payment__btn btn">
+                                Оплатити
+                            </button>
+                            <a class="liqpay__link" href="#">
+                                <img class="liqpay__img" src="./assets/liqpay.svg" alt="liqpay">
+                            </a>
+                        </div>
+                    </form>   
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -145,7 +278,7 @@
                             </a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                            <a class="menu__list-link" href="about.html">
                                 Медсестринська спільнота
                             </a>
                         </li>
@@ -206,7 +339,7 @@
                                 </a>
                             </li>
                             <li class="footer__content-item">
-                                <a class="footer__content-link" href="#">
+                                <a class="footer__content-link" href="timetable.html">
                                     Розклад занять
                                 </a>
                             </li>
@@ -256,7 +389,7 @@
                                 </a>
                             </li>
                             <li class="footer__content-item">
-                                <a class="footer__content-link" href="#">
+                                <a class="footer__content-link" href="payment.html">
                                     Оплата навчання
                                 </a>
                             </li>
