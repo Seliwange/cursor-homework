@@ -7,7 +7,7 @@
     <title>Project#3 MedCollege</title>
     <link rel="stylesheet" href="./css/nor.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/css/all.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,51 +16,183 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__layout">
-                <div class="logo">
-                    <a class="logo__link" href="index.html">
-                        <img class="logo__img" src="./assets/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="routs">
-                    <ul class="routs__list">
-                        <li class="routs__item">
-                            <a class="routs__link" href="#">
+                <div class="header__wrap">
+                    <div class="logo">
+                        <a class="logo__link" href="index.html">
+                            <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="routs">
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
                                 Вступнику
-                            </a>
-                        </li>
-                        <li class="routs__item">
-                            <a class="routs__link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        День відкритих дверей
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спеціальності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Приймальна комісія
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Рейтингові списки вступників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Накази про зарахування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
                                 Студенту
-                            </a>
-                        </li>
-                        <li class="routs__item">
-                            <a class="routs__link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Палітра студентського життя
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад занять
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Розклад екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Державна кваліфікаційна атестація
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Електронний журнал успішності
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Дистанційне навчання
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Перелік питань до екзаменів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Силабуси
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Каталог вибіркових дисциплів
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Працевлаштування випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Оплата навчання
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="routs__wrap">
+                            <button class="routs__list-btn">
                                 Випускнику
-                            </a>
-                        </li>
-                    </ul>            
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="arrow-down" d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <ul class="routs__list">
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Історія успіху
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Спільнота випускників
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Про фонд
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Події
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Документи для скачування
+                                    </a>
+                                </li>
+                                <li class="routs__item">
+                                    <a class="routs__link" href="#">
+                                        Нормативні документи
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <button class="header__btn btn">
-                    Вхід / Реєстрація
-                </button>
-                <div class="header__lang">
-                    <ul class="lang__list">
-                        <li class="lang__item lang__item--active">
-                            <a class="lang__link" href="">
-                                УКР
-                            </a>
-                        </li>
-                        <li class="lang__item">
-                            <a class="lang__link" href="">
-                                ENG
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="toogle">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z" fill="black"/>
-                        </svg>
+                <div class="header__wrap">
+                    <button class="header__btn btn" id="registration">
+                        Вхід / Реєстрація
                     </button>
+                    <div class="header__lang">
+                        <form class="lang__form" action="">
+                            <label for="language"></label>
+                            <select class="lang__select" name="select" id="language">
+                                <option value="УКР" selected>УКР</option>
+                                <option value="ENG">ENG</option>
+                              </select>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +341,7 @@
                             Тепер оплату можна здійснити безпосередньо на нашому сайті через сервіс LIQPAY
                         </p>
                         <a class="info__card-link" href="payment.html">
-                            Переглянути<i class="fas arrow-right">f061</i>
+                            Переглянути
                         </a>
                     </div>
                     <div class="info__card">
@@ -231,7 +363,7 @@
                             Всі необхідні матеріали в одному місці, більше не потрібно носити з собою велетенські книги
                         </p>
                         <a class="info__card-link" href="#">
-                            Переглянути<i class="fas">f061</i>
+                            Переглянути<i class="fas fa-f061"></i>
                         </a>
                     </div>
                 </div>
@@ -426,33 +558,33 @@
             <div class="footer__inner">
                 <nav class="footer__menu">
                     <ul class="footer__menu-list menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="index.html">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="index.html">
                                 Про нас
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
                                 Освіта
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
                                 Післядипломна освіта
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="#">
                                 Симуляційно-тренінговий центр
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="about.html">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="about.html">
                                 Медсестринська спільнота
                             </a>
                         </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="news.html">
+                        <li class="footer__menu-item menu__list-item">
+                            <a class="footer__menu-link menu__list-link" href="news.html">
                                 Новини
                             </a>
                         </li>
@@ -633,5 +765,107 @@
             </div>
         </div>
     </footer>
+
+    <dialog id="registration-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Реєстрація
+                </h2>
+                <button class="modal__close" id="cancel" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" method="dialog">
+                        <p class="modal__entry">
+                            Вже маєте акаунт?
+                            <a class="modal__entry-link" id="entry" href="#">Увійти</a>
+                        </p>
+                        <input class="modal__input input" type="text" id="name" name="name" placeholder="Ім’я">
+                        <label for="name"></label>
+                        <input class="modal__input input" type="text" id="surname" name="surname" placeholder="Прізвище">
+                        <label for="surname"></label>
+                        <div class="modal__input-wrap">
+                            <input class="modal__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="modal__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                        </div>
+                        <input class="email modal__input input" type="email" id="email" name="email" placeholder="Email">
+                        <label for="email"></label>
+                        <input class="password modal__input input" type="password" id="password" name="password" placeholder="Пароль">
+                        <label for="password"></label>
+                        <button class="modal__btn btn" type="submit">
+                            Створити акаунт
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <dialog id="entry-dialog">
+        <div class="modal">
+            <div class="modal__holder">
+                <h2 class="modal__title title">
+                    Вхід
+                </h2>
+                <button class="modal__close" id="cancel-btn" type="reset">
+                    <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
+                </button>
+                <div class="modal__content">
+                    <form class="modal__registration" method="dialog">
+                        <p class="modal__entry">
+                            Ще не маєте акаунт?
+                            <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>
+                        </p>
+                        <input class="email modal__input input" type="email" id="email" name="email" placeholder="Email">
+                        <label for="email"></label>
+                        <input class="password modal__input input" type="password" id="password" name="password" placeholder="Пароль">
+                        <label for="password"></label>
+                        <button class="modal__btn btn">
+                            Увійти
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script>
+        (function() {
+            let registrationButton = document.getElementById('registration');
+            let cancelButton = document.getElementById('cancel');
+            let cancelEntryButton = document.getElementById('cancel-btn');
+            let registrationDialog = document.getElementById('registration-dialog');
+            let entryButton = document.getElementById('entry');
+            let entryDialog = document.getElementById('entry-dialog');
+            let registrationLink = document.getElementById('registration-form');
+
+            // registration button opens a modal dialog
+            registrationButton.addEventListener('click', function() {
+                registrationDialog.showModal();
+            });
+                        
+            // regiatration cancel button closes the dialog box
+            cancelButton.addEventListener('click', function() {
+                registrationDialog.close();
+            });
+                        
+            // entry button close registration modal dialog and opens an entry modal dialog
+            entryButton.addEventListener('click', function() {
+                registrationDialog.close();
+                entryDialog.showModal();
+            });
+            
+            // entry cancel button closes the dialog box
+            cancelEntryButton.addEventListener('click', function() {
+                entryDialog.close();
+            });
+            
+            // registration link close entry modal dialog and opens a registration modal dialog
+            registrationLink.addEventListener('click', function() {
+                entryDialog.close();
+                registrationDialog.showModal();
+            });
+        })();
+    </script>
 </body>
 </html>
