@@ -501,12 +501,16 @@ a{
     font-size: 16px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
 }
 
 .info__card-link:hover{
     color: rgba(255, 255, 255, 0.72);
 }
-.fas {
+
+.info__card-link i{
+    margin-left: 16px;
 }
 /*Info styles end*/
 
@@ -534,11 +538,7 @@ a{
     max-width: 652px;
 }
 
-.slider__wrap{
-
-}
-
-.slider__number{
+.slider__pagination{
     font-family: 'Roboto Mono', monospace;
     font-style: normal;
     font-weight: 400;
@@ -546,15 +546,25 @@ a{
     line-height: 38px;
     padding-top: 29px;
     margin-bottom: 32px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slider__number--active{
+.slider__pagination--active{
     font-family: 'Roboto Mono', monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
+}
+
+.slider__control{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .slider__info{
@@ -698,10 +708,16 @@ a{
     font-size: 16px;
     line-height: 24px;/* identical to box height, or 150% */
     color: #4D4680;
+    display: flex;
+    align-items: center;
 }
 
 .news__article-link:hover{
     color: #786CD9;
+}
+
+.news__article-link i{
+    margin-left: 22px;
 }
 
 .news__btn{
