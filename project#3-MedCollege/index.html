@@ -277,17 +277,29 @@
                                     <thead class="program__table-head">
                                         <tr class="program__table-row">
                                             <th class="program__table-column">Освітній ступінь</th>
-                                            <th class="program__table-column">Термін навчання</th>
+                                            <th class="program__table-column program__table-column--mobile">Термін навчання</th>
                                         </tr>
                                     </thead>
                                     <tbody class="program__table-body">
                                         <tr class="program__table-row">
                                             <td class="program__table-column">Фаховий молодший бакалавр</td>
-                                            <td class="program__table-column">4 роки</td>
+                                            <td class="program__table-column program__table-column--mobile">4 роки</td>
                                         </tr>
                                         <tr class="program__table-row">
                                             <td class="program__table-column">Бакалавр</td>
-                                            <td class="program__table-column"></td>
+                                            <td class="program__table-column program__table-column--mobile"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="program__table program__table--mobile">
+                                    <thead class="program__table-head program__table-head--mobile">
+                                        <tr class="program__table-row">
+                                            <th class="program__table-column">Термін навчання</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="program__table-body program__table-body--mobile">
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column">4 роки</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -307,17 +319,29 @@
                                     <thead class="program__table-head">
                                         <tr class="program__table-row">
                                             <th class="program__table-column">Освітній ступінь</th>
-                                            <th class="program__table-column">Термін навчання</th>
+                                            <th class="program__table-column program__table-column--mobile">Термін навчання</th>
                                         </tr>
                                     </thead>
                                     <tbody class="program__table-body">
                                         <tr class="program__table-row">
                                             <td class="program__table-column" rowspan="2">Фаховий молодший бакалавр</td>
-                                            <td class="program__table-column">3 роки</td>
+                                            <td class="program__table-column program__table-column--mobile">3 роки</td>
                                         </tr>
                                         <tr class="program__table-row">
                                             <td class="program__table-column"></td>
-                                            <td class="program__table-column"></td>
+                                            <td class="program__table-column program__table-column--mobile"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="program__table program__table--mobile">
+                                    <thead class="program__table-head">
+                                        <tr class="program__table-row">
+                                            <th class="program__table-column">Термін навчання</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="program__table-body">
+                                        <tr class="program__table-row">
+                                            <td class="program__table-column">3 роки</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -374,6 +398,20 @@
                 <div class="slider__items">
                     <!-- <img class="slider__img" src="./assets/slider-img1.jpg" width="764px" height="507px" alt="slide1"> -->
                     <div class="slider__item">
+                        <div class="slider__carousel">
+                            <div class="slider__carousel-inner">
+                                <div class="slider__carousel-item">
+                                    <img src="./assets/slider_img1-mobile.png" alt="photo">
+                                </div>
+                             </div>
+                            <div class="slider__carousel-indicators">
+                                <button class="slider__carousel-btn" type="button"></button>
+                                <button class="slider__carousel-btn slider__carousel-btn--active" type="button"></button>
+                                <button class="slider__carousel-btn" type="button"></button>
+                                <button class="slider__carousel-btn" type="button"></button>
+                                <button class="slider__carousel-btn" type="button"></button>
+                            </div>
+                        </div>
                         <div class="slider__pagination">
                             <button class="slider__control">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -418,7 +456,10 @@
                             <h6 class="tour__link-text">Відвідати віртуальний тур</h6>
                         </a>
                     </div>
-                    <img class="tour__img" src="./assets/tour-img.jpg" width="571px" height="338px" alt="tour">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="./assets/tour_img-mobile.jpg" width="343px">
+                        <img class="tour__img" src="./assets/tour-img.jpg" width="571px" height="338px" alt="tour">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -551,10 +592,10 @@
                         Отримати консультацію
                     </h4>
                     <form class="consultation__form" action="">
-                        <label for="name"></label>
-                        <input class="consultation__form-input" type="text" name="name" id="name" placeholder="Ім’я">
-                        <label for="phone"></label>
-                        <input class="consultation__form-input" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефону">
+                        <label for="consultation-name"></label>
+                        <input class="consultation__form-input" type="text" name="name" id="consultation-name" placeholder="Ім’я">
+                        <label for="consultation-phone"></label>
+                        <input class="consultation__form-input" type="tel" name="phone" id="consultation-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер телефону">
                         <button class="consultation__form-btn btn">
                             Відправити заявку
                         </button>
@@ -748,11 +789,11 @@
                 <div class="footer__contacts">
                     <address class="address">
                         <p>м. Львів, вул. Миколайчука, 9</p>
-                        <div class="phones">
-                            <a class="phone" href="tel:0322520305">(032) 252-03-05</a>
-                            <a class="phone" href="tel:0322587471">(032) 258-74-71</a>
-                            <a class="phone" href="tel:0322587395">(032) 258-73-95</a>
-                        </div>
+                    </address>
+                    <address class="address">
+                        <a class="phone" href="tel:0322520305">(032) 252-03-05</a>
+                        <a class="phone" href="tel:0322587471">(032) 258-74-71</a>
+                        <a class="phone" href="tel:0322587395">(032) 258-73-95</a>
                     </address>
                     <div class="footer__socials">
                         <ul class="footer__social-list">
@@ -791,18 +832,18 @@
                             Вже маєте акаунт?
                             <a class="modal__entry-link" id="entry" href="#">Увійти</a>
                         </p>
-                        <input class="modal__input input" type="text" id="name" name="name" placeholder="Ім’я">
-                        <label for="name"></label>
-                        <input class="modal__input input" type="text" id="surname" name="surname" placeholder="Прізвище">
-                        <label for="surname"></label>
+                        <input class="modal__input input" type="text" id="registration-name" name="name" placeholder="Ім’я">
+                        <label for="registration-name"></label>
+                        <input class="modal__input input" type="text" id="registration-surname" name="surname" placeholder="Прізвище">
+                        <label for="registration-surname"></label>
                         <div class="modal__input-wrap">
                             <input class="modal__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
                             <label class="modal__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
                         </div>
-                        <input class="email modal__input input" type="email" id="email" name="email" placeholder="Email">
-                        <label for="email"></label>
-                        <input class="password modal__input input" type="password" id="password" name="password" placeholder="Пароль">
-                        <label for="password"></label>
+                        <input class="email modal__input input" type="email" id="registration-email" name="email" placeholder="Email">
+                        <label for="registration-email"></label>
+                        <input class="password modal__input input" type="password" id="registration-password" name="password" placeholder="Пароль">
+                        <label for="registration-password"></label>
                         <button class="modal__btn btn" type="submit">
                             Створити акаунт
                         </button>
@@ -826,10 +867,10 @@
                             Ще не маєте акаунт?
                             <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>
                         </p>
-                        <input class="email modal__input input" type="email" id="email" name="email" placeholder="Email">
-                        <label for="email"></label>
-                        <input class="password modal__input input" type="password" id="password" name="password" placeholder="Пароль">
-                        <label for="password"></label>
+                        <input class="email modal__input input" type="email" id="entry-email" name="email" placeholder="Email">
+                        <label for="entry-email"></label>
+                        <input class="password modal__input input" type="password" id="entry-password" name="password" placeholder="Пароль">
+                        <label for="entry-password"></label>
                         <button class="modal__btn btn">
                             Увійти
                         </button>
