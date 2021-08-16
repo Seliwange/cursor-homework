@@ -14,8 +14,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.5; /*21px / 14px*/
     color: rgba(0, 0, 0, 0.86);
 }
 
@@ -24,8 +24,8 @@ ul{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
 }
 
 a{
@@ -42,8 +42,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem; /*32px / 16*/
+    line-height: 1.1875; /*38px / 32px*/
     color: #232040;
 }
 
@@ -59,8 +59,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.333333333; /*24px / 18px*/
     color: #FFFFFF;
 
     transition: all 0.5s linear;
@@ -88,16 +88,16 @@ a{
     padding: 10px 25px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.428571; /*20px / 14px*/
 }
 
 .label{
     display: block;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;/* identical to box height, or 154% */
+    font-size: 0.8125em; /*13px / 16*/
+    line-height: 1.5384615; /*20px / 13px*/
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -141,8 +141,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
     color: rgba(0, 0, 0, 0.86);
     display: flex;
     align-items: center;
@@ -206,8 +206,8 @@ a{
 .header__btn{
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
     padding: 6px 8px;
     margin-right: 27px;
 }
@@ -276,8 +276,8 @@ a{
 
 .hero__title{
     font-weight: 700;
-    font-size: 34px;
-    line-height: 42px; /* or 124% */
+    font-size: 2.125rem; /*34px / 16*/
+    line-height: 124%; /*42px  or 124% */
     color: #FFFFFF;
     margin-bottom: 57px;
 }
@@ -318,8 +318,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;/* identical to box height, or 150% */
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5; /*24px / 16px*/
     color: #FFFFFF;
 }
 
@@ -343,8 +343,8 @@ a{
 
 .programs__title{
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5em; /*40px / 16*/
+    line-height: 1.2; /*48px / 40px*/
     margin-bottom: 42px;
 }
 
@@ -385,16 +385,16 @@ a{
 }
 
 .program__table-title{
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 1.5em; /*24px / 16*/
+    line-height: 1.58333333333; /*38px / 24px*/
     text-align: left;
     margin-bottom: 8px;
 }
 
 .program__table-head{
     font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 0.75em; /*12px / 16*/
+    line-height: 2; /*24px / 12px*/
     opacity: 0.6;
     text-align: left;
 }
@@ -408,14 +408,13 @@ a{
 .program__table-column:first-of-type{
     width: 267px;
 }
-.program__table-body {
-}
+
 .program__card-btn{
     font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5; /*24px / 16px*/
     color: #4D4680;
     padding: 8px 24px;
     border-radius: 8px;
@@ -487,15 +486,15 @@ a{
 
 .info__card-title{
     font-weight: 700;
-    line-height: 24px;
+    line-height: 0.75; /*24px / 32px*/
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 8px;
 }
 
 .info__card-desc{
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5; /*24px / 16px*/
     margin-bottom: 24px;
 }
 
@@ -503,8 +502,8 @@ a{
     font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5; /*24px / 16px*/
     color: rgba(255, 255, 255, 0.85);
     display: flex;
     align-items: center;
@@ -586,14 +585,14 @@ a{
 }
 
 .slider__title{
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 1.75em; /*28px / 16*/
+    line-height: 1.42857142; /*40px / 28px*/
     margin-bottom: 16px;
 }
 
 .slider__desc{
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.833333333; /*33px / 18px*/
     margin-bottom: 24px;
 }
 
@@ -615,7 +614,7 @@ a{
 .tour__info{
     background: #F2F5F9;
     border-radius: 8px 0 0 8px;
-    padding: 32px;/*32px / 585px*/
+    padding: 32px; /*32px / 585px*/
 }
 
 .tour__title{
@@ -624,8 +623,8 @@ a{
 
 .tour__desc{
     font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.5; /*27px / 18px*/
     margin-bottom: 52px;
 }
 
@@ -644,8 +643,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;/* identical to box height, or 133% */
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 133%;/* 24px or 133% */
     color: #4F478F;
 }
 
@@ -701,8 +700,8 @@ a{
 }
 
 .news__article-title{
-    font-size: 24px;
-    line-height: 32px;/* or 133% */
+    font-size: 1.5em; /*24px / 16*/
+    line-height: 133%;/* 32px or 133% */
     color: rgba(0, 0, 0, 0.86);
     margin-bottom: 16px;
 }
@@ -715,8 +714,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;/* identical to box height, or 150% */
+    font-size: 1em; /*16px / 16*/
+    line-height: 150%;/* 24px or 150% */
     color: #4D4680;
     display: flex;
     align-items: center;
@@ -808,7 +807,7 @@ a{
 .page__link{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em; /*14px / 16*/
     line-height: 134.77%;
     color: #4F478F;
     display: flex;
@@ -867,7 +866,7 @@ a{
 }
 
 .consultation__card-title{
-    font-size: 1.5em; /*24px / 16px*/
+    font-size: 1.5em; /*24px / 16*/
     line-height: 1.3333333333333; /*32px / 24px*/
     color: rgba(0, 0, 0, 0.85);
 }
@@ -896,8 +895,11 @@ a{
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     padding: 21px 24px;
-    font-family: inherit;
-    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
     color: rgba(0, 0, 0, 0.5);
     margin-right: 24px;
 }
@@ -923,8 +925,8 @@ a{
 }
 
 .footer__menu-list{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5;/* 24px / 16px*/
 }
 
 .footer__menu-link:hover{
@@ -972,8 +974,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.111111111111; /*20px / 18px*/
 }
 
 .address:first-of-type{
@@ -1014,8 +1016,8 @@ a{
 .copyright{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75em; /*12px / 16*/
+    line-height: 1.3333333333; /*16px / 12px*/
     color: rgba(255, 255, 255, 0.72);
 }
 /*Footer styles end*/
@@ -1061,7 +1063,7 @@ dialog::backdrop{
 .modal__entry{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875em; /*14px / 16*/
     line-height: 140.62%;
     text-align: right;
     margin-bottom: 24px;
@@ -1109,8 +1111,8 @@ dialog::backdrop{
 
 .timetable__title{
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5em; /*40px / 16*/
+    line-height: 1.2; /*48px / 40px*/
     margin-bottom: 32px;
     text-align: center;
 }
@@ -1126,7 +1128,7 @@ dialog::backdrop{
 }
 
 .course__title{
-    font-size: 18px;
+    font-size: 1.125em; /*18px / 16*/
     line-height: 134.77%;
     color: rgba(255, 255, 255, 0.85);
     text-align: center;
@@ -1156,8 +1158,8 @@ dialog::backdrop{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.375; /*22px / 16px*/
     color: rgba(0, 0, 0, 0.86);
     border: none;
     background-color: transparent;
@@ -1172,7 +1174,7 @@ dialog::backdrop{
 .accordion__link{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.57142857; /*22px / 14px*/
     color: rgba(0, 0, 0, 0.86);
     display: flex;
     align-items: center;
@@ -1212,8 +1214,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
     color: #1F3841;
     margin-right: 16px;
 }
@@ -1305,8 +1307,8 @@ dialog::backdrop{
 .gallery__title{
     max-width: 483px;
     font-weight: 900;
-    font-size: 56px;
-    line-height: 62px;/* or 111% */
+    font-size: 3.5em; /*56px / 16*/
+    line-height: 111%;/* 62px or 111% */
     color: #FFFFFF;
     margin-top: 77px;
 }
@@ -1316,20 +1318,33 @@ dialog::backdrop{
 }
 
 .gallery__images{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: masonry;
-    grid-gap: 24px;
+    column-count: 4;
+    column-gap: 24px;
 }
 
-.gallery__wrap {
+.gallery__wrap{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 24px;
+    break-inside: avoid;
 }
-.gallery__img {
+
+.gallery__img{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.gallery__wrap > .gallery__img{
+    grid-row: 1 / -1;
+    grid-column: 1;
 }
 
 .gallery__img-desc{
-    line-height: 22px;/* or 157% */
+    line-height: 157%;/* 22px or 157% */
     color: #000000;
+    grid-column: 1;
+    justify-self: start;
 }
 /*Gallery page styles end*/
 
@@ -1363,8 +1378,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.57142857; /*22px / 14px*/
     color: rgba(0, 0, 0, 0.86);
     display: flex;
     justify-content: space-between;
@@ -1440,8 +1455,8 @@ dialog::backdrop{
 
 .about__title{
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5em; /*40px / 16*/
+    line-height: 1.2; /*48px / 40px*/
     color: #3D3866;
     margin-bottom: 32px;
 }
@@ -1459,15 +1474,15 @@ dialog::backdrop{
 
 .about__text-lato{
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.6666667; /*30px / 18px*/
 }
 
 .about__text-list{
     font-family: 'Open Sans',sans-serif;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.8333333333; /*33px / 18px*/
 }
 .about__text-item{
     text-indent: 30px;
@@ -1492,8 +1507,8 @@ dialog::backdrop{
 
 .about__slider-info{
     max-width: 478px;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.6666667; /*30px / 18px*/
     color: #000000;
     background: #FFFFFF;
     box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
@@ -1542,28 +1557,28 @@ dialog::backdrop{
 
 .professors__card-title{
     font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 4em; /*64px / 16*/
+    line-height: 1.21875; /*78px / 64px*/
     color: #786CD9;
 }
 
 .professors__card-subtitle {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5;/* 24px / 16px*/
 }
 
 .professors__text{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.6666667; /*30px / 18px*/
 }
 
 .professors__list{
     list-style: disc inside;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 2.222222222; /*40px / 18px*/
     margin: 24px 0;
 }
 
@@ -1595,8 +1610,8 @@ dialog::backdrop{
 .quote__desc{
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25em; /*20px / 16*/
+    line-height: 1.5; /*30px / 20px*/
     color: #232040;
     position: relative;
     padding-top: 50px;
@@ -1624,15 +1639,15 @@ dialog::backdrop{
 }
 
 .quote__author{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.333333333333; /*24px / 18px*/
     margin-bottom: 8px;
 }
 
 .quote__author-position{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.375;/* 22px / 16px*/
 }
 
 .quote_author-img{
@@ -1687,8 +1702,8 @@ dialog::backdrop{
 }
 
 .meeting__img-desc{
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.6666667; /*30px / 18px*/
     margin-top: 32px;
 }
 /*Meeting styles end*/
@@ -1715,12 +1730,9 @@ dialog::backdrop{
     margin-bottom: 32px;
 }
 
-.cost__btn-link {
-}
-
 .cost__table{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5;/* 24px / 16px*/
     width: 100%;
     background: #FFFFFF;
     border-spacing: 0;
@@ -1775,8 +1787,8 @@ dialog::backdrop{
 }
 
 .cost__text{
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.8333333333; /*33px / 18px*/
 }
 
 .cost__text:not(:last-child){
@@ -1830,8 +1842,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.7142857; /*24px / 14px*/
     color: #7D7D7D;
 }
 
@@ -1839,8 +1851,8 @@ dialog::backdrop{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875em; /*14px / 16*/
+    line-height: 1.42857142857; /*20px / 14px*/
     border: 1px solid #E0E0E0;
     margin-bottom: 16px;
 }
@@ -1854,8 +1866,8 @@ dialog::backdrop{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 0.8125em; /*13px / 16*/
+    line-height: 1.5384615; /*20px / 13px*/
 }
 
 .payment__specialty-wrap{
@@ -1928,14 +1940,14 @@ dialog::backdrop{
 }
 
 .payment__sum-label{
-    font-size: 16px;
+    font-size: 1em;
     margin-right: 108px;
 }
 
 .payment__sum-price{
     font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 2em; /*32px / 16*/
+    line-height: 1.21875; /*39px / 32px*/
     color: #786CD9;
 }
 
@@ -2000,6 +2012,9 @@ dialog::backdrop{
         grid-template-columns: 1fr;
         row-gap: 16px;
     }
+    .program__card-inner{
+        padding: 16px 16px 24px;
+    }
     .program__table-column--mobile{
         display: none;
     }
@@ -2017,6 +2032,7 @@ dialog::backdrop{
     }
     .info__card{
         height: 240px;
+        padding: 16px 16px 24px;
     }
     .info__card:nth-child(1){
         background-image: url(../assets/pay_card-mobile.jpg);
@@ -2090,6 +2106,7 @@ dialog::backdrop{
     }
     .tour__info{
         border-radius: 0 0 8px 8px;
+        padding: 16px 16px 32px;
     }
 
     .news__articles{
@@ -2099,6 +2116,9 @@ dialog::backdrop{
     .news__btn{
         grid-column: 1;
         margin-top: 8px;
+    }
+    .news__article-info{
+        padding: 16px 16px 24px;
     }
 
     .consultation__form-inner{
@@ -2126,6 +2146,12 @@ dialog::backdrop{
         position: absolute;
         top: 60px;
         left: -10px;
+    }
+    .consultation__info-title{
+        font-size: 24px;
+        line-height: 28px;
+        color: #232040;
+        margin-bottom: 48px;
     }
     .consultation__card-img{
         width: 80px;
@@ -2199,5 +2225,15 @@ dialog::backdrop{
     .footer__socials{
         grid-column: 2;
         grid-row: 2;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    .grid{
+        max-width: 343px;
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
     }
 }

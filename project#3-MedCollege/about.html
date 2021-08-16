@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -407,13 +407,30 @@
                     <h2 class="about__title title">
                         Про коледж
                     </h2>
-                    <img class="about__img" src="./assets/about-img.jpg" alt="college">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="./assets/about_img-mobile.jpg" width="343px" hight="158px">
+                        <img class="about__img" src="./assets/about-img.jpg" alt="college" width="870px" height="400px">
+                    </picture>
                     <p class="about__text-lato">
                         09.04.1985 р. рішенням № 188 Львівської обласної ради народних депутатів та наказом № 326 відділу охорони здоров'я  виконкому Львівської обласної ради народних депутатів від 08.05.1985 р. на базі Львівської міської клінічної лікарні швидкої медичної допомоги було організовано Львівського медичного училища підготовки та підвищення кваліфікації молодших медичних і фармацевтичних спеціалістів
                     </p>
                     <div class="about__slider">
                         <div class="about__slider-items">
                             <div class="about__slider-item">
+                                <div class="slider__carousel">
+                                    <div class="slider__carousel-inner">
+                                        <div class="slider__carousel-item">
+                                            <img src="./assets/slider_img1-mobile.png" alt="photo">
+                                        </div>
+                                     </div>
+                                    <div class="slider__carousel-indicators">
+                                        <button class="slider__carousel-btn" type="button"></button>
+                                        <button class="slider__carousel-btn slider__carousel-btn--active" type="button"></button>
+                                        <button class="slider__carousel-btn" type="button"></button>
+                                        <button class="slider__carousel-btn" type="button"></button>
+                                        <button class="slider__carousel-btn" type="button"></button>
+                                    </div>
+                                </div>
                                 <div class="slider__pagination">
                                     <button class="slider__control">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
