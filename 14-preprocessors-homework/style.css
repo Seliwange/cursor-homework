@@ -124,6 +124,7 @@ a:hover, a:active, a:focus {
   font-size: 26px;
   line-height: 38px;
   color: #37447E;
+  text-decoration: none;
 }
 .logo:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -153,13 +154,24 @@ a:hover, a:active, a:focus {
 .navbar__item:hover {
   border-bottom: 1px solid #091133;
 }
-.navbar__link {
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-light .navbar-nav .navbar__link.nav-link {
   color: #505F98;
 }
-.navbar__link:hover, .navbar__link:focus {
+.navbar-light .navbar-nav .navbar__link.nav-link:hover, .navbar-light .navbar-nav .navbar__link.nav-link:focus {
   color: #091133;
 }
 
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 .panel {
   min-height: 570px;
 }

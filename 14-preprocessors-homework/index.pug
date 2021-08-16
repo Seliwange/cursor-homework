@@ -11,15 +11,18 @@ html(lang="en")
     body 
         header.header 
             .container
-                nav.navbar 
-                    ul.navbar__list.navbar-nav.flex-row.col-12.col-md-3.justify-content-between 
-                        li.navbar__item.nav-item
-                            a.navbar__link.nav-link(href="#") Home 
-                        li.navbar__item.nav-item
-                            a.navbar__link.nav-link(href="#") About 
-                        li.navbar__item.nav-item
-                            a.navbar__link.nav-link(href="#") Contact
-                    a.logo.navbar-brand.col-6.col-md-2.text-center(href="#") Landie
+                nav.navbar.navbar-expand-md.navbar-light
+                    button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+                    .collapse.navbar-collapse#navbarSupportedContent
+                        ul.navbar__list.navbar-nav.flex-column.flex-md-row.col-3.col-md-3.justify-content-between 
+                            li.navbar__item.nav-item.me-3
+                                a.navbar__link.nav-link(href="#") Home 
+                            li.navbar__item.nav-item.me-3
+                                a.navbar__link.nav-link(href="#") About 
+                            li.navbar__item.nav-item
+                                a.navbar__link.nav-link(href="#") Contact
+                    a.logo.col-4.col-md-2.text-center(href="#") Landie
                     button.header__btn.btn.btn-primary.col-4.col-md-2(type="button") Buy Now
             .header__info.d-flex.text-center.text-md-start
                 .container 
@@ -101,12 +104,12 @@ html(lang="en")
             .container 
                 .footer__inner 
                     .navbar.align-items-center.col-12
-                        p.copyright.col-lg-2.col-md-3.col-12.mb-0 ©2020 Yourcompany
-                        a.logo.navbar-brand.col-lg-2.col-md-3.col-4.text-center(href="#") Landie
-                        button.header__btn.btn.btn-primary.col-lg-2.col-md-3.col-sm-4.col-6 Purchase now
+                        p.copyright.col-lg-2.col-md-3.col-sm-4.col-5.mb-0 ©2020 Yourcompany
+                        a.logo.col-lg-2.col-md-3.col-sm-3.col-2.text-center(href="#") Landie
+                        button.header__btn.btn.btn-primary.col-lg-2.col-md-3.col-4 Purchase now
                     hr
                     nav.navbar 
-                        ul.navbar__list.navbar-nav.flex-row.col-12.col-md-3.justify-content-between 
+                        ul.navbar__list.navbar-nav.flex-column.flex-md-row.col-4.col-md-3.justify-content-between 
                             li.navbar__item.nav-item
                                 a.navbar__link.nav-link(href="#") Home 
                             li.navbar__item.nav-item

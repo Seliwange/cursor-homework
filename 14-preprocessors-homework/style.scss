@@ -133,6 +133,7 @@ a{
     font-size: 26px;
     line-height: 38px;
     color: base.$logo-color;
+    text-decoration: none;
 
     &:hover{
         animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -171,14 +172,24 @@ a{
             border-bottom: 1px solid base.$title-color;
         }
     }
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
 
-    &__link{
-        color: base.$base-color;
+.navbar-light .navbar-nav .navbar__link.nav-link{
+    color: base.$base-color;
 
-        &:hover,
-        &:focus{
-            color: base.$title-color;
-        }
+    &:hover,
+    &:focus{
+        color: base.$title-color;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-expand-md {
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
 }
 
