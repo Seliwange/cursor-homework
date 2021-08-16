@@ -185,7 +185,7 @@
                         Вхід / Реєстрація
                     </button>
                     <div class="header__lang">
-                        <form class="lang__form" action="">
+                        <form class="lang__form" action="#">
                             <label for="language"></label>
                             <select class="lang__select" name="select" id="language">
                                 <option value="УКР" selected>УКР</option>
@@ -404,12 +404,12 @@
             </div>
             <div class="content">
                 <section class="about">
-                    <h2 class="about__title title">
+                    <h1 class="about__title title">
                         Про коледж
-                    </h2>
+                    </h1>
                     <picture>
-                        <source media="(max-width: 375px)" srcset="./assets/about_img-mobile.jpg" width="343px" hight="158px">
-                        <img class="about__img" src="./assets/about-img.jpg" alt="college" width="870px" height="400px">
+                        <source media="(max-width: 375px)" srcset="./assets/about_img-mobile.jpg" width="343">
+                        <img class="about__img" src="./assets/about-img.jpg" alt="college" width="870" height="400">
                     </picture>
                     <p class="about__text-lato">
                         09.04.1985 р. рішенням № 188 Львівської обласної ради народних депутатів та наказом № 326 відділу охорони здоров'я  виконкому Львівської обласної ради народних депутатів від 08.05.1985 р. на базі Львівської міської клінічної лікарні швидкої медичної допомоги було організовано Львівського медичного училища підготовки та підвищення кваліфікації молодших медичних і фармацевтичних спеціалістів
@@ -517,8 +517,10 @@
                     <p class="professors__text">
                         У медичному коледжі післядипломної освіти працює 47 штатних викладачів, з них лікарів – 33, провізорів – 5, вчителів – 9.
                     </p>
-                    <ul class="professors__list">
+                    <p class="professors__list-header">
                         З числа штатних викладачів в Коледжі працюють:
+                    </p>
+                    <ul class="professors__list">
                         <li class="professors__item">
                             5 - кандидатів медичних наук
                         </li>
@@ -546,7 +548,7 @@
                     </p>
                 </section>
             </div>
-            <section class="quote">
+            <div class="quote">
                 <div class="quote__wrap">
                     <div class="quote__inner">
                         <div class="quote__desc">
@@ -559,7 +561,7 @@
                                 Викладач медсестринства
                             </p>
                         </div>
-                        <img class="quote_author-img" src="./assets/quote_author-img.png" width="265px" height="343px" alt="photo">
+                        <img class="quote_author-img" src="./assets/quote_author-img.png" width="265" height="343" alt="photo">
                         <div class="quote__images">
                             <button class="quote__btn quote__btn-left">
                                 <img src="./assets/quote_img-small1.png" alt="photo">
@@ -570,7 +572,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="meeting">
                 <h4 class="meeting__title title">
                     Засідання педагогічної ради коледжу
@@ -806,7 +808,7 @@
                     <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
                 </button>
                 <div class="modal__content">
-                    <form class="modal__registration" method="dialog">
+                    <form class="modal__registration" action="#">
                         <p class="modal__entry">
                             Вже маєте акаунт?
                             <a class="modal__entry-link" id="entry" href="#">Увійти</a>
@@ -841,7 +843,7 @@
                     <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
                 </button>
                 <div class="modal__content">
-                    <form class="modal__registration" method="dialog">
+                    <form class="modal__registration" action="#">
                         <p class="modal__entry">
                             Ще не маєте акаунт?
                             <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>

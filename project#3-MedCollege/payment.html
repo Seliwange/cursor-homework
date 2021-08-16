@@ -185,7 +185,7 @@
                         Вхід / Реєстрація
                     </button>
                     <div class="header__lang">
-                        <form class="lang__form" action="">
+                        <form class="lang__form" action="#">
                             <label for="language"></label>
                             <select class="lang__select" name="select" id="language">
                                 <option value="УКР" selected>УКР</option>
@@ -238,11 +238,11 @@
         <section class="cost">
             <div class="wrapper">
                 <div class="cost__inner">
-                    <h2 class="cost__title title">
+                    <h1 class="cost__title title">
                         Вартість навчання за контрактом для вступників 2021 року
-                    </h2>
+                    </h1>
                     <button class="cost__btn btn">
-                        <a class="cost__btn-link" href="#">Оплатити онлайн</a>
+                        Оплатити онлайн
                     </button>
                     <table class="cost__table">
                         <colgroup class="cost__table-group">
@@ -306,8 +306,8 @@
                         <p class="cost__text cost__text--dark">
                             Вступники з високими балами ЗНО можуть претендувати на стипендії, які повністю покривають їх вартість навчання. <br>
                             Детальніше  про стипендії та ліцензовані обсяги прийому <a class="cost__text-link" href="#">за посиланням</a>.
+                        </p>
                     </div>
-                    </p>
                 </div>
             </div>
         </section>
@@ -336,14 +336,14 @@
                     </ul>
                 </div>
                 <div class="payment__body">
-                    <form class="payment__form" action="">
-                        <input class="payment__input input" type="text" id="name" name="name" placeholder="Ім’я">
-                        <label for="name"></label>
-                        <input class="payment__input input" type="text" id="surname" name="surname" placeholder="Прізвище">
-                        <label for="surname"></label>
+                    <form class="payment__form" action="#">
+                        <input class="payment__input input" type="text" id="payment__name" name="name" placeholder="Ім’я">
+                        <label for="payment__name"></label>
+                        <input class="payment__input input" type="text" id="payment__surname" name="surname" placeholder="Прізвище">
+                        <label for="payment__surname"></label>
                         <div class="payment__input-wrap">
-                            <input class="payment__input input" type="number" min="10" max="10000" id="personal-number" name="personal-number" placeholder="Персональний номер">
-                            <label class="payment__label label" for="personal-number">Персональний номер — номер залікової книжки</label>
+                            <input class="payment__input input" type="number" min="10" max="10000" id="payment__personal-number" name="personal-number" placeholder="Персональний номер">
+                            <label class="payment__label label" for="payment__personal-number">Персональний номер — номер залікової книжки</label>
                         </div>
                         <div class="payment__specialty-wrap">
                             <p class="payment__title-radio">Спеціальність :</p>
@@ -607,7 +607,7 @@
                     <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
                 </button>
                 <div class="modal__content">
-                    <form class="modal__registration" method="dialog">
+                    <form class="modal__registration" action="#">
                         <p class="modal__entry">
                             Вже маєте акаунт?
                             <a class="modal__entry-link" id="entry" href="#">Увійти</a>
@@ -642,7 +642,7 @@
                     <img class="modal__close-img" src="./assets/close-icon.svg" alt="close">
                 </button>
                 <div class="modal__content">
-                    <form class="modal__registration" method="dialog">
+                    <form class="modal__registration" action="#">
                         <p class="modal__entry">
                             Ще не маєте акаунт?
                             <a class="modal__entry-link" id="registration-form" href="#">Зареєструватись</a>

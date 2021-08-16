@@ -807,7 +807,7 @@ a{
 .page__link{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 0.875em; /*14px / 16*/
+    font-size: 14px;
     line-height: 134.77%;
     color: #4F478F;
     display: flex;
@@ -1573,13 +1573,19 @@ dialog::backdrop{
     line-height: 1.6666667; /*30px / 18px*/
 }
 
+.professors__list-header,
 .professors__list{
     list-style: disc inside;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.125em; /*18px / 16*/
     line-height: 2.222222222; /*40px / 18px*/
-    margin: 24px 0;
+}
+.professors__list-header{
+    margin-top: 24px;
+}
+.professors__list{
+    margin-bottom: 24px;
 }
 
 .professors__item{
