@@ -16,13 +16,19 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__layout">
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <div class="header__wrap">
                     <div class="logo">
                         <a class="logo__link" href="index.html">
-                            <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/logo-mobile.svg">
+                                <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            </picture>
                         </a>
                     </div>
-                    <div class="routs">
+                    <div class="routs header__menu">
                         <div class="routs__wrap">
                             <button class="routs__list-btn">
                                 Вступнику
@@ -181,9 +187,11 @@
                     </div>
                 </div>
                 <div class="header__wrap">
-                    <button class="header__btn btn" id="registration">
-                        Вхід / Реєстрація
-                    </button>
+                    <div class="header__btn-wrap header__menu">
+                        <button class="header__btn btn" id="registration">
+                            Вхід / Реєстрація
+                        </button>
+                    </div>
                     <div class="header__lang">
                         <form class="lang__form" action="#">
                             <label for="language"></label>
@@ -198,35 +206,35 @@
         </div>
         <div class="header__border-img"></div>
         <div class="wrapper">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="index.html">
+            <nav class="menu header__menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="index.html">
                             Про нас
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Післядипломна освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Симуляційно-тренінговий центр
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="about.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="about.html">
                             Медсестринська спільнота
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="news.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="news.html">
                             Новини
                         </a>
                     </li>
@@ -245,15 +253,24 @@
                 <div class="wrapper">
                     <div class="gallery__images">
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo1.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo1-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo1.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Випускники-оптометристи</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo5.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo5-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo5.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Літературний марафон, присвячений пам'яті Тараса Шевченка</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo9.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo9-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo9.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Посвята в студенти</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
@@ -265,15 +282,24 @@
                             <figcaption class="gallery__img-desc">Розважаємось та навчаємось</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo2.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo2-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo2.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Випускники-оптометристи</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo6.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo6-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo6.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Літературний марафон, присвячений пам'яті Тараса Шевченка</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo10.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo10-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo10.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Посвята в студенти</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
@@ -285,11 +311,17 @@
                             <figcaption class="gallery__img-desc">Промислова фармація</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo3.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo3-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo3.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Випускники-оптометристи</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo7.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo7-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo7.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Студенти переглянули фільм «Крути 1918»</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
@@ -305,11 +337,17 @@
                             <figcaption class="gallery__img-desc">Розважаємось та навчаємось</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo4.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo4-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo4.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">День вишиванки</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
-                            <img class="gallery__img" src="./assets/gallery-photo8.jpg" alt="photo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/gallery_photo8-mobile.jpg">
+                                <img class="gallery__img" src="./assets/gallery-photo8.jpg" alt="photo">
+                            </picture>
                             <figcaption class="gallery__img-desc">Студенти переглянули фільм «Крути 1918»</figcaption>
                         </figure>
                         <figure class="gallery__wrap">
@@ -675,6 +713,15 @@
                 registrationDialog.showModal();
             });
         })();
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header__burger').click(function(event){
+                $('.header__burger, .header__menu').toggleClass('active');
+            });
+        });
     </script>
 </body>
 </html>
