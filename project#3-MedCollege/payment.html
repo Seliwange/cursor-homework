@@ -16,13 +16,19 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__layout">
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <div class="header__wrap">
                     <div class="logo">
                         <a class="logo__link" href="index.html">
-                            <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/logo-mobile.svg">
+                                <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            </picture>
                         </a>
                     </div>
-                    <div class="routs">
+                    <div class="routs header__menu">
                         <div class="routs__wrap">
                             <button class="routs__list-btn">
                                 Вступнику
@@ -181,9 +187,11 @@
                     </div>
                 </div>
                 <div class="header__wrap">
-                    <button class="header__btn btn" id="registration">
-                        Вхід / Реєстрація
-                    </button>
+                    <div class="header__btn-wrap header__menu">
+                        <button class="header__btn btn" id="registration">
+                            Вхід / Реєстрація
+                        </button>
+                    </div>
                     <div class="header__lang">
                         <form class="lang__form" action="#">
                             <label for="language"></label>
@@ -198,35 +206,35 @@
         </div>
         <div class="header__border-img"></div>
         <div class="wrapper">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="index.html">
+            <nav class="menu header__menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="index.html">
                             Про нас
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Післядипломна освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Симуляційно-тренінговий центр
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="about.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="about.html">
                             Медсестринська спільнота
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="news.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="news.html">
                             Новини
                         </a>
                     </li>
@@ -259,7 +267,7 @@
                                     Спеціальність
                                 </th>
                                 <th class="cost__table-column">
-                                    Вартість першого року навчання (грн.)
+                                    Вартість <span>першого року</span> навчання (грн.)
                                 </th>
                             </tr>
                         </thead>
@@ -697,6 +705,16 @@
                 registrationDialog.showModal();
             });
         })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header__burger').click(function(event){
+                $('.header__burger, .header__menu').toggleClass('active');
+            });
+        });
     </script>
 </body>
 </html>

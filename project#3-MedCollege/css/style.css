@@ -1114,6 +1114,9 @@ dialog::backdrop{
 .timetable{
 
 }
+.timetable__table--mobile{
+    display: none;
+}
 
 .timetable__inner{
     padding-top: 48px;
@@ -1159,11 +1162,13 @@ dialog::backdrop{
 }
 
 .accordion__header{
+    transition: all 0.4s ease-in-out;
+}
+.accordion__header-inner{
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
 }
-
 .accordion__button{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -1179,8 +1184,15 @@ dialog::backdrop{
 }
 .accordion__button svg{
     margin-right: 12px;
+    transition: all 0.4s ease-in-out;
 }
-
+.accordion__header--active .accordion__button svg{
+    transform: rotate(90deg);
+    transition: all 0.4s ease-in-out;
+}
+.accordion__header--active .accordion__arrow{
+    fill: #4F478F;
+}
 .accordion__link{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -1196,12 +1208,15 @@ dialog::backdrop{
 
 .accordion__body{
     margin: 16px 0 48px;
+    display: none;
+    overflow: hidden;
 }
 
 .timetable__info{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 16px;
 }
 
@@ -1263,18 +1278,11 @@ dialog::backdrop{
     border: 1px solid #4F478F;
 }
 
-.timetable__group-link{
-
-}
-
 .timetable__table{
     width: 100%;
     background: #FCFCFC;
     border-collapse: collapse;
     margin-bottom: 16px;
-}
-.timetable__table-group{
-
 }
 
 .timetable__table-head,
@@ -1549,7 +1557,6 @@ dialog::backdrop{
 
 .professors__img{
     max-width: 870px;
-    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -1827,6 +1834,7 @@ dialog::backdrop{
 .payment__header{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
 
@@ -1847,7 +1855,8 @@ dialog::backdrop{
 }
 
 .payment__body{
-    width: 720px;
+    max-width: 720px;
+    width: 100%;
     background: #FFFFFF;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
@@ -1858,8 +1867,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.7142857; /*24px / 14px*/
+    font-size: 14px;
+    line-height: 24px;
     color: #7D7D7D;
 }
 
@@ -1867,8 +1876,8 @@ dialog::backdrop{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.42857142857; /*20px / 14px*/
+    font-size: 14px;
+    line-height: 20px;
     border: 1px solid #E0E0E0;
     margin-bottom: 16px;
 }
@@ -1882,8 +1891,8 @@ dialog::backdrop{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.8125em; /*13px / 16*/
-    line-height: 1.5384615; /*20px / 13px*/
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .payment__specialty-wrap{
@@ -1970,6 +1979,7 @@ dialog::backdrop{
 .payment__form-btns{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .payment__btn{
@@ -2087,11 +2097,13 @@ dialog::backdrop{
         background-image: url(../assets/library_card-mobile.jpg);
     }
 
-    .slider__items{
+    .slider__items,
+    .about__slider-items{
         background: none;
         justify-content: flex-start;
     }
-    .slider__info {
+    .slider__info,
+    .about__slider-info {
         width: 100%;
         background: none;
         box-shadow: none;
@@ -2106,6 +2118,7 @@ dialog::backdrop{
     .slider__carousel {
         display: block;
     }
+    .slider__carousel-item,
     .slider__carousel-indicators {
         text-align: center;
     }
@@ -2152,15 +2165,23 @@ dialog::backdrop{
         padding: 16px 16px 32px;
     }
 
-    .news__articles{
+    .news__articles,
+    .news__articles-main{
         grid-template-columns: 1fr;
         row-gap: 16px;
+    }
+    .news__articles-main{
+        margin-bottom: 16px;
+    }
+    .news__article-main{
+        flex-direction: column;
     }
     .news__btn{
         grid-column: 1;
         margin-top: 8px;
     }
-    .news__article-info{
+    .news__article-info,
+    .news__article-info-main{
         padding: 16px 16px 24px;
     }
 
@@ -2279,6 +2300,23 @@ dialog::backdrop{
         margin: 0 auto;
         grid-template-columns: 1fr;
     }
+    .about__slider{
+        margin: 56px 0 97px;
+    }
+    .about__text-inner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about__text--hidden{
+        display: none;
+    }
+    .about__img-wrap{
+        flex-direction: column;
+    }
+    .about__img-wrap picture:last-of-type{
+        margin-top: 16px;
+    }
+    
 
     .gallery__header {
         min-height: 617px;
@@ -2464,4 +2502,107 @@ dialog::backdrop{
         color: #4F478F;
     }
     /*Burger menu styles end*/
+
+    .cost__title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .cost__table-column span{
+        display: none;
+    }
+    .payment__title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .payment__list{
+        margin-top: 16px;
+    }
+    .payment__body{
+        padding: 24px 16px 40px;
+    }
+    .payment__sum-label{
+        margin-right: 25px;
+    }
+    .payment__btn{
+        padding: 20px 108px;
+        margin-right: 0;
+    }
+    .liqpay__link{
+        margin-top: 16px;
+    }
+
+    /*Timetable page styles start*/
+    .accordion__link span{
+        display: none;
+    }
+    .timetable__inner{
+        padding-top: 32px;
+    }
+    .timetable__title{
+        margin: 0 0 24px;
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .timetable__wrap {
+        padding: 0 24px 0 16px;
+    }
+    .timetable__group{
+        margin-top: 24px;
+    }
+    .timetable__info{
+        margin-bottom: 24px;
+    }
+    .timetable__speaker {
+        text-align: left;
+    }
+    .timetable__table{
+        display: none;
+    }
+    .timetable__table--mobile{
+        display: block;
+    }
+    .timetable__tab{
+        width: 100%;
+        background: #FCFCFC;
+        border-collapse: collapse;
+        margin-bottom: 16px;
+    }
+    .table__tab-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .table__tab-item{
+        width: 100%;
+        background: #F9F9F9;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px 8px 0px 0px;
+        padding: 13px 16px;
+        font-weight: 700;
+    }
+    .timetable__tab-body{
+        line-height: 22px;
+    }
+    .timetable__tab-column:first-child{
+        width: 99px;
+    } 
+    .timetable__tab-body .timetable__tab-column{
+        border: 1px solid #DADADA;
+        padding: 13px 8px 13px 16px;
+        text-align: left;
+        border-left: none;
+    }
+    .timetable__tab-row:first-of-type .timetable__tab-column{
+        border-top: none;
+    }
+    .timetable__tab-column:last-child{
+        border-right: none;
+    }
+    .ui-tabs-active{
+        border-bottom: none;
+    }
+    .ui-tabs-active .table__tab-link{
+        color: #4F478F;
+    }
+    /*Timetable page styles end*/
 }

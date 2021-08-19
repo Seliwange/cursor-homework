@@ -16,13 +16,19 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__layout">
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <div class="header__wrap">
                     <div class="logo">
                         <a class="logo__link" href="index.html">
-                            <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/logo-mobile.svg">
+                                <img class="logo__img" src="./assets/logo.svg" alt="logo">
+                            </picture>
                         </a>
                     </div>
-                    <div class="routs">
+                    <div class="routs header__menu">
                         <div class="routs__wrap">
                             <button class="routs__list-btn">
                                 Вступнику
@@ -181,9 +187,11 @@
                     </div>
                 </div>
                 <div class="header__wrap">
-                    <button class="header__btn btn" id="registration">
-                        Вхід / Реєстрація
-                    </button>
+                    <div class="header__btn-wrap header__menu">
+                        <button class="header__btn btn" id="registration">
+                            Вхід / Реєстрація
+                        </button>
+                    </div>
                     <div class="header__lang">
                         <form class="lang__form" action="#">
                             <label for="language"></label>
@@ -198,35 +206,35 @@
         </div>
         <div class="header__border-img"></div>
         <div class="wrapper">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="index.html">
+            <nav class="menu header__menu">
+                <ul class="header__menu-list menu__list">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="index.html">
                             Про нас
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Післядипломна освіта
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="#">
                             Симуляційно-тренінговий центр
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="about.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="about.html">
                             Медсестринська спільнота
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="news.html">
+                    <li class="header__menu-item menu__list-item">
+                        <a class="header__menu-link menu__list-link" href="news.html">
                             Новини
                         </a>
                     </li>
@@ -420,7 +428,7 @@
                                 <div class="slider__carousel">
                                     <div class="slider__carousel-inner">
                                         <div class="slider__carousel-item">
-                                            <img src="./assets/slider_img1-mobile.png" alt="photo">
+                                            <img src="./assets/slider_img-small1-mobile.png" alt="photo">
                                         </div>
                                      </div>
                                     <div class="slider__carousel-indicators">
@@ -453,33 +461,46 @@
                             </div>
                         </div>
                     </div>
-                    <p class="about__text">
-                        Відповідно до рішення Державної акредитаційної комісії України Львівському медичному коледжу післядипломної освіти надано право на провадження освітньої діяльності, пов'язаної з підвищенням кваліфікації фахівців у галузі знань 22 Охорона здоров'я з ліцензійним обсягом 5000 осіб щорічно, та проведення підготовки молодших медичних і фармацевтичних спеціалістів зі спеціальностей:
-                    </p>
-                    <ul class="about__text-list">
-                        <li class="about__text-item">
-                            223 Медсестринство - ліцензований обсягом 120 осіб; Термін підготовки – 3 роки 5 місяці на базі повної загальної середньої освіти з вечірньою формою навчання.
-                        </li>
-                        <li class="about__text-item">
-                            226 Фармація, промислова фармація - ліцензований обсягом 50 осіб; Термін навчання – 2 роки 5 місяці на базі повної загальної середньої освіти з вечірньою формою навчання.
-                        </li>
-                    </ul>
-                    <p class="about__text">
-                        За час свого функціонування (35 років) в коледжі підвищили свій фаховий рівень близько 118000 молодших медичних і фармацевтичних спеціалістів, було підготовлено понад 500 фармацевтів і 4000 сестер медичних.
-                    </p>
-                    <div class="about__img-wrap">
-                        <img src="./assets/about_img-small1.jpg" alt="photo">
-                        <img src="./assets/about_img-small2.jpg" alt="photo">
+                    <div class="about__text-inner">
+                        <div class="about__text-wrap">
+                            <p class="about__text">
+                                Відповідно до рішення Державної акредитаційної комісії України Львівському медичному коледжу післядипломної освіти надано право на провадження освітньої діяльності, пов'язаної з підвищенням кваліфікації фахівців у галузі знань 22 Охорона здоров'я з ліцензійним обсягом 5000 осіб щорічно, та проведення підготовки молодших медичних і фармацевтичних спеціалістів зі спеціальностей:
+                            </p>
+                            <ul class="about__text-list">
+                                <li class="about__text-item">
+                                    223 Медсестринство - ліцензований обсягом 120 осіб; Термін підготовки – 3 роки 5 місяці на базі повної загальної середньої освіти з вечірньою формою навчання.
+                                </li>
+                                <li class="about__text-item">
+                                    226 Фармація, промислова фармація - ліцензований обсягом 50 осіб; Термін навчання – 2 роки 5 місяці на базі повної загальної середньої освіти з вечірньою формою навчання.
+                                </li>
+                            </ul>
+                            <p class="about__text">
+                                За час свого функціонування (35 років) в коледжі підвищили свій фаховий рівень близько 118000 молодших медичних і фармацевтичних спеціалістів, було підготовлено понад 500 фармацевтів і 4000 сестер медичних.
+                            </p>
+                        </div>
+                        <div class="about__img-wrap">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/about_img-small1-mobile.jpg">
+                                <img src="./assets/about_img-small1.jpg" alt="photo">
+                            </picture>
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./assets/about_img-small2-mobile.jpg">
+                                <img src="./assets/about_img-small2.jpg" alt="photo">
+                            </picture>
+                        </div>
+                        <p class="about__text-lato about__text--hidden">
+                            За час свого функціонування (35 років) в коледжі підвищили свій фаховий рівень близько 118000 молодших медичних і фармацевтичних спеціалістів, було підготовлено понад 500 фармацевтів і 4000 сестер медичних. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
                     </div>
-                    <p class="about__text-lato">
-                        За час свого функціонування (35 років) в коледжі підвищили свій фаховий рівень близько 118000 молодших медичних і фармацевтичних спеціалістів, було підготовлено понад 500 фармацевтів і 4000 сестер медичних. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
                 </section>
                 <section class="professors">
                     <h4 class="professors__title title">
                         Наші викладачі
                     </h4>
-                    <img class="professors__img" src="./assets/professors.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="./assets/professors-mobile.jpg">
+                        <img class="professors__img" src="./assets/professors.jpg" alt="photo">
+                    </picture>
                     <div class="professors__faculty">
                         <div class="professors__faculty-card">
                             <h2 class="professors__card-title title">
@@ -898,6 +919,16 @@
                 registrationDialog.showModal();
             });
         })();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.header__burger').click(function(event){
+                $('.header__burger, .header__menu').toggleClass('active');
+            });
+        });
     </script>
 </body>
 </html>
