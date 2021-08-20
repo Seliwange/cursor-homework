@@ -24,8 +24,8 @@ ul{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.57142857; /*22px / 14px*/
+    font-size: 14px;
+    line-height: 22px;
 }
 
 a{
@@ -130,20 +130,20 @@ a{
     z-index: 5;
 }
 
-.routs{
+.routs__menu{
     display: flex;
     align-items: center;
 }
 
-.routs__wrap{
+.routs__menu-wrap{
     position: relative;
 }
 
-.routs__wrap:not(:last-child){
+.routs__menu-wrap:not(:last-child){
     margin-right: 24px;
 }
 
-.routs__list-btn{
+.routs__menu-list-btn{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -158,11 +158,11 @@ a{
     transition: all 0.5s ease;
 }
 
-.routs__list-btn:focus{
+.routs__menu-list-btn:focus{
     color: #4F478F;
 }
 
-.routs__list-btn:focus svg{
+.routs__menu-list-btn:focus svg{
     transform: rotate(180deg);
 }
 
@@ -170,7 +170,7 @@ a{
     fill: #4F478F;
 }
 
-.routs__list{
+.routs__menu-list{
     min-width: 250px;
     position: absolute;
     background-color: #FFFFFF;
@@ -185,27 +185,27 @@ a{
     transition: all 0.5s ease;
 }
 
-.routs__item{
+.routs__menu-item{
     width: 100%;
     height: 100%;
     padding: 10px 15px;
 }
 
-.routs__item:hover{
+.routs__menu-item:hover{
     background-color: rgba(79, 71, 143, 0.2);
     
 }
-.routs__item:hover:last-child{
+.routs__menu-item:hover:last-child{
     border-radius: 0px 0px 8px 8px;
 }
 
-.routs__list-btn:focus + .routs__list{
+.routs__menu-list-btn:focus + .routs__menu-list{
     opacity: 1;
     pointer-events: all;
     transform: translateY(0deg);
 }
 
-.routs__link{
+.routs__menu-link{
     color: rgba(0, 0, 0, 0.86);
 }
 
@@ -287,7 +287,7 @@ a{
 .hero__title{
     font-weight: 700;
     font-size: 2.125rem; /*34px / 16*/
-    line-height: 124%; /*42px  or 124% */
+    line-height: 1.2352941; /*42px / 34px*/
     color: #FFFFFF;
     margin-bottom: 57px;
 }
@@ -534,18 +534,47 @@ a{
     margin-bottom: 120px;
 }
 
-.slider__carousel{
+.slider__carousel,
+.slider__carousel-dots{
     display: none;
 }  
 
 .slider__items{
+    display: none;
+}
+
+.slide1{
     background: url(../assets/slider-img1.jpg) no-repeat;
     background-position: top left;
     border-radius: 12px;
+}
+
+.slide2{
+    background: url(../assets/meeting_img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+.slide3{
+    background: url(../assets/slider-img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+
+.slide4{
+    background: url(../assets/meeting_img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+.slide5{
+    background: url(../assets/slider-img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+
+.slider__items-wrap{
     display: flex;
     justify-content: flex-end;
 }
-
 .slider__img{
     width: 764px;
     height: 507px;
@@ -568,13 +597,11 @@ a{
     justify-content: center;
     align-items: center;
 }
-
-.slider__pagination--active{
-    font-family: 'Roboto Mono', monospace;
-    font-style: normal;
+.slider__pagination--active span{
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
+    color: #4F478F;
 }
 
 .slider__control{
@@ -624,7 +651,7 @@ a{
 .tour__info{
     background: #F2F5F9;
     border-radius: 8px 0 0 8px;
-    padding: 32px; /*32px / 585px*/
+    padding: 32px;
 }
 
 .tour__title{
@@ -646,7 +673,6 @@ a{
 .tour__link-img{
     width: 60px;
     height: 60px;
-    margin-right: 16px;
 }
 
 .tour__link-text{
@@ -654,14 +680,17 @@ a{
     font-style: normal;
     font-weight: 600;
     font-size: 1.125em; /*18px / 16*/
-    line-height: 133%;/* 24px or 133% */
+    line-height: 1.33333333;/* 24px / 18px */
     color: #4F478F;
 }
 
 .tour__link-text:hover{
     color: #786CD9;
 }
-.tour__img {
+
+.tour__img{
+    max-width: 571px;
+    height: 100%;
 }
 /*Tour styles end*/
 
@@ -711,7 +740,7 @@ a{
 
 .news__article-title{
     font-size: 1.5em; /*24px / 16*/
-    line-height: 133%;/* 32px or 133% */
+    line-height: 1.33333333;/*32px / 24px*/
     color: rgba(0, 0, 0, 0.86);
     margin-bottom: 16px;
 }
@@ -725,7 +754,7 @@ a{
     font-style: normal;
     font-weight: 600;
     font-size: 1em; /*16px / 16*/
-    line-height: 150%;/* 24px or 150% */
+    line-height: 1.5;/*24px / 16px*/
     color: #4D4680;
     display: flex;
     align-items: center;
@@ -770,8 +799,8 @@ a{
 }
 
 .news__article-img-main{
-    width: 572px;
-    height: 348px;
+    max-width: 572px;
+    height: 100%;
 }
 
 .news__article-info-main{
@@ -818,7 +847,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 134.77%;
+    line-height: 19px;
     color: #4F478F;
     display: flex;
 }
@@ -845,8 +874,6 @@ a{
     text-align: center;
 }
 .consultation__info-cards{
-    /* background: url(../assets/consultation-steps.png) no-repeat;
-    background-position: center; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -884,7 +911,7 @@ a{
 .consultation__form-inner{
     background: linear-gradient(0deg, #7CACB3, #7CACB3), #786CD9;
     border-radius: 0 0 8px 8px;
-    padding: 3.418803418803419% 46px 6.153846153846154%;
+    padding: 40px 46px 72px;
 }
 
 .consultation__form-title{
@@ -908,8 +935,8 @@ a{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.57142857; /*22px / 14px*/
+    font-size: 14px;
+    line-height: 22px;
     color: rgba(0, 0, 0, 0.5);
     margin-right: 24px;
 }
@@ -1052,7 +1079,7 @@ dialog::backdrop{
     background-position: left top;
     background-color: #FAFAFA;
     border-radius: 8px;
-    padding: 40px 17.482517482517483% 48px; /*100px / 572px*/
+    padding: 40px 100px 48px;
     position: relative;
 }
 
@@ -1073,8 +1100,8 @@ dialog::backdrop{
 .modal__entry{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 140.62%;
+    font-size: 14px;
+    line-height: 20px;
     text-align: right;
     margin-bottom: 24px;
 }
@@ -1142,7 +1169,7 @@ dialog::backdrop{
 
 .course__title{
     font-size: 1.125em; /*18px / 16*/
-    line-height: 134.77%;
+    line-height: 1.3333333333; /*24px / 18px*/
     color: rgba(255, 255, 255, 0.85);
     text-align: center;
 }
@@ -1239,8 +1266,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.57142857; /*22px / 14px*/
+    font-size: 14px;
+    line-height: 22px;
     color: #1F3841;
     margin-right: 16px;
 }
@@ -1326,7 +1353,7 @@ dialog::backdrop{
     max-width: 483px;
     font-weight: 900;
     font-size: 3.5em; /*56px / 16*/
-    line-height: 111%;/* 62px or 111% */
+    line-height: 1.107142857;/*62px / 56px*/
     color: #FFFFFF;
     margin-top: 77px;
 }
@@ -1359,7 +1386,7 @@ dialog::backdrop{
 }
 
 .gallery__img-desc{
-    line-height: 157%;/* 22px or 157% */
+    line-height: 22px;
     color: #000000;
     grid-column: 1;
     justify-self: start;
@@ -1396,8 +1423,8 @@ dialog::backdrop{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.57142857; /*22px / 14px*/
+    font-size: 14px;
+    line-height: 22px;
     color: rgba(0, 0, 0, 0.86);
     display: flex;
     justify-content: space-between;
@@ -1510,13 +1537,40 @@ dialog::backdrop{
     padding-bottom: 30px;
     margin: 120px 0;
 }
-
 .about__slider-items{
+    display: none;
+}
+.about__slider-items-wrap{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about__slide1{
     background: url(../assets/slider_img-small1.jpg) no-repeat;
     background-position: top right;
     border-radius: 8px;
-    display: flex;
-    justify-content: flex-start;
+}
+
+.about__slide2{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+.about__slide3{
+    background: url(../assets/slider_img-small1.jpg) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+
+.about__slide4{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+.about__slide5{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
 }
 
 .about__slider-item{
@@ -1532,10 +1586,6 @@ dialog::backdrop{
     box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
     border-radius: 12px;
     padding: 32px 32px 40px 32px;
-}
-
-.about__slider-desc{
-
 }
 
 .about__img-wrap{
@@ -1561,9 +1611,9 @@ dialog::backdrop{
 }
 
 .professors__faculty{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
     margin-bottom: 56px;
 }
 
@@ -1673,7 +1723,7 @@ dialog::backdrop{
     line-height: 1.375;/* 22px / 16px*/
 }
 
-.quote_author-img{
+.quote__author-img{
     width: 265px;
     height: 343px;
     filter: drop-shadow(0px 4px 12px rgba(14, 8, 49, 0.15));
@@ -1716,6 +1766,9 @@ dialog::backdrop{
 }
 .meeting__title{
     margin-bottom: 32px;
+}
+.meeting__slider{
+    display: none;
 }
 
 .meeting__img{
@@ -2000,7 +2053,10 @@ dialog::backdrop{
         max-width: 343px;
         width: 100%;
     }
-
+    .title{
+        font-size: 24px;
+        line-height: 38px;
+    }
     .logo{
         margin-right: 0;
         margin-left: 20px;
@@ -2019,13 +2075,12 @@ dialog::backdrop{
         padding: 24px 40px 32px;
         position: relative;
     }
-    .modal__title{
-        font-size: 24px;
-    }
     .modal__close {
         top: 16px;
         right: 16px;
-
+    }
+    .modal__btn{
+        padding: 16px 20px;  
     }
 
     .main,
@@ -2046,6 +2101,7 @@ dialog::backdrop{
         padding: 188px 0 40px;
     }
     .hero__title{
+        line-height: 30px;
         margin-bottom: 40px;
     }
     .hero__border-img:last-of-type{
@@ -2061,12 +2117,19 @@ dialog::backdrop{
         margin-bottom: 8px;
     }
 
+    .programs__title{
+        text-align: center;
+    }
     .programs__cards{
         grid-template-columns: 1fr;
         row-gap: 16px;
     }
     .program__card-inner{
         padding: 16px 16px 24px;
+    }
+    .program__table-title{
+        font-size: 18px;
+        line-height: 30px;
     }
     .program__table-column--mobile{
         display: none;
@@ -2083,6 +2146,9 @@ dialog::backdrop{
         grid-template-columns: 1fr;
         row-gap: 16px;
     }
+    .info__card-title{
+        line-height: 24px;
+    }
     .info__card{
         height: 240px;
         padding: 16px 16px 24px;
@@ -2097,20 +2163,51 @@ dialog::backdrop{
         background-image: url(../assets/library_card-mobile.jpg);
     }
 
+    .slider,
+    .about__slider,
+    .meeting__slider{
+        position: relative;
+    }
+    .meeting__slider{
+        display: block;
+        height: 217px;
+    }
+    .meeting__slider-items{
+        display: none;
+    }
+    .slider__title{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    .slider__desc{
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+    .slider__btn{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 16px 37px;
+    }
     .slider__items,
     .about__slider-items{
         background: none;
-        justify-content: flex-start;
+    }
+    .slider__items-wrap,
+    .about__slider-items-wrap{
+        justify-content: center;
     }
     .slider__info,
     .about__slider-info {
+        max-width: 343px;
         width: 100%;
+        margin: 0 auto;
         background: none;
         box-shadow: none;
         filter: none;
         border-radius: 0px;
         padding: 0px;
-        margin-top: 34px;
     }
     .slider__pagination{
         display: none;
@@ -2118,11 +2215,31 @@ dialog::backdrop{
     .slider__carousel {
         display: block;
     }
+    .slider__carousel-item{
+        height: 241px;
+        margin-bottom: 50px;
+    }
     .slider__carousel-item,
-    .slider__carousel-indicators {
+    .slider__carousel-dots,
+    .meeting-slider__carousel-dots {
         text-align: center;
     }
-    .slider__carousel-btn {
+    .slider__carousel-dots{
+        display: block;
+        position: absolute;
+        top: 257px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .meeting-slider__carousel-dots{
+        display: block;
+        position: absolute;
+        top: 217px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slider__carousel-dot,
+    .meeting-slider__carousel-dot {
         width: 10px;
         height: 10px;
         margin-right: 16px;
@@ -2130,32 +2247,12 @@ dialog::backdrop{
         border: 1px solid #C4C4C4;
         border-radius: 50%;
     }
-    .slider__carousel-btn--active {
+    .slider__carousel-dot--active,
+    .meeting-slider__carousel-dot--active {
         background: #4F478F;
         border: 1px solid #4F478F;
     }
  
-    /* .carousel-indicators button[data-bs-target] {
-        box-sizing: content-box;
-        width: 10px;
-        height: 10px;
-        padding: 0;
-        margin-right: 16px;
-        background-color: #C4C4C4;
-        background-clip: padding-box;
-        border: 0;
-        border-top: 0;
-        border-bottom: 0;
-        border-radius: 50%;
-        opacity: 1;
-        transition: opacity .6s ease;
-    }
-    .carousel-indicators button.active {
-        background: #4F478F;
-    }
-    .slider__items .carousel-indicators {
-        bottom: -26px;
-    } */
 
     .tour__inner{
         flex-direction: column-reverse;
@@ -2163,6 +2260,25 @@ dialog::backdrop{
     .tour__info{
         border-radius: 0 0 8px 8px;
         padding: 16px 16px 32px;
+    }
+    .tour__title{
+        margin-bottom: 8px;
+    }
+    .tour__desc{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 24px;
+    }
+    .tour__link-img{
+        width: 48px;
+        height: 48px;
+    }
+    .tour__link-text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tour__img{
+        width: 100%;
     }
 
     .news__articles,
@@ -2176,8 +2292,26 @@ dialog::backdrop{
     .news__article-main{
         flex-direction: column;
     }
+    .news__title{
+        margin-bottom: 24px;
+    }
+    .news__article-title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .news__article-desc{
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .news__article-link{
+        font-size: 16px;
+        line-height: 24px;
+    }
     .news__btn{
+        font-size: 14px;
+        line-height: 16px;
         grid-column: 1;
+        padding: 16px 24px;
         margin-top: 8px;
     }
     .news__article-info,
@@ -2185,11 +2319,53 @@ dialog::backdrop{
         padding: 16px 16px 24px;
     }
 
+    .news__inner {
+        padding: 32px 0 0;
+    }
+    .news__article-img-main{
+        width: 100%;
+    }
+
+
+    .consultation__info-title{
+        font-size: 24px;
+        line-height: 28px;
+        color: #232040;
+        margin-bottom: 48px;
+    }
+    .consultation__info-cards{
+        justify-content: center;
+    }
+    .consultation__info-cards::before{
+        content: url(../assets/consultation_steps-mobile.png);
+        position: absolute;
+        top: 60px;
+        left: -10px;
+    }
+    .consultation__info-card{
+        width: 150px;
+        flex-direction: column;
+    }
+    .consultation__info-card:not(:last-of-type){
+        margin-bottom: 76px;
+    }
+    .consultation__card-img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 24px;
+    }
+    .consultation__card-title{
+        font-size: 18px;
+        line-height: 22px;
+    }
     .consultation__form-inner{
         padding: 32px 40px 56px;
     }
     .consultation__form{
         flex-direction: column;
+    }
+    .consultation__form-title{
+        line-height: 28px;
     }
     .consultation__form-input{
         padding: 14px 16px;
@@ -2199,29 +2375,12 @@ dialog::backdrop{
     .consultation__form-input:last-of-type{
         margin-bottom: 24px;
     }
-    .consultation__info-card{
-        flex-direction: column;
+    .consultation__form-btn{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 16px;
     }
-    .consultation__info-card:not(:last-of-type){
-        margin-bottom: 76px;
-    }
-    .consultation__info-cards::before{
-        content: url(../assets/consultation_steps-mobile.png);
-        position: absolute;
-        top: 60px;
-        left: -10px;
-    }
-    .consultation__info-title{
-        font-size: 24px;
-        line-height: 28px;
-        color: #232040;
-        margin-bottom: 48px;
-    }
-    .consultation__card-img{
-        width: 80px;
-        height: 80px;
-        margin-bottom: 24px;
-    }
+
 
     .footer__inner{
         padding: 48px 0;
@@ -2291,16 +2450,29 @@ dialog::backdrop{
         grid-row: 2;
     }
 
+    /*About page styles start*/
     .sidebar{
         display: none;
     }
     .grid{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "content content"
+        "quote quote"
+        "meeting meeting";
+    }
+    .content,
+    .quote__wrap,
+    .meeting{
         max-width: 343px;
         width: 100%;
         margin: 0 auto;
-        grid-template-columns: 1fr;
+    }
+    .about{
+        margin-bottom: 56px;
     }
     .about__slider{
+        padding-bottom: 0;
         margin: 56px 0 97px;
     }
     .about__text-inner{
@@ -2310,14 +2482,105 @@ dialog::backdrop{
     .about__text--hidden{
         display: none;
     }
+    .about__text-lato,
+    .about__slider-desc,
+    .about__text,
+    .about__text-list,
+    .professors__text,
+    .professors__list-header,
+    .professors__list{
+        font-size: 13px;
+        line-height: 21px;
+    }
     .about__img-wrap{
         flex-direction: column;
+        margin: 0 0 24px;
     }
     .about__img-wrap picture:last-of-type{
         margin-top: 16px;
     }
-    
+    .professors{
+        margin-bottom: 56px;
+    }
+    .professors__title{
+        margin-bottom: 24px;
+    }
+    .professors__img{
+        margin-bottom: 32px;
+    }
+    .professors__faculty-card{
+        width: 163px;
+    }
+    .professors__faculty{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+    .professors__card-subtitle{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .professors__list-header{
+        margin-top: 16px;
+    }
+    .professors__list{
+        margin-bottom: 16px;
+    }
+    .quote{
+        grid-template-columns: 1fr;
+        grid-template-areas: "quote__wrap";
+        margin-bottom: 67px;
+        overflow-x: hidden;
+    }
+    .quote__inner{
+        flex-direction: column-reverse;
+        padding: 22px 0 20px;
+    }
+    .quote__desc{
+        padding: 50px 32px 0;
+    }
+    .quote__author-img{
+        width: 253px;
+        height: 327px;
+        margin-right: 0;        
+    }
+    .qoute__text{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 48px;
+    }
+    .quote__author{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .quote__author-position{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .quote__desc::before {
+        content: url(../assets/upper_quote-mobile.png);
+        top: -10px;
+        left: 10px;
+    }
+    .quote__desc::after {
+        content: url(../assets/lower_quote-mobile.png);
+    }
+    .meeting__title {
+        margin-bottom: 24px;
+    }
+    .meeting__img-desc{
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .meeting__img img{
+        display: none;
+    }
+    .meeting__img {
+        grid-template-columns: 1fr;
+    }
+    /*About page styles end*/
 
+    /*Gallery page styles start*/
     .gallery__header {
         min-height: 617px;
         background: #181342;
@@ -2366,12 +2629,17 @@ dialog::backdrop{
     .gallery__wrap:nth-of-type(18){
         grid-row: 12;
     }
+    /*Gallery page styles end*/
 
     /*Burger menu styles start*/
     .header{
         position: relative;
         z-index: 2;
         height: 72px;
+    }
+    .header__btn{
+        line-height: 22px;
+        padding: 6px 16px;
     }
 
     .header__burger{
@@ -2431,15 +2699,15 @@ dialog::backdrop{
     .header__menu.active{
         left: 0;
     }
-    .routs{
+    .routs__menu{
         display: block;
         top: 72px;
         padding-top: 16px;
     }
-    .routs__list-btn svg{
+    .routs__menu-list-btn svg{
         display: none;
     }
-    .routs__wrap{
+    .routs__menu-wrap{
         display: block;
         max-width: 319px;
         width: 100%;
@@ -2447,11 +2715,11 @@ dialog::backdrop{
         background: #FFFFFF;
         padding: 14px 32px;
     }
-    .routs__wrap:hover{
+    .routs__menu-wrap:hover{
         background: #ECE9FF;
         border-radius: 2px;
     }
-    .routs__list{
+    .routs__menu-list{
         min-width: 250px;
         position: absolute;
         background-color: #FFFFFF;
@@ -2466,7 +2734,7 @@ dialog::backdrop{
         transition: all 0.5s ease;
         z-index: 2;
     }
-    .routs__list-btn:focus + .routs__list{
+    .routs__menu-list-btn:focus + .routs__menu-list{
         opacity: 1;
         pointer-events: all;
         transform: translateY(0deg);
@@ -2503,9 +2771,25 @@ dialog::backdrop{
     }
     /*Burger menu styles end*/
 
+    .cost__inner{
+        padding: 32px 0 0;
+    }
     .cost__title{
         font-size: 24px;
         line-height: 30px;
+        margin-bottom: 24px;
+    }
+    .cost__btn{
+        padding: 16px 22.5px;
+        margin-bottom: 24px;
+    }
+    .cost__table{
+        margin-bottom: 16px;
+    }
+    .cost__text{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
     }
     .cost__table-column span{
         display: none;
@@ -2532,7 +2816,14 @@ dialog::backdrop{
     }
 
     /*Timetable page styles start*/
+    .course__title{
+        font-size: 16px;
+        line-height: 22px;
+    }
     .accordion__link span{
+        display: none;
+    }
+    .calendar__date span{
         display: none;
     }
     .timetable__inner{
