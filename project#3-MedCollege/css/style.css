@@ -147,8 +147,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.57142857; /*22px / 14px*/
+    font-size: 14px;
+    line-height: 22px;
     color: rgba(0, 0, 0, 0.86);
     display: flex;
     align-items: center;
@@ -202,7 +202,7 @@ a{
 .routs__menu-list-btn:focus + .routs__menu-list{
     opacity: 1;
     pointer-events: all;
-    transform: translateY(0deg);
+    transform: translateY(0px);
 }
 
 .routs__menu-link{
@@ -2702,7 +2702,7 @@ dialog::backdrop{
     .routs__menu{
         display: block;
         top: 72px;
-        padding-top: 16px;
+        padding: 16px 0;
     }
     .routs__menu-list-btn svg{
         display: none;
@@ -2713,53 +2713,42 @@ dialog::backdrop{
         width: 100%;
         height: 100%;
         background: #FFFFFF;
-        padding: 14px 32px;
+        padding: 12px 32px;
+    }
+    .routs__menu-wrap:not(:last-of-type){
+        margin-bottom: 16px;
     }
     .routs__menu-wrap:hover{
         background: #ECE9FF;
         border-radius: 2px;
     }
-    .routs__menu-list{
-        min-width: 250px;
-        position: absolute;
-        background-color: #FFFFFF;
-        margin-top: 10px;
-        border-radius: 0px 0px 8px 8px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-10px);
-        transition: all 0.5s ease;
-        z-index: 2;
-    }
-    .routs__menu-list-btn:focus + .routs__menu-list{
-        opacity: 1;
-        pointer-events: all;
-        transform: translateY(0deg);
-        z-index: 8;
-    }
     .header__btn-wrap{
         min-height: max-content;
         height: 100%;
-        top: 502px;
-        padding: 14px 32px 134px 32px;
+        top: 644px;
+        padding: 12px 32px 134px 32px;
+        z-index: -1;
     }
     .header__border-img{
         display: none;
     }
     .menu{
-        top: 214px;
+        top: 273px;
         min-height: max-content;
         height: 100%;
+        padding: 0;
+        z-index: -1;
     }
     .header__menu-list{
         display: block;
         background: #FFFFFF;
+        padding-bottom: 16px;
     }
     .header__menu-item{
-        padding: 14px 32px;
+        padding: 12px 32px;
+    }
+    .header__menu-item:not(:last-child){
+        margin-bottom: 16px;
     }
     .header__menu-item:hover{
         background: #ECE9FF;
@@ -2770,6 +2759,67 @@ dialog::backdrop{
         color: #4F478F;
     }
     /*Burger menu styles end*/
+
+    /*Burger submenu styles start*/
+    .header__submenu.header__submenu--active{
+        left: 0;
+    }
+    .header__submenu{
+        position: fixed;
+        left: -100%;
+        max-width: 319px;
+        width: 100%;
+        background: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+    }
+    .routs__menu-list-btn:focus + .routs__menu-list{
+        z-index: 8;
+    }
+    .routs__menu-list{
+        display: block;
+        top: 134px;
+        padding-bottom: 100vh;
+        border-radius: 0;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
+    .routs__menu-item{
+        position: relative;
+        padding: 16px;
+    }
+    .routs__menu-item:after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        background: linear-gradient(90deg, #4D4680 0.18%, #786CD9 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
+        border-radius: 4px;
+    }
+    .routs__menu-list-btn:focus.header__submenu--active{
+        justify-content: center;
+        width: 100%;
+    }
+    .routs__menu-wrap:nth-child(2) .routs__menu-list-btn:focus.header__submenu--active{
+        transform: translateY(-74px);
+        background: #ECE9FF;
+        padding: 12px 0;
+    }
+    .routs__menu-wrap:nth-child(3) .routs__menu-list-btn:focus.header__submenu--active{
+        transform: translateY(-136px);
+        background: #ECE9FF;
+        padding: 12px 0;
+    }
+    .routs__menu-list-btn:focus.header__submenu--active::before{
+        content: url(../assets/menu_arrow-left.svg);
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        cursor: pointer;
+    }
+    /*Burger submenu styles end*/
+
 
     .cost__inner{
         padding: 32px 0 0;
