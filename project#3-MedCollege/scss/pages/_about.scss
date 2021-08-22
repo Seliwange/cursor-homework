@@ -1,0 +1,398 @@
+/*About page styles start*/
+.grid{
+    display: grid;
+    grid-template-columns: 135px 1fr 1fr 135px;
+    grid-template-areas: "... sidebar content ..." "quote quote quote quote" "... ... meeting ...";
+    margin-top: 34px;
+}
+
+/*Sidebar styles start*/
+.sidebar{
+    grid-area: sidebar;
+    padding-right: 23px;
+}
+
+.sidebar__menu{
+    min-width: 274px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15), inset -1px 0px 0px #F0F0F0;
+}
+
+.sidebar__wrap{
+    position: relative;
+}
+
+.sidebar__btn,
+.sidebar__self-link{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: map-get($font-weights, medium);
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 9px 24px;
+}
+
+.sidebar__btn{
+
+    &:focus{
+        color: #4F478F;
+
+        svg{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.sidebar__list{
+    min-width: 250px;
+    position: relative;
+    background-color: #FFFFFF;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(-10px);
+    transition: all 0.5s ease;
+}
+
+.sidebar__item{
+    background: rgba(236, 233, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    padding: 9px 0px 9px 48px;
+    
+    &:hover{
+        background: #ECE9FF;
+        border-right: 3px solid #4F478F;
+    }
+}
+
+.sidebar__btn:focus + .sidebar__list{
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0deg);
+}
+
+.sidebar__link{
+    color: rgba(0, 0, 0, 0.86);
+    
+    &:hover{
+        color: #4F478F;
+    }
+}
+
+.sidebar__self-link:hover{
+    color: #4F478F;
+    background: #ECE9FF;
+}
+/*Sidebar styles end*/
+
+/*Content styles start*/
+.content{
+    grid-area: content;
+}
+
+/*About styles start*/
+.about{
+    margin-bottom: 120px;
+}
+
+.about__title{
+    font-weight: map-get($font-weights, bold);
+    font-size: 2.5em; /*40px / 16*/
+    line-height: 1.2; /*48px / 40px*/
+    color: #3D3866;
+    margin-bottom: 32px;
+}
+
+.about__img{
+    max-width: 870px;
+    width: 100%;
+    margin-bottom: 24px;
+
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 40px 0;
+    }
+}
+
+.about__text{
+    font-size: 18px;
+    line-height: 33px;
+    
+    &-lato{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.6666667; /*30px / 18px*/
+    }
+    
+    &-list{
+        font-family: 'Open Sans',sans-serif;
+        font-weight: map-get($font-weights, regular);
+        font-size: 18px;
+        line-height: 33px;
+    }
+    &-item{
+        text-indent: 30px;
+    }
+}
+
+.about__slider{
+    padding-bottom: 30px;
+    margin: 120px 0;
+    
+    &-items{
+        display: none;
+        
+        &-wrap{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+    
+    &-item{
+        max-width: 478px;
+    }
+    
+    &-info{
+        max-width: 478px;
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.6666667; /*30px / 18px*/
+        color: #000000;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
+        border-radius: 12px;
+        padding: 32px 32px 40px 32px;
+    }
+}
+
+.about__slide1{
+    background: url(../assets/slider_img-small1.jpg) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+
+.about__slide2{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+.about__slide3{
+    background: url(../assets/slider_img-small1.jpg) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+
+.about__slide4{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+.about__slide5{
+    background: url(../assets/meeting_img1-mobile.png) no-repeat;
+    background-position: top right;
+    border-radius: 8px;
+}
+/*About styles end*/
+
+/*Professors styles start*/
+.professors{
+    margin-bottom: 32px;
+}
+
+.professors__title{
+    margin-bottom: 32px;
+}
+
+.professors__img{
+    max-width: 870px;
+    margin-bottom: 40px;
+}
+
+.professors__faculty{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    margin-bottom: 56px;
+    
+    &-card{
+        width: 175px;
+        text-align: center;
+    }
+}
+
+.professors__card-title{
+    font-weight: map-get($font-weights, bold);
+    font-size: 4em; /*64px / 16*/
+    line-height: 1.21875; /*78px / 64px*/
+    color: #786CD9;
+}
+
+.professors__card-subtitle {
+    font-weight: map-get($font-weights, regular);
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5;/* 24px / 16px*/
+}
+
+.professors__text{
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.6666667; /*30px / 18px*/
+}
+
+.professors__list-header,
+.professors__list{
+    list-style: disc inside;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: map-get($font-weights, regular);
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 2.222222222; /*40px / 18px*/
+}
+.professors__list-header{
+    margin-top: 24px;
+}
+.professors__list{
+    margin-bottom: 24px;
+}
+
+.professors__item{
+    padding-left: 15px;
+}
+/*Professors styles end*/
+
+/*Quote styles start*/
+.quote{
+    min-height: 471px;
+    grid-area: quote;
+    background: #F2F5F9;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 135px 300px 1fr 135px;
+    grid-template-areas: "... ... quote__wrap ...";
+}
+
+.quote__wrap{
+    grid-area: quote__wrap;
+}
+
+.quote__inner{
+    display: flex;
+    padding: 58px 0 70px;
+}
+
+.quote__desc{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: map-get($font-weights, semi-bold);
+    font-size: 1.25em; /*20px / 16*/
+    line-height: 1.5; /*30px / 20px*/
+    color: #232040;
+    position: relative;
+    padding-top: 50px;
+    z-index: 1;
+    
+    &::before{
+        content: url(../assets/upper_quote.png);
+        position: absolute;
+        top: -10px;
+        left: -40px;
+        z-index: -1;
+    }
+    
+    &::after{
+        content: url(../assets/lower_quote.png);
+        position: absolute;
+        bottom: 30%;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.qoute__text{
+    margin-bottom: 24px;
+}
+
+.quote__author{
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.333333333333; /*24px / 18px*/
+    margin-bottom: 8px;
+    
+    &-position{
+        font-weight: map-get($font-weights, medium);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.375;/* 22px / 16px*/
+    }
+    
+    &-img{
+        width: 265px;
+        height: 343px;
+        filter: drop-shadow(0px 4px 12px rgba(14, 8, 49, 0.15));
+        border-radius: 8px;
+        margin-right: 24px;
+    }
+}
+
+.quote__images{
+    display: flex;
+}
+
+.quote__btn{
+    background: none;
+    border: none;
+    align-self: flex-start;
+    position: relative;
+    cursor: pointer;
+    
+    &:not(:last-child){
+        margin-right: 24px;
+    }
+    
+    &-left:after{
+        content: url(../assets/quote_btn-left.svg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-right:before{
+        content: url(../assets/quote_btn-right.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+/*Quote styles end*/
+
+/*Meeting styles start*/
+.meeting{
+    grid-area: meeting;
+}
+.meeting__title{
+    margin-bottom: 32px;
+}
+.meeting__slider{
+    display: none;
+}
+
+.meeting__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    
+    &-desc{
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.6666667; /*30px / 18px*/
+        margin-top: 32px;
+    }
+}
+/*Meeting styles end*/
+/*Content styles end*/
+/*About page styles end*/

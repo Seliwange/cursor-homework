@@ -1,0 +1,619 @@
+/*Main styles start*/
+.main{
+    margin-bottom: 120px;
+}
+
+/*Hero styles start*/
+.hero{
+    background: url(../assets/college.jpg) no-repeat;
+    background-color: #232040;
+    background-position: center right;
+    background-size: contain;
+    
+    &__inner{
+        padding: 104px 0 87px;
+    }
+    
+    &__info{
+        max-width: 450px;
+        
+        &-wrap{
+            display: flex;
+            margin-bottom: 24px;
+        }
+        
+        &-img{
+            width: 223px;
+            height: 120px;
+            border-radius: 8px;
+            margin-right: 24px;
+        }
+
+        &-text{
+            font-weight: map-get($font-weights, light);
+            color: rgba(255, 255, 255, 0.86);
+        }
+
+        &-link{
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &__title{
+        font-weight: map-get($font-weights, bold);
+        font-size: 2.125rem; /*34px / 16*/
+        line-height: 1.2352941; /*42px / 34px*/
+        color: #FFFFFF;
+        margin-bottom: 57px;
+    }
+    
+    &__border-img:not(:last-child){
+        margin-bottom: 23px;
+    }
+
+    &__link-img{
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    
+    &__link-text{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: map-get($font-weights, bold);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.5; /*24px / 16px*/
+        color: #FFFFFF;
+        
+        &:hover{
+            color: #786CD9;
+        }
+    }
+}
+/*Hero styles end*/
+
+/*Programs styles start*/
+.programs{
+    background: #F2F5F9;
+    margin-bottom: 80px;
+    
+    &__inner{
+        padding: 76px 0 63px;
+    }
+    
+    &__title{
+        font-weight: map-get($font-weights, bold);
+        font-size: 2.5em; /*40px / 16*/
+        line-height: 1.2; /*48px / 40px*/
+        margin-bottom: 42px;
+    }
+    
+    &__cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+    }
+}
+
+.program__card{
+    max-width: 572px;
+    box-shadow: 0px 2px 12px rgba(10, 30, 52, 0.08);
+    border-radius: 8px;
+    
+    &-nursing{
+        background: url(../assets/Illustration_nurse.png) no-repeat;
+        background-position: right bottom;
+        background-color: #FFFFFF;
+    }
+    
+    &-pharmacy{
+        background: url(../assets/Illustration_pharmacy.png) no-repeat;
+        background-position: right bottom;
+        background-color: #FFFFFF;
+    }
+    
+    &-inner{
+        padding: 32px 32px 40px 32px;
+    }
+    
+    &-btn{
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        font-weight: map-get($font-weights, bold);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.5; /*24px / 16px*/
+        color: #4D4680;
+        padding: 8px 24px;
+        border-radius: 8px;
+        background: none;
+        border: 2px solid #4D4680;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.4s ease;
+        
+        &:hover{
+            background-color: #4D4680;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.program__table--mobile{
+    display: none;
+}
+
+.program__table{
+    margin-bottom: 40px;
+    
+    &-title{
+        font-size: 1.5em; /*24px / 16*/
+        line-height: 1.58333333333; /*38px / 24px*/
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    
+    &-head{
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 0.75em; /*12px / 16*/
+        line-height: 2; /*24px / 12px*/
+        opacity: 0.6;
+        text-align: left;
+    }
+    
+    &-column{
+        vertical-align: top;
+        
+        &:first-of-type{
+            width: 267px;
+        }
+    }
+    
+}
+/*Programs styles end*/
+
+/*Info styles start*/
+.info{
+    margin-bottom: 120px;
+}
+
+.info__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.info__card{
+    max-width: 373px;
+    width: 100%;
+    height: 578px;
+    padding: 24px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    &:nth-child(1){
+        background-image: url(../assets/pay-card.jpg);
+    }
+    
+    &:nth-child(2){
+        background-image: url(../assets/timetable-card.jpg);
+    }
+    
+    &:nth-child(3){
+        background-image: url(../assets/library-card.jpg);
+    }
+    
+    &-title{
+        font-weight: map-get($font-weights, bold);
+        line-height: 0.75; /*24px / 32px*/
+        color: rgba(255, 255, 255, 0.85);
+        margin-bottom: 8px;
+    }
+    
+    &-desc{
+        font-weight: map-get($font-weights, light);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.5; /*24px / 16px*/
+        margin-bottom: 24px;
+    }
+    
+    &-link{
+        font-family: 'Comfortaa', cursive;
+        font-style: normal;
+        font-weight: map-get($font-weights, bold);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.5; /*24px / 16px*/
+        color: rgba(255, 255, 255, 0.85);
+        display: flex;
+        align-items: center;
+        
+        &:hover{
+            color: rgba(255, 255, 255, 0.72);
+        }
+        
+        i{
+            margin-left: 16px;
+        }
+    }
+}
+/*Info styles end*/
+
+/*Slider styles start*/
+.slider{
+    padding-bottom: 30px;
+    margin-bottom: 120px;
+    
+    &__carousel{
+        display: none;
+
+        &-dots{
+            display: none;
+        }
+    }  
+    
+    &__items{
+        display: none;
+
+        &-wrap{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    
+    &__img{
+        width: 764px;
+        height: 507px;
+        border-radius: 12px;
+    }
+    
+    &__item{
+        max-width: 652px;
+    }
+    
+    &__pagination{
+        font-family: 'Roboto Mono', monospace;
+        font-style: normal;
+        font-weight: map-get($font-weights, regular);
+        font-size: 28px;
+        line-height: 38px;
+        padding-top: 29px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--active span{
+            font-weight: map-get($font-weights, bold);
+            font-size: 28px;
+            line-height: 38px;
+            color: #4F478F;
+        }
+    }
+    
+    &__control{
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    &__info{
+        max-width: 652px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 12px 2px rgba(37, 51, 66, 0.12);
+        filter: drop-shadow(0px 2px 12px rgba(10, 30, 52, 0.08));
+        border-radius: 12px;
+        padding: 48px;
+    }
+    
+    &__title{
+        font-size: 1.75em; /*28px / 16*/
+        line-height: 1.42857142; /*40px / 28px*/
+        margin-bottom: 16px;
+    }
+    
+    &__desc{
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.833333333; /*33px / 18px*/
+        margin-bottom: 24px;
+    }
+    
+    &__btn{
+        padding: 20px 56.5px;
+    }
+}
+
+.slide1{
+    background: url(../assets/slider-img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+
+.slide2{
+    background: url(../assets/meeting_img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+.slide3{
+    background: url(../assets/slider-img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+
+.slide4{
+    background: url(../assets/meeting_img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+.slide5{
+    background: url(../assets/slider-img1.jpg) no-repeat;
+    background-position: top left;
+    border-radius: 12px;
+}
+/*Slider styles end*/
+
+/*Tour styles start*/
+.tour{
+    margin-bottom: 120px;
+    
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__info{
+        background: #F2F5F9;
+        border-radius: 8px 0 0 8px;
+        padding: 32px;
+        
+        &-link{
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &__title{
+        margin-bottom: 16px;
+    }
+    
+    &__desc{
+        font-weight: map-get($font-weights, light);
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.5; /*27px / 18px*/
+        margin-bottom: 52px;
+    }
+    
+    &__link-img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    &__link-text{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 1.125em; /*18px / 16*/
+        line-height: 1.33333333;/* 24px / 18px */
+        color: #4F478F;
+        
+        &:hover{
+            color: #786CD9;
+        }
+    }
+    
+    &__img{
+        max-width: 571px;
+        height: 100%;
+    }
+}
+/*Tour styles end*/
+
+/*News styles start*/
+.news{
+    margin-bottom: 120px;
+    
+    &__title{
+        text-align: center;
+        font-weight: map-get($font-weights, bold);
+        font-size: 2.5em; /*40px / 16*/
+        line-height: 1.2; /*48px / 40px*/
+        margin-bottom: 48px;
+    }
+    
+    &__articles{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 40px;
+        margin-bottom: 48px;
+    }
+    
+    &__btn{
+        justify-self: center;
+        grid-column: 2;
+        padding: 20px 40px;
+    }
+
+    &__inner{
+        padding: 64px 0 0;
+    }
+}
+
+
+.news__article{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    &-img{
+        max-width: 373px;
+        width: 100%;
+        height: 222px;
+    }
+    
+    &-info{
+        height: -webkit-fill-available;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px 24px 32px;
+    }
+    
+    &-title{
+        font-size: 1.5em; /*24px / 16*/
+        line-height: 1.33333333;/*32px / 24px*/
+        color: rgba(0, 0, 0, 0.86);
+        margin-bottom: 16px;
+    }
+    
+    &-desc{
+        margin-bottom: 24px;
+    }
+    
+    &-link{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 1em; /*16px / 16*/
+        line-height: 1.5;/*24px / 16px*/
+        color: #4D4680;
+        display: flex;
+        align-items: center;
+        
+        &:hover{
+            color: #786CD9;
+        }
+        
+        i{
+            margin-left: 22px;
+        }
+    }
+}
+
+.news__title-main{
+    margin-bottom: 32px;
+}
+
+.news__articles-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    margin-bottom: 88px;
+}
+
+.news__article-main{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.news__article-img-main{
+    max-width: 572px;
+    height: 100%;
+}
+
+.news__article-info-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 40px 32px;
+}
+/*News styles end*/
+
+/*Consultation styles start*/
+.consultation__info{
+    background: #F2F5F9;
+    border-radius: 8px 8px 0 0;
+    padding: 32px 40px 90px;
+    
+    &-title{
+        color: #3D3866;
+        margin-bottom: 72px;
+        text-align: center;
+    }
+    
+    &-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        
+        &::before{
+            content: url(../assets/consultation-steps.png);
+            position: absolute;
+            top: 30px;
+            left: 90px;
+        }
+    }
+    
+    &-card{   
+        width: 274px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    }
+}
+
+.consultation__card-img{
+    width: 104px;
+    height: 104px;
+    margin-bottom: 32px;
+}
+
+.consultation__card-title{
+    font-size: 1.5em; /*24px / 16*/
+    line-height: 1.3333333333333; /*32px / 24px*/
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.consultation__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &-inner{
+        background: linear-gradient(0deg, #7CACB3, #7CACB3), #786CD9;
+        border-radius: 0 0 8px 8px;
+        padding: 40px 46px 72px;
+    }
+    
+    &-title{
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    &-input{
+        min-width: 250px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        padding: 21px 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: map-get($font-weights, regular);
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-right: 24px;
+    }
+    
+    &-btn{
+        padding: 20px 30px;
+    }
+}
+/*Consultation styles end*/
+/*Main styles end*/

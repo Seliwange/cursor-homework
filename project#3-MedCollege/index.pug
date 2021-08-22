@@ -1,0 +1,323 @@
+extends layout.pug
+
+block content 
+    main.main
+      section.hero
+        .wrapper
+          .hero__inner
+            .hero__info
+              h1.hero__title.title Львівський медичний фаховий коледж післядипломної освіти
+              .hero__border-img.border-img
+              .hero__info-wrap
+                img.hero__info-img(src='./assets/class_chairs.png', width='807', height='617', alt='class chairs')
+                p.hero__info-text Відвідай наш коледж, не виходячи з дому, просто натиснувши кнопку для перегляду.
+              .hero__info-wrap
+                a.hero__info-link(href='#')
+                  img.hero__link-img(src='./assets/play-icon.svg', width='223', height='120', alt='play')
+                  h6.hero__link-text Віртуальний тур
+              .hero__border-img.border-img
+      section.programs
+        .wrapper
+          .programs__inner
+            h2.programs__title.title Наші освітні програми
+            .programs__cards
+              .program__card-nursing.program__card
+                .program__card-inner
+                  table.program__table
+                    caption.program__table-title.title Медсестринство
+                    colgroup.program__table-group
+                      col
+                      col
+                    thead.program__table-head
+                      tr.program__table-row
+                        th.program__table-column Освітній ступінь
+                        th.program__table-column.program__table-column--mobile Термін навчання
+                    tbody.program__table-body
+                      tr.program__table-row
+                        td.program__table-column Фаховий молодший бакалавр
+                        td.program__table-column.program__table-column--mobile 4 роки
+                      tr.program__table-row
+                        td.program__table-column Бакалавр
+                        td.program__table-column.program__table-column--mobile
+                  table.program__table.program__table--mobile
+                    thead.program__table-head.program__table-head--mobile
+                      tr.program__table-row
+                        th.program__table-column Термін навчання
+                    tbody.program__table-body.program__table-body--mobile
+                      tr.program__table-row
+                        td.program__table-column 4 роки
+                  button.program__card-btn Детальніше
+              .program__card-pharmacy.program__card
+                .program__card-inner
+                  table.program__table
+                    caption.program__table-title.title Фармація
+                    colgroup.program__table-group
+                      col
+                      col
+                    thead.program__table-head
+                      tr.program__table-row
+                        th.program__table-column Освітній ступінь
+                        th.program__table-column.program__table-column--mobile Термін навчання
+                    tbody.program__table-body
+                      tr.program__table-row
+                        td.program__table-column(rowspan='2') Фаховий молодший бакалавр
+                        td.program__table-column.program__table-column--mobile 3 роки
+                      tr.program__table-row
+                        td.program__table-column.program__table-column--mobile
+                  table.program__table.program__table--mobile
+                    thead.program__table-head
+                      tr.program__table-row
+                        th.program__table-column Термін навчання
+                    tbody.program__table-body
+                      tr.program__table-row
+                        td.program__table-column 3 роки
+                  button.program__card-btn Детальніше
+      section.info
+        .wrapper
+          .info__cards
+            .info__card
+              h3.info__card-title.title Оплатити
+              p.info__card-desc Тепер оплату можна здійснити безпосередньо на нашому сайті через сервіс LIQPAY
+              a.info__card-link(href='payment.html') Переглянути
+                i.fas.fa-arrow-right
+            .info__card
+              h3.info__card-title.title Розклад
+              p.info__card-desc Тут ви завжди зможете знайти розклад занять вашої групи та подивитись або скачати
+              a.info__card-link(href='timetable.html') Переглянути
+                i.fas.fa-arrow-right
+            .info__card
+              h3.info__card-title.title Бібліотека
+              p.info__card-desc Всі необхідні матеріали в одному місці, більше не потрібно носити з собою велетенські книги
+              a.info__card-link(href='#') Переглянути
+                i.fas.fa-arrow-right
+      section.slider
+        .wrapper
+          .slider__items.slide1
+            .slider__items-wrap
+              .slider__item
+                .slider__carousel
+                  .slider__carousel-inner
+                    .slider__carousel-item
+                      img(src='./assets/slider_img1-mobile.png', alt='photo')
+                .slider__pagination
+                  button.slider__control(onclick='plusSlides(-1)')
+                    img(src='./assets/slider_arrow-left.svg', alt='arrow-left')
+                  span 1
+                  | /6
+                  button.slider__control(onclick='plusSlides(1)')
+                    img(src='./assets/slider_arrow-right.svg', alt='arrow-right')
+                .slider__info
+                  h3.slider__title.title Симуляційно-тренінговий центр
+                  p.slider__desc У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. 
+                  button.slider__btn.btn Детальніше
+          .slider__items.slide2
+            .slider__items-wrap
+              .slider__item
+                .slider__carousel
+                  .slider__carousel-inner
+                    .slider__carousel-item
+                      img(src='./assets/slider_img-small1-mobile.png', alt='photo')
+                .slider__pagination
+                  button.slider__control(onclick='plusSlides(-1)')
+                    img(src='./assets/slider_arrow-left.svg', alt='arrow-left')
+                  span 2
+                  | /6
+                  button.slider__control(onclick='plusSlides(1)')
+                    img(src='./assets/slider_arrow-right.svg', alt='arrow-right')
+                .slider__info
+                  h3.slider__title.title Lorem ipsum dolor
+                  p.slider__desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, possimus rem? Quam non possimus velit officia eos, omnis fugit sunt tenetur, aut explicabo dicta hic, repudiandae ducimus consequuntur sed nulla.
+                  button.slider__btn.btn Детальніше
+          .slider__items.slide3
+            .slider__items-wrap
+              .slider__item
+                .slider__carousel
+                  .slider__carousel-inner
+                    .slider__carousel-item
+                      img(src='./assets/slider_img1-mobile.png', alt='photo')
+                .slider__pagination
+                  button.slider__control(onclick='plusSlides(-1)')
+                    img(src='./assets/slider_arrow-left.svg', alt='arrow-left')
+                  span 3
+                  | /6
+                  button.slider__control(onclick='plusSlides(1)')
+                    img(src='./assets/slider_arrow-right.svg', alt='arrow-right')
+                .slider__info
+                  h3.slider__title.title Симуляційно-тренінговий центр
+                  p.slider__desc У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо.
+                  button.slider__btn.btn Детальніше
+          .slider__items.slide4
+            .slider__items-wrap
+              .slider__item
+                .slider__carousel
+                  .slider__carousel-inner
+                    .slider__carousel-item
+                      img(src='./assets/slider_img-small1-mobile.png', alt='photo')
+                .slider__pagination
+                  button.slider__control(onclick='plusSlides(-1)')
+                    img(src='./assets/slider_arrow-left.svg', alt='arrow-left')
+                  span 4
+                  | /6
+                  button.slider__control(onclick='plusSlides(1)')
+                    img(src='./assets/slider_arrow-right.svg', alt='arrow-right')
+                .slider__info
+                  h3.slider__title.title Lorem ipsum dolor
+                  p.slider__desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, possimus rem? Quam non possimus velit officia eos, omnis fugit sunt tenetur, aut explicabo dicta hic, repudiandae ducimus consequuntur sed nulla.
+                  button.slider__btn.btn Детальніше
+          .slider__items.slide5
+            .slider__items-wrap
+              .slider__item
+                .slider__carousel
+                  .slider__carousel-inner
+                    .slider__carousel-item
+                      img(src='./assets/slider_img1-mobile.png', alt='photo')
+                .slider__pagination
+                  button.slider__control(onclick='plusSlides(-1)')
+                    img(src='./assets/slider_arrow-left.svg', alt='arrow-left')
+                  span 5
+                  | /6
+                  button.slider__control(onclick='plusSlides(1)')
+                    img(src='./assets/slider_arrow-right.svg', alt='arrow-right')
+                .slider__info
+                  h3.slider__title.title Симуляційно-тренінговий центр
+                  p.slider__desc У Львівському медичному фаховому коледжі післядипломної освіти запрацював симуляційно-тренінговий центр, в якому облаштували кабінет для тренінгів у сімейній медицині, педіатрії, кабінет акушерського догляду, медсестринського догляду, кабінет тренінгів медсестринських навичок, кабінет для навчання оптометристів, кабінет інформатики тощо. 
+                  button.slider__btn.btn Детальніше
+          .slider__carousel-dots
+            button.slider__carousel-dot(type='button')
+            button.slider__carousel-dot(type='button')
+            button.slider__carousel-dot(type='button')
+            button.slider__carousel-dot(type='button')
+            button.slider__carousel-dot(type='button')
+      section.tour
+        .wrapper
+          .tour__inner
+            .tour__info
+              h3.tour__title.title Віртуальний тур
+              p.tour__desc Запрошуємо всіх охочих у віртуальну екскурсію по Львівському медичному коледжі післядипломної освіти. За допомогою віртуального туру ви зможете відвідати коледж, не виходячи з дому.
+              a.tour__info-link(href='#')
+                img.tour__link-img(src='./assets/virtual_tour-icon.svg', width='223', height='120', alt='play')
+                h6.tour__link-text Відвідати віртуальний тур
+            picture
+              source(media='(max-width: 375px)', srcset='./assets/tour_img-mobile.jpg')
+              img.tour__img(src='./assets/tour-img.jpg', width='571', alt='tour')
+      section.news
+        .wrapper
+          h2.news__title.title Останні новини
+          .news__articles
+            article.news__article
+              img.news__article-img(src='./assets/news-small1.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Метр медсестринської професії
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            article.news__article
+              img.news__article-img(src='./assets/news-small2.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Базові реанімаційні заходи у дорослих
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            article.news__article
+              img.news__article-img(src='./assets/news-small3.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Я вмію рятувати життя
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            article.news__article
+              img.news__article-img(src='./assets/news-small4.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Наші нові муляжі
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            article.news__article
+              img.news__article-img(src='./assets/news-small5.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Дотримуємось правил карантину
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            article.news__article
+              img.news__article-img(src='./assets/news-small6.jpg', width='373', height='222', alt='photo')
+              .news__article-info
+                h4.news__article-title.title Шановні першокурсники!
+                p.news__article-desc Сьогодні  на базі симуляційно-тренінгового центру, викладачі Мар'яна Солодовська - Кольцова, Марія  Блажівська, Галина Квінтюк, які є інструкторами від ERC, провели тренінг "Базові реанімаційні заходи у дорослих" для медичних сестер.
+                a.news__article-link(href='#') Читати більше
+                  i.fas.fa-arrow-right
+            button.news__btn.btn Більше новини
+      section.consultation
+        .wrapper
+          .consultation__info
+            h4.consultation__info-title.title Як стати нашим студентом?
+            .consultation__info-cards
+              .consultation__info-card
+                img.consultation__card-img(src='./assets/consultation-file.png', alt='file')
+                p.consultation__card-title.title Обрати бажану спеціальність
+              .consultation__info-card
+                img.consultation__card-img(src='./assets/consultation-email.png', alt='email')
+                p.consultation__card-title.title Підписатись на оновлення
+              .consultation__info-card
+                img.consultation__card-img(src='./assets/consultation-docs.png', alt='docs')
+                p.consultation__card-title.title 
+                  | Подати 
+                  br
+                  | документи
+          .consultation__form-inner
+            h4.consultation__form-title.title Отримати консультацію
+            form.consultation__form(action='#')
+              label(for='consultation-name')
+              input#consultation-name.consultation__form-input(type='text', name='name', placeholder='Ім’я')
+              label(for='consultation-phone')
+              input#consultation-phone.consultation__form-input(type='tel', name='phone', pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}', placeholder='Номер телефону')
+              button.consultation__form-btn.btn Відправити заявку
+block append scripts  
+    script.
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slider__items");
+        var controls = document.getElementsByClassName("slider__pagination");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < controls.length; i++) {
+        controls[i].className = controls[i].className.replace(" slider__pagination--active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        controls[slideIndex-1].className += " slider__pagination--active";
+        }
+    script.
+        let slideIndexSmall = 0;
+        showSlidesSmall();
+        function showSlidesSmall() {
+        const mediaQuery = window.matchMedia('(max-width: 375px)');
+        if (mediaQuery.matches) {
+        let i;
+        let slidesSmall = document.getElementsByClassName("slider__items");
+        var dots = document.getElementsByClassName("slider__carousel-dot");
+        for (i = 0; i < slidesSmall.length; i++) {
+        slidesSmall[i].style.display = "none";
+        }
+        slideIndexSmall++;
+        if (slideIndexSmall > slidesSmall.length) {slideIndexSmall = 1}
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" slider__carousel-dot--active", "");
+        }
+        slidesSmall[slideIndexSmall-1].style.display = "block";
+        dots[slideIndexSmall-1].className += " slider__carousel-dot--active";
+        setTimeout(showSlidesSmall, 4000); // Change image every 4 seconds
+        }
+        }

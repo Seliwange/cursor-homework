@@ -1,0 +1,110 @@
+extends layout.pug
+
+block content
+    main.main
+      section.gallery
+        .gallery__header
+          h1.gallery__title.title Палітра студентського життя
+        .gallery__collection
+          .wrapper
+            .gallery__images
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo1-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo1.jpg', alt='photo')
+                figcaption.gallery__img-desc Випускники-оптометристи
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo5-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo5.jpg', alt='photo')
+                figcaption.gallery__img-desc Літературний марафон, присвячений пам'яті Тараса Шевченка
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo9-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo9.jpg', alt='photo')
+                figcaption.gallery__img-desc Посвята в студенти
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo13.jpg', alt='photo')
+                figcaption.gallery__img-desc Стеднти на цікавому занятті
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo17.jpg', alt='photo')
+                figcaption.gallery__img-desc Розважаємось та навчаємось
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo2-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo2.jpg', alt='photo')
+                figcaption.gallery__img-desc Випускники-оптометристи
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo6-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo6.jpg', alt='photo')
+                figcaption.gallery__img-desc Літературний марафон, присвячений пам'яті Тараса Шевченка
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo10-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo10.jpg', alt='photo')
+                figcaption.gallery__img-desc Посвята в студенти
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo14.jpg', alt='photo')
+                figcaption.gallery__img-desc Навчаємось
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo18.jpg', alt='photo')
+                figcaption.gallery__img-desc Промислова фармація
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo3-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo3.jpg', alt='photo')
+                figcaption.gallery__img-desc Випускники-оптометристи
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo7-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo7.jpg', alt='photo')
+                figcaption.gallery__img-desc Студенти переглянули фільм «Крути 1918»
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo11.jpg', alt='photo')
+                figcaption.gallery__img-desc Посвята в студенти
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo15.jpg', alt='photo')
+                figcaption.gallery__img-desc Не забуваємо дбати про чистоту довкілля
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo19.jpg', alt='photo')
+                figcaption.gallery__img-desc Розважаємось та навчаємось
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo4-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo4.jpg', alt='photo')
+                figcaption.gallery__img-desc День вишиванки
+              figure.gallery__wrap
+                picture
+                  source(media='(max-width: 375px)', srcset='./assets/gallery_photo8-mobile.jpg')
+                  img.gallery__img(src='./assets/gallery-photo8.jpg', alt='photo')
+                figcaption.gallery__img-desc Студенти переглянули фільм «Крути 1918»
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo12.jpg', alt='photo')
+                figcaption.gallery__img-desc Посвята в студенти
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo16.jpg', alt='photo')
+                figcaption.gallery__img-desc Не забуваємо дбати про чистоту довкілля
+              figure.gallery__wrap
+                img.gallery__img(src='./assets/gallery-photo20.jpg', alt='photo')
+                figcaption.gallery__img-desc Промислова фармація
+        .pagination
+          ul.pagination__list
+            li.page__item.page__item--disabled
+              a.page__link(href='#')
+                svg(width='9', height='16', viewBox='0 0 9 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                  path(d='M1.00021 7.99997C0.999756 7.76632 1.08113 7.53988 1.23021 7.35997L6.23021 1.35997C6.39995 1.15575 6.64386 1.02733 6.90829 1.00295C7.17272 0.97857 7.436 1.06023 7.64021 1.22997C7.84443 1.39971 7.97285 1.64362 7.99723 1.90805C8.02161 2.17247 7.93995 2.43575 7.77021 2.63997L3.29021 7.99997L7.61021 13.36C7.69328 13.4623 7.75531 13.58 7.79274 13.7063C7.83017 13.8326 7.84227 13.9651 7.82833 14.0962C7.81439 14.2272 7.77469 14.3542 7.71152 14.4698C7.64834 14.5854 7.56294 14.6874 7.46021 14.77C7.35739 14.8616 7.23676 14.9309 7.10589 14.9737C6.97502 15.0165 6.83672 15.0318 6.69965 15.0187C6.56259 15.0055 6.42972 14.9642 6.30936 14.8973C6.189 14.8304 6.08376 14.7394 6.00021 14.63L1.17021 8.62997C1.0447 8.44489 0.984842 8.22307 1.00021 7.99997Z', fill='white')
+            li.page__item.page__item--active
+              a.page__link.page__link--active(href='#') 1
+            li.page__item
+              a.page__link(href='#') 2
+            li.page__item
+              a.page__link(href='#') 3
+            li.page__item
+              a.page__link(href='#') ...
+            li.page__item
+              a.page__link(href='#') 16
+            li.page__item
+              a.page__link(href='#')
+                svg(width='9', height='16', viewBox='0 0 9 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                  path(d='M7.99979 8.00003C8.00024 8.23368 7.91887 8.46012 7.76979 8.64003L2.76979 14.64C2.60005 14.8442 2.35614 14.9727 2.09171 14.9971C1.82728 15.0214 1.564 14.9398 1.35979 14.77C1.15557 14.6003 1.02715 14.3564 1.00277 14.092C0.978387 13.8275 1.06005 13.5642 1.22979 13.36L5.70979 8.00003L1.38979 2.64003C1.30672 2.53774 1.24469 2.42004 1.20726 2.29371C1.16983 2.16737 1.15773 2.03488 1.17167 1.90385C1.18561 1.77282 1.22531 1.64584 1.28848 1.5302C1.35166 1.41456 1.43706 1.31255 1.53979 1.23003C1.64261 1.13845 1.76324 1.06909 1.89411 1.0263C2.02498 0.983505 2.16328 0.968203 2.30035 0.981345C2.43741 0.994488 2.57028 1.03579 2.69064 1.10268C2.811 1.16956 2.91624 1.26058 2.99979 1.37003L7.82979 7.37003C7.9553 7.55511 8.01516 7.77693 7.99979 8.00003Z', fill='#4F478F')

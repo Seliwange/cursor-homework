@@ -1,0 +1,1239 @@
+extends layout.pug
+
+block content
+    main.main
+      section.timetable
+        .wrapper
+          .timetable__inner
+            h1.timetable__title.title Розклад занять
+            .timetable__course
+              .course__header
+                h2.course__title.title 226 Фармація, промислова фармація
+              .timetable__accordion
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | І курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П.
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | IІ курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П.
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | IIІ курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П. 
+            .timetable__course
+              .course__header
+                h2.course__title.title 223 Медсестринство
+              .timetable__accordion
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | І курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П.
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | IІ курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П.
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | IIІ курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П. 
+                .accordion__item
+                  .accordion__header
+                    .timetable__wrap
+                      .accordion__header-inner
+                        button.accordion__button
+                          svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path.accordion__arrow(d='M16 12C16.0005 12.2336 15.9191 12.4601 15.77 12.64L10.77 18.64C10.6003 18.8442 10.3564 18.9726 10.092 18.997C9.82753 19.0214 9.56425 18.9397 9.36003 18.77C9.15581 18.6002 9.02739 18.3563 9.00301 18.0919C8.97863 17.8275 9.06029 17.5642 9.23003 17.36L13.71 12L9.39003 6.63997C9.30697 6.53768 9.24493 6.41998 9.2075 6.29364C9.17007 6.16731 9.15798 6.03481 9.17192 5.90379C9.18585 5.77276 9.22555 5.64578 9.28873 5.53014C9.3519 5.4145 9.4373 5.31249 9.54003 5.22997C9.64285 5.13839 9.76348 5.06903 9.89435 5.02624C10.0252 4.98344 10.1635 4.96814 10.3006 4.98128C10.4377 4.99443 10.5705 5.03573 10.6909 5.10262C10.8112 5.1695 10.9165 5.26052 11 5.36997L15.83 11.37C15.9555 11.5551 16.0154 11.7769 16 12Z', fill='black', fill-opacity='0.86') 
+                          | IV курс
+                        a.accordion__link(href='./css/nor.css', download='') 
+                          span Завантажити розклад
+                          img.accordion__img(src='./assets/pdf.svg', alt='pdf')
+                  .accordion__body
+                    .timetable__wrap
+                      .timetable__info
+                        .timetable__calendar
+                          img.calendar__img(src='./assets/calendar.svg', alt='calendar')
+                          p.calendar__date
+                            | Пн, 01.03 
+                            span  - Пт, 05.03
+                          img.calendar__arrow-left(src='./assets/calendar_arrow-left.svg', alt='arrow-left')
+                          img.calendar__arrow-right(src='./assets/calendar_arrow-right.svg', alt='arrow-right')
+                        .timetable__group
+                          ul.timetable__group-list
+                            li.timetable__group-item.timetable__group-item--active
+                              a.timetable__group-link(href='#') I Група
+                            li.timetable__group-item
+                              a.timetable__group-link(href='#') II Група
+                    table.timetable__table
+                      colgroup.timetable__table-group
+                        col
+                        col
+                        col
+                        col
+                        col
+                        col
+                      thead.timetable__table-head
+                        tr.timetable__table-row
+                          th.timetable__table-column Пара
+                          th.timetable__table-column Понеділок
+                          th.timetable__table-column Вівторок
+                          th.timetable__table-column Середа
+                          th.timetable__table-column Четвер
+                          th.timetable__table-column П’ятниця
+                      tbody.timetable__table-body
+                        tr.timetable__table-row
+                          td.timetable__table-column 0
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 1
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                          td.timetable__table-column Перша долік. допомога(1п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 2
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                        tr.timetable__table-row
+                          td.timetable__table-column 3
+                          td.timetable__table-column
+                          td.timetable__table-column
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                          td.timetable__table-column Перша долік. допомога(2п)
+                    .timetable__table--mobile
+                      ul.table__tab-list
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-monday') Пн
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-tuesday') Вт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-wednesday') Ср
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-thursday') Чт
+                        li.table__tab-item
+                          a.table__tab-link(href='#tab-friday') Пт
+                      table#tab-monday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-tuesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column
+                      table#tab-wednesday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-thursday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                      table#tab-friday.timetable__tab
+                        colgroup
+                          col
+                          col
+                        tbody.timetable__tab-body
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 0
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 1
+                            td.timetable__tab-column Перша долік. допомога(1п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 2
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                          tr.timetable__tab-row
+                            td.timetable__tab-column 3
+                            td.timetable__tab-column Перша долік. допомога(2п)
+                    .timetable__wrap
+                      p.timetable__speaker Перша долікарська допомога - Якимець Л.П.
+block append scripts  
+    script.
+      $(document).ready(function(){
+      $('.timetable__table--mobile').tabs();
+      });
+    script.
+      $(document).ready(function(){
+      $('.timetable__group-link').tabs();
+      });
+    script.
+      var acc = document.getElementsByClassName("accordion__header");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("accordion__header--active");
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+      panel.style.display = "none";
+      } else {
+      panel.style.display = "block";
+      }
+      });
+      }

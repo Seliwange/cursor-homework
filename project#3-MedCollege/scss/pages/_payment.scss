@@ -1,0 +1,248 @@
+/*Payment page styles start*/
+/*Cost styles start*/
+.cost{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 64px;
+}
+
+.cost__inner{
+    padding: 48px 0 0;
+}
+
+.cost__title{
+    margin-bottom: 32px;
+}
+
+.cost__btn{
+    padding: 20px 40px;
+    margin-bottom: 32px;
+}
+
+.cost__table{
+    font-size: 1em; /*16px / 16*/
+    line-height: 1.5;/* 24px / 16px*/
+    width: 100%;
+    background: #FFFFFF;
+    border-spacing: 0;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    
+    &-head{
+        background: #ECE9FF;
+    }
+    
+    &-body{
+        border: 1px solid #E0E0E0;
+    }
+}
+
+.cost__table-head .cost__table-column {
+    text-align: left;
+    font-weight: map-get($font-weights, medium);
+    padding: 13px 8px 13px 16px;
+}
+
+.cost__table-body .cost__table-column{
+    border-right: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: left;
+    padding: 13px 8px 13px 16px;
+}
+
+.cost__table-body .cost__table-column:first-child{
+    border-left: 1px solid #E0E0E0;
+}
+
+.cost__table-head .cost__table-column:first-child{
+    border-radius: 8px 0px 0px 0px;
+}
+.cost__table-head .cost__table-column:last-child{
+    border-radius: 0px 8px 0px 0px;
+}
+.cost__table-body .cost__table-row:last-child .cost__table-column:first-child{
+    border-radius: 0px 0px 0px 8px;
+}
+.cost__table-body .cost__table-row:last-child .cost__table-column:last-child{
+    border-radius: 0px 0px 8px 0px;
+}
+
+.cost__table-column:last-child{
+    text-align: right;
+}
+
+.cost__desc{
+    max-width: 869px;
+}
+
+.cost__text{
+    font-size: 1.125em; /*18px / 16*/
+    line-height: 1.8333333333; /*33px / 18px*/
+    
+    &:not(:last-child){
+        margin-bottom: 24px;
+    }
+    
+    &--dark{
+        color: #1F3841;
+    }
+    
+    &-link{
+        color: #786CD9;
+    }
+}
+/*Cost styles end*/
+
+/*Paymen styles start*/
+.payment__header{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.payment__title{
+    margin-right: 32px;
+}
+
+.payment__list{
+    display: flex;
+}
+
+.payment__item:not(:last-child){
+    margin-right: 24px;
+}
+
+.payment__body{
+    max-width: 720px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 48px 48px 56px;
+}
+
+.payment__form{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: map-get($font-weights, medium);
+    font-size: 14px;
+    line-height: 24px;
+    color: #7D7D7D;
+}
+
+.payment__input{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: map-get($font-weights, regular);
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 16px;
+    
+    &-wrap{
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 16px;
+    }
+}
+
+.payment__label{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: map-get($font-weights, regular);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.payment__specialty-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.payment__period-wrap{
+    margin-bottom: 40px;
+}
+
+.payment__title-radio{
+    font-weight: map-get($font-weights, semi-bold);
+    margin-bottom: 8px;
+}
+
+.payment__radio-label{
+    position: relative;
+    padding-left: 24px;
+}
+
+.payment__radio-label .payment__radio-input:checked ~ .checkmark{
+    border: 1px solid #4F478F;
+}
+
+.payment__radio-label .payment__radio-input:checked ~ .checkmark::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4F478F;
+}
+
+.payment__radio-input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin-right: 8px;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+}
+
+.payment__specialty-label:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.payment__period-label:not(:last-child){
+    margin-right: 24px;
+}
+
+.payment__sum{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    
+    &-label{
+        font-size: 1em;
+        margin-right: 108px;
+    }
+    
+    &-price{
+        font-weight: map-get($font-weights, bold);
+        font-size: 2em; /*32px / 16*/
+        line-height: 1.21875; /*39px / 32px*/
+        color: #786CD9;
+    }
+}
+
+.payment__form-btns{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.payment__btn{
+    padding: 20px 139px;
+    margin-right: 38px;
+}
+/*Paymen styles end*/
+/*Payment page styles end*/

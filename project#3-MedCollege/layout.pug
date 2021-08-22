@@ -1,0 +1,298 @@
+doctype html
+html(lang='uk')
+  head
+    block head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title Project#3 MedCollege
+        link(rel='stylesheet', href='./css/style.css')
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Mono:wght@400;700&family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700;900&family=Open+Sans:wght@300;400;600&display=swap', rel='stylesheet')
+        script(src='https://kit.fontawesome.com/7c1675e0a5.js', crossorigin='anonymous')
+  body
+    block header
+      header.header
+        .wrapper
+          .header__layout
+            .header__burger
+              span
+            .header__wrap
+              .logo
+                a.logo__link(href='index.html')
+                  picture
+                    source(media='(max-width: 375px)', srcset='./assets/logo-mobile.svg')
+                    img.logo__img(src='./assets/logo.svg', alt='logo')
+              .routs__menu.header__menu
+                .routs__menu-wrap
+                  button.routs__menu-list-btn Вступнику
+                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      path.arrow-down(d='M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z', fill='black')
+                  ul.routs__menu-list.header__submenu
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') День відкритих дверей
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Спеціальності
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Приймальна комісія
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Рейтингові списки вступників
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Накази про зарахування
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Нормативні документи
+                .routs__menu-wrap
+                  button.routs__menu-list-btn Студенту
+                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      path.arrow-down(d='M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z', fill='black')
+                  ul.routs__menu-list.header__submenu
+                    li.routs__menu-item
+                      a.routs__menu-link(href='gallery.html') Палітра студентського життя
+                    li.routs__menu-item
+                      a.routs__menu-link(href='timetable.html') Розклад занять
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Розклад екзаменів
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Державна кваліфікаційна атестація
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Електронний журнал успішності
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Перелік питань до екзаменів
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Дистанційне навчання
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Перелік питань до екзаменів
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Силабуси
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Каталог вибіркових дисциплів
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Працевлаштування випускників
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Нормативні документи
+                    li.routs__menu-item
+                      a.routs__menu-link(href='payment.html') Оплата навчання
+                .routs__menu-wrap
+                  button.routs__menu-list-btn Випускнику
+                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                      path.arrow-down(d='M6.17576 10.1602C6.07655 10.2506 6.01537 10.3697 6.00287 10.4969C5.99037 10.6241 6.02735 10.7512 6.10736 10.8561L6.17576 10.9324L11.5758 15.8407C11.6752 15.9309 11.8063 15.9865 11.9462 15.9978C12.0861 16.0092 12.2259 15.9756 12.3414 15.9029L12.4254 15.8407L17.8254 10.9324C17.9317 10.8363 17.9945 10.7074 18.0014 10.5712C18.0083 10.435 17.9589 10.3014 17.8628 10.1967C17.7668 10.092 17.631 10.0238 17.4824 10.0055C17.3337 9.98726 17.183 10.0203 17.0598 10.098L16.9758 10.1602L12.0006 14.6834L7.02536 10.1602C6.96963 10.1094 6.90342 10.0691 6.83052 10.0416C6.75763 10.0142 6.67948 10 6.60056 10C6.52164 10 6.4435 10.0142 6.3706 10.0416C6.29771 10.0691 6.2315 10.1094 6.17576 10.1602Z', fill='black')
+                  ul.routs__menu-list.header__submenu
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Історія успіху
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Спільнота випускників
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Про фонд
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Події
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Документи для скачування
+                    li.routs__menu-item
+                      a.routs__menu-link(href='#') Нормативні документи
+            .header__wrap
+              .header__btn-wrap.header__menu
+                button#registration.header__btn.btn Вхід / Реєстрація
+              .header__lang
+                form.lang__form(action='#')
+                  label(for='language')
+                  select#language.lang__select(name='select')
+                    option(value='УКР', selected='') УКР
+                    option(value='ENG') ENG
+        .header__border-img
+        .wrapper
+          nav.menu.header__menu
+            ul.header__menu-list.menu__list
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='index.html') Про нас
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='#') Освіта
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='#') Післядипломна освіта
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='#') Симуляційно-тренінговий центр
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='about.html') Медсестринська спільнота
+              li.header__menu-item.menu__list-item
+                a.header__menu-link.menu__list-link(href='news.html') Новини
+    block content
+    block footer
+      footer.footer
+        .wrapper
+          .footer__inner
+            nav.footer__menu
+              ul.footer__menu-list.menu__list
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='index.html') Про нас
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='#') Освіта
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='#') Післядипломна освіта
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='#') Симуляційно-тренінговий центр
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='about.html') Медсестринська спільнота
+                li.footer__menu-item.menu__list-item
+                  a.footer__menu-link.menu__list-link(href='news.html') Новини
+            .footer__border-img.border-img
+            .footer__wrap
+              .footer__content
+                ul.footer__content-list
+                  li.footer__content-item Вступнику
+                  li.footer__content-item
+                    a.footer__content-link(href='#') День відкритих дверей
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Спеціальності
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Приймальна комісія
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Рейтингові списки вступників
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Накази про зарахування
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Нормативні документи
+              .footer__content
+                ul.footer__content-list
+                  li.footer__content-item Студенту
+                  li.footer__content-item
+                    a.footer__content-link(href='gallery.html') Палітра студентського життя
+                  li.footer__content-item
+                    a.footer__content-link(href='timetable.html') Розклад занять
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Розклад екзаменів
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Державна кваліфікаційна атестація
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Електронний журнал успішності
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Перелік питань до екзаменів
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Дистанційне навчання
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Силабуси
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Каталог вибіркових дисциплів
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Працевлаштування випускників
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Нормативні документи
+                  li.footer__content-item
+                    a.footer__content-link(href='payment.html') Оплата навчання
+              .footer__content
+                ul.footer__content-list
+                  li.footer__content-item Випускнику
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Історія успіху
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Спільнота випускників
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Про фонд
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Події
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Документи для скачування
+                  li.footer__content-item
+                    a.footer__content-link(href='#') Нормативні документи
+            .footer__border-img.border-img
+            .footer__contacts
+              address.address
+                p м. Львів, вул. Миколайчука, 9
+              address.address
+                a.phone(href='tel:0322520305') (032) 252-03-05
+                a.phone(href='tel:0322587471') (032) 258-74-71
+                a.phone(href='tel:0322587395') (032) 258-73-95
+              .footer__socials
+                ul.footer__social-list
+                  li.footer__social-item
+                    a.footer__social-link(href='#')
+                      img.footer__social-img(src='./assets/facebook.svg', alt='facebook')
+                  li.footer__social-item
+                    a.footer__social-link(href='#')
+                      img.footer__social-img(src='./assets/instagram.svg', alt='instagram')
+            .copyright
+              p &copy; 2021 Львівський медичний фаховий коледж післядипломної освіти
+    block dialog
+      dialog#registration-dialog
+        .modal
+          .modal__holder
+            h2.modal__title.title Реєстрація
+            button#cancel.modal__close(type='reset')
+              img.modal__close-img(src='./assets/close-icon.svg', alt='close')
+            .modal__content
+              form.modal__registration(action='#')
+                p.modal__entry Вже маєте акаунт?
+                  a#entry.modal__entry-link(href='#')  Увійти
+                input#registration-name.modal__input.input(type='text', name='name', placeholder='Ім’я')
+                label(for='registration-name')
+                input#registration-surname.modal__input.input(type='text', name='surname', placeholder='Прізвище')
+                label(for='registration-surname')
+                .modal__input-wrap
+                  input#personal-number.modal__input.input(type='number', min='10', max='10000', name='personal-number', placeholder='Персональний номер')
+                  label.modal__label.label(for='personal-number') Персональний номер — номер залікової книжки
+                input#registration-email.email.modal__input.input(type='email', name='email', placeholder='Email')
+                label(for='registration-email')
+                input#registration-password.password.modal__input.input(type='password', name='password', placeholder='Пароль')
+                label(for='registration-password')
+                button.modal__btn.btn(type='submit') Створити акаунт
+      dialog#entry-dialog
+        .modal
+          .modal__holder
+            h2.modal__title.title Вхід
+            button#cancel-btn.modal__close(type='reset')
+              img.modal__close-img(src='./assets/close-icon.svg', alt='close')
+            .modal__content
+              form.modal__registration(action='#')
+                p.modal__entry Ще не маєте акаунт?
+                  a#registration-form.modal__entry-link(href='#')  Зареєструватись
+                input#entry-email.email.modal__input.input(type='email', name='email', placeholder='Email')
+                label(for='entry-email')
+                input#entry-password.password.modal__input.input(type='password', name='password', placeholder='Пароль')
+                label(for='entry-password')
+                button.modal__btn.btn Увійти
+    block scripts 
+        script.
+            (function() {
+            let registrationButton = document.getElementById('registration');
+            let cancelButton = document.getElementById('cancel');
+            let cancelEntryButton = document.getElementById('cancel-btn');
+            let registrationDialog = document.getElementById('registration-dialog');
+            let entryButton = document.getElementById('entry');
+            let entryDialog = document.getElementById('entry-dialog');
+            let registrationLink = document.getElementById('registration-form');
+            // registration button opens a modal dialog
+            registrationButton.addEventListener('click', function() {
+            registrationDialog.showModal();
+            });
+            // regiatration cancel button closes the dialog box
+            cancelButton.addEventListener('click', function() {
+            registrationDialog.close();
+            });
+            // entry button close registration modal dialog and opens an entry modal dialog
+            entryButton.addEventListener('click', function() {
+            registrationDialog.close();
+            entryDialog.showModal();
+            });
+            // entry cancel button closes the dialog box
+            cancelEntryButton.addEventListener('click', function() {
+            entryDialog.close();
+            });
+            // registration link close entry modal dialog and opens a registration modal dialog
+            registrationLink.addEventListener('click', function() {
+            entryDialog.close();
+            registrationDialog.showModal();
+            });
+            })();
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        script.
+            $(document).ready(function(){
+            $('.header__burger').click(function(event){
+            $('.header__burger, .header__menu').toggleClass('active');
+            });
+            });
+        script.
+            $(document).ready(function(){
+            $('.routs__menu-list-btn').click(function(event){
+            $('.routs__menu-list-btn, .header__submenu').toggleClass('header__submenu--active');
+            });
+            });

@@ -1,0 +1,98 @@
+extends layout.pug
+
+block content
+    main.main
+      section.cost
+        .wrapper
+          .cost__inner
+            h1.cost__title.title Вартість навчання за контрактом для вступників 2021 року
+            button.cost__btn.btn Оплатити онлайн
+            table.cost__table
+              colgroup.cost__table-group
+                col
+                col
+                col
+              thead.cost__table-head
+                tr.cost__table-row
+                  th.cost__table-column Освітній ступінь
+                  th.cost__table-column Спеціальність
+                  th.cost__table-column  
+                    | Вартість
+                    span  першого року 
+                    |  навчання (грн.)
+              tbody.cost__table-body
+                tr.cost__table-row
+                  td.cost__table-column Бакалавр
+                  td.cost__table-column 223 Медсестринство
+                  td.cost__table-column 18 400
+                tr.cost__table-row
+                  td.cost__table-column Фаховий молодший бакалавр
+                  td.cost__table-column 223 Медсестринство
+                  td.cost__table-column 14 600
+                tr.cost__table-row
+                  td.cost__table-column Фаховий молодший бакалавр
+                  td.cost__table-column 226 Фармація, промислова фармація
+                  td.cost__table-column 16 200
+            .cost__desc
+              p.cost__text Оплата за навчання може проводитись один раз на рік (до початку навчання), двічі на рік (до початку кожного семестру).
+              p.cost__text.cost__text--dark
+                | Вступники з високими балами ЗНО можуть претендувати на стипендії, які повністю покривають їх вартість навчання. 
+                br
+                | Детальніше  про стипендії та ліцензовані обсяги прийому 
+                a.cost__text-link(href='#') за посиланням
+                | .
+      section.payment
+        .wrapper
+          .payment__header
+            h2.payment__title.title Оплата за навчання
+            ul.payment__list
+              li.payment__item
+                a.payment__link(href='#')
+                  img.payment__img(src='./assets/mastercard.svg', alt='mastercard')
+              li.payment__item
+                a.payment__link(href='#')
+                  img.payment__img(src='./assets/visa.svg', alt='visa')
+              li.payment__item
+                a.payment__link(href='#')
+                  img.payment__img(src='./assets/privat24.svg', alt='privat24')
+          .payment__body
+            form.payment__form(action='#')
+              input#payment__name.payment__input.input(type='text', name='name', placeholder='Ім’я')
+              label(for='payment__name')
+              input#payment__surname.payment__input.input(type='text', name='surname', placeholder='Прізвище')
+              label(for='payment__surname')
+              .payment__input-wrap
+                input#payment__personal-number.payment__input.input(type='number', min='10', max='10000', name='personal-number', placeholder='Персональний номер')
+                label.payment__label.label(for='payment__personal-number') Персональний номер — номер залікової книжки
+              .payment__specialty-wrap
+                p.payment__title-radio Спеціальність :
+                label.payment__specialty-label.payment__radio-label(for='specialty-radio1')
+                  input#specialty-radio1.payment__radio-input(type='radio', name='specialty-radio', value='223 Медсестринство (бакалавр)', checked='') 
+                  | 223 Медсестринство (бакалавр)
+                  span.checkmark
+                label.payment__specialty-label.payment__radio-label(for='specialty-radio2')
+                  input#specialty-radio2.payment__radio-input(type='radio', name='specialty-radio', value='223 Медсестринство (Фаховий молодший бакалавр)') 
+                  | 223 Медсестринство (Фаховий молодший бакалавр)
+                  span.checkmark
+                label.payment__specialty-label.payment__radio-label(for='specialty-radio3')
+                  input#specialty-radio3.payment__radio-input(type='radio', name='specialty-radio', value='226 Фармація, промислова фармація (Фаховий молодший бакалавр)') 
+                  | 226 Фармація, промислова фармація (Фаховий молодший бакалавр)
+                  span.checkmark
+              .payment__period-wrap
+                p.payment__title-radio Оплата :
+                label.payment__period-label.payment__radio-label(for='period-radio1')
+                  input#period-radio1.payment__radio-input(type='radio', name='period-radio', value='Рік') 
+                  | Рік
+                  span.checkmark
+                label.payment__period-label.payment__radio-label(for='period-radio2')
+                  input#period-radio2.payment__radio-input(type='radio', name='period-radio', value='Пів року', checked='') 
+                  | Пів року
+                  span.checkmark
+              .payment__sum
+                p.payment__sum-label До оплати :
+                p.payment__sum-price
+                  span 9 200 грн.
+              .payment__form-btns
+                button.payment__btn.btn Оплатити
+                a.liqpay__link(href='#')
+                  img.liqpay__img(src='./assets/liqpay.svg', alt='liqpay')
