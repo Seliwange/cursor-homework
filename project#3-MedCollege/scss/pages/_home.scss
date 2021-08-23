@@ -545,7 +545,12 @@
         position: relative;
         
         &::before{
-            content: url(../assets/consultation-steps.png);
+            content: '';
+            background-image: url(../assets/consultation-steps.png);
+            background-repeat: no-repeat;
+            width: 911px;
+            height: 100%;
+            background-size: contain;
             position: absolute;
             top: 30px;
             left: 90px;
