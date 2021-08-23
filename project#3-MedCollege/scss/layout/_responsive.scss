@@ -4,8 +4,8 @@
         width: 100%;
     }
     .title{
-        font-size: 24px;
-        line-height: 38px;
+        font-size: size(large);
+        line-height: line(large);
     }
     .logo{
         margin-right: 0;
@@ -20,7 +20,7 @@
         &__holder {
             background: url(../assets/illustration_cross-mobile.svg) no-repeat;
             background-position: left top;
-            background-color: #FAFAFA;
+            background-color: $bg-light;
             border-radius: 8px;
             padding: 24px 40px 32px;
             position: relative;
@@ -44,7 +44,7 @@
 
     .hero {
         background: url(../assets/college-mobile.jpg) no-repeat;
-        background-color: #232040;
+        background-color: $base-color;
         background-position: center top;
         background-size: contain;
     }
@@ -52,7 +52,7 @@
         padding: 188px 0 40px;
     }
     .hero__title{
-        line-height: 30px;
+        line-height: line(medium);
         margin-bottom: 40px;
     }
     .hero__border-img:last-of-type{
@@ -79,8 +79,8 @@
         padding: 16px 16px 24px;
     }
     .program__table-title{
-        font-size: 18px;
-        line-height: 30px;
+        font-size: size(medium);
+        line-height: line(medium);
     }
     .program__table-column--mobile{
         display: none;
@@ -102,7 +102,7 @@
         padding: 16px 16px 24px;
 
         &-title{
-            line-height: 24px;
+            line-height: line(regular);
         }
 
         &:nth-child(1){
@@ -129,18 +129,18 @@
         display: none;
     }
     .slider__title{
-        font-size: 18px;
-        line-height: 24px;
+        font-size: size(medium);
+        line-height: line(regular);
         margin-bottom: 12px;
     }
     .slider__desc{
-        font-size: 13px;
-        line-height: 21px;
+        font-size: size(small);
+        line-height: line(base);
         margin-bottom: 16px;
     }
     .slider__btn{
-        font-size: 14px;
-        line-height: 16px;
+        font-size: size(base);
+        line-height: line(thin);
         padding: 16px 37px;
     }
     .slider__items,
@@ -197,14 +197,14 @@
         width: 10px;
         height: 10px;
         margin-right: 16px;
-        background-color: #C4C4C4;
-        border: 1px solid #C4C4C4;
+        background-color: $input-border;
+        border: 1px solid $input-border;
         border-radius: 50%;
     }
     .slider__carousel-dot--active,
     .meeting-slider__carousel-dot--active {
-        background: #4F478F;
-        border: 1px solid #4F478F;
+        background: $primary-color;
+        border: 1px solid $primary-color;
     }
  
 
@@ -219,8 +219,8 @@
         margin-bottom: 8px;
     }
     .tour__desc{
-        font-size: 14px;
-        line-height: 21px;
+        font-size: size(base);
+        line-height: line(base);
         margin-bottom: 24px;
     }
     .tour__link-img{
@@ -228,8 +228,8 @@
         height: 48px;
     }
     .tour__link-text{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: size(regular);
+        line-height: line(regular);
     }
     .tour__img{
         width: 100%;
@@ -250,20 +250,20 @@
         margin-bottom: 24px;
     }
     .news__article-title{
-        font-size: 18px;
-        line-height: 24px;
+        font-size: size(medium);
+        line-height: line(regular);
     }
     .news__article-desc{
-        font-size: 13px;
-        line-height: 21px;
+        font-size: size(small);
+        line-height: line(base);
     }
     .news__article-link{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: size(regular);
+        line-height: line(regular);
     }
     .news__btn{
-        font-size: 14px;
-        line-height: 16px;
+        font-size: size(base);
+        line-height: line(thin);
         grid-column: 1;
         padding: 16px 24px;
         margin-top: 8px;
@@ -281,9 +281,9 @@
 
 
     .consultation__info-title{
-        font-size: 24px;
-        line-height: 28px;
-        color: #232040;
+        font-size: size(large);
+        line-height: line(normal);
+        color: $base-color;
         margin-bottom: 48px;
     }
     .consultation__info-cards{
@@ -310,8 +310,8 @@
         margin-bottom: 24px;
     }
     .consultation__card-title{
-        font-size: 18px;
-        line-height: 22px;
+        font-size: size(medium);
+        line-height: line(base-second);
     }
     .consultation__form-inner{
         padding: 32px 40px 56px;
@@ -320,7 +320,7 @@
         flex-direction: column;
     }
     .consultation__form-title{
-        line-height: 28px;
+        line-height: line(normal);
     }
     .consultation__form-input{
         padding: 14px 16px;
@@ -332,8 +332,8 @@
         }
     }
     .consultation__form-btn{
-        font-size: 14px;
-        line-height: 16px;
+        font-size: size(base);
+        line-height: line(thin);
         padding: 16px;
     }
 
@@ -358,7 +358,7 @@
         width: 100%;
         left: 0;
         height: 1px;
-        background: linear-gradient(90deg, #4D4680 0.18%, #786CD9 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
+        background: linear-gradient(90deg, $accent-color 0.18%, $secondary-color 6.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
         border-radius: 4px;
         margin-top: 16px;
     }
@@ -383,12 +383,12 @@
         width: 100%;
         left: 0;
         height: 1px;
-        background: linear-gradient(90deg, #4D4680 0.18%, #786CD9 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
+        background: linear-gradient(90deg, $accent-color 0.18%, $secondary-color 6.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
         border-radius: 4px;
         margin-top: 24px;
     }
     .footer__content-list{
-        font-size: 16px;
+        font-size: size(regular);
         line-height: 32px;
     }
     .address:first-of-type{
@@ -445,8 +445,8 @@
     .professors__text,
     .professors__list-header,
     .professors__list{
-        font-size: 13px;
-        line-height: 21px;
+        font-size: size(small);
+        line-height: line(base);
     }
     .about__img-wrap{
         flex-direction: column;
@@ -474,8 +474,8 @@
         }
     }
     .professors__card-subtitle{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: size(base);
+        line-height: line(small);
     }
     .professors__list{
         margin-bottom: 16px;
@@ -512,25 +512,25 @@
         margin-right: 0;        
     }
     .qoute__text{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: size(regular);
+        line-height: line(regular);
         margin-bottom: 48px;
     }
     .quote__author{
-        font-size: 16px;
-        line-height: 20px;
+        font-size: size(regular);
+        line-height: line(small);
 
         &-position{
-            font-size: 14px;
-            line-height: 22px;
+            font-size: size(base);
+            line-height: line(base-second);
         }
     }
     .meeting__title {
         margin-bottom: 24px;
     }
     .meeting__img-desc{
-        font-size: 13px;
-        line-height: 21px;
+        font-size: size(small);
+        line-height: line(base);
     }
     .meeting__img img{
         display: none;
@@ -598,7 +598,7 @@
         height: 72px;
     }
     .header__btn{
-        line-height: 22px;
+        line-height: line(base-second);
         padding: 6px 16px;
     }
 
@@ -613,7 +613,7 @@
             content: '';
             position: absolute;
             width: 100%;
-            background: #4F478F;
+            background: $primary-color;
             border-radius: 23px;
             height: 3px;
             left: 0;
@@ -628,7 +628,7 @@
         & span{
             position: absolute;
             width: 100%;
-            background: #4F478F;
+            background: $primary-color;
             border-radius: 23px;
             height: 3px;
             left: 0;
@@ -654,7 +654,7 @@
         left: -100%;
         max-width: 319px;
         width: 100%;
-        background: #FFFFFF;
+        background: $light;
         transition: all 0.4s ease-in-out;
 
         &.active{
@@ -674,14 +674,14 @@
         max-width: 319px;
         width: 100%;
         height: 100%;
-        background: #FFFFFF;
+        background: $light;
         padding: 12px 32px;
    
         &:not(:last-of-type){
             margin-bottom: 16px;
         }
         &:hover{
-            background: #ECE9FF;
+            background: $sidebar-color;
             border-radius: 2px;
         }
     }
@@ -704,7 +704,7 @@
     }
     .header__menu-list{
         display: block;
-        background: #FFFFFF;
+        background: $light;
         padding-bottom: 16px;
     }
     .header__menu-item{
@@ -714,13 +714,13 @@
             margin-bottom: 16px;
         }
         &:hover{
-            background: #ECE9FF;
+            background: $sidebar-color;
             border-radius: 2px;
         }
     }
     .header__menu-link:hover{
         border-bottom: none;
-        color: #4F478F;
+        color: $primary-color;
     }
     /*Burger menu styles end*/
 
@@ -733,7 +733,7 @@
         left: -100%;
         max-width: 319px;
         width: 100%;
-        background: #FFFFFF;
+        background: $light;
         transition: all 0.3s ease-in-out;
     }
     .routs__menu-list-btn:focus + .routs__menu-list{
@@ -758,7 +758,7 @@
             width: 100%;
             left: 0;
             height: 1px;
-            background: linear-gradient(90deg, #4D4680 0.18%, #786CD9 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
+            background: linear-gradient(90deg, $accent-color 0.18%, $secondary-color 6.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
             border-radius: 4px;
         }
     }
@@ -768,12 +768,12 @@
     }
     .routs__menu-wrap:nth-child(2) .routs__menu-list-btn:focus.header__submenu--active{
         transform: translateY(-74px);
-        background: #ECE9FF;
+        background: $sidebar-color;
         padding: 12px 0;
     }
     .routs__menu-wrap:nth-child(3) .routs__menu-list-btn:focus.header__submenu--active{
         transform: translateY(-136px);
-        background: #ECE9FF;
+        background: $sidebar-color;
         padding: 12px 0;
     }
     .routs__menu-list-btn:focus.header__submenu--active::before{
@@ -790,8 +790,8 @@
         padding: 32px 0 0;
     }
     .cost__title{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: size(large);
+        line-height: line(medium);
         margin-bottom: 24px;
     }
     .cost__btn{
@@ -800,18 +800,20 @@
     }
     .cost__table{
         margin-bottom: 16px;
+        font-size: size(base);
+        line-height: line(small);
     }
     .cost__text{
-        font-weight: map-get($font-weights, light);
-        font-size: 16px;
-        line-height: 24px;
+        font-weight: weight(light);
+        font-size: size(regular);
+        line-height: line(regular);
     }
     .cost__table-column span{
         display: none;
     }
     .payment__title{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: size(large);
+        line-height: line(medium);
     }
     .payment__list{
         margin-top: 16px;
@@ -822,18 +824,22 @@
     .payment__sum-label{
         margin-right: 25px;
     }
+    .payment__form-btns{
+        flex-direction: column;
+    }
     .payment__btn{
         padding: 20px 108px;
         margin-right: 0;
     }
     .liqpay__link{
         margin-top: 16px;
+        align-self: flex-start;
     }
 
     /*Timetable page styles start*/
     .course__title{
-        font-size: 16px;
-        line-height: 22px;
+        font-size: size(regular);
+        line-height: line(base-second);
     }
     .accordion__link span{
         display: none;
@@ -846,8 +852,8 @@
     }
     .timetable__title{
         margin: 0 0 24px;
-        font-size: 24px;
-        line-height: 38px;
+        font-size: size(large);
+        line-height: line(large);
     }
     .timetable__wrap {
         padding: 0 24px 0 16px;
@@ -869,7 +875,7 @@
     }
     .timetable__tab{
         width: 100%;
-        background: #FCFCFC;
+        background: $table-bg;
         border-collapse: collapse;
         margin-bottom: 16px;
     }
@@ -881,19 +887,19 @@
     .table__tab-item{
         width: 100%;
         background: #F9F9F9;
-        border: 1px solid #E0E0E0;
+        border: 1px solid $border-light;
         border-radius: 8px 8px 0px 0px;
         padding: 13px 16px;
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(bold);
     }
     .timetable__tab-body{
-        line-height: 22px;
+        line-height: line(base-second);
     }
     .timetable__tab-column:first-child{
         width: 99px;
     } 
     .timetable__tab-body .timetable__tab-column{
-        border: 1px solid #DADADA;
+        border: 1px solid $table-border;
         padding: 13px 8px 13px 16px;
         text-align: left;
         border-left: none;
@@ -908,7 +914,7 @@
         border-bottom: none;
     }
     .ui-tabs-active .table__tab-link{
-        color: #4F478F;
+        color: $primary-color;
     }
     /*Timetable page styles end*/
 }

@@ -14,7 +14,7 @@
 
 .sidebar__menu{
     min-width: 274px;
-    background: #FFFFFF;
+    background: $light;
     box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15), inset -1px 0px 0px #F0F0F0;
 }
 
@@ -25,12 +25,8 @@
 .sidebar__btn,
 .sidebar__self-link{
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: map-get($font-weights, medium);
-    font-size: 14px;
-    line-height: 22px;
-    color: rgba(0, 0, 0, 0.86);
+    @extend %type-style-list;
+    color: $text-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +40,7 @@
 .sidebar__btn{
 
     &:focus{
-        color: #4F478F;
+        color: $primary-color;
 
         svg{
             transform: rotate(180deg);
@@ -55,7 +51,7 @@
 .sidebar__list{
     min-width: 250px;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: $light;
     display: none;
     opacity: 0;
     pointer-events: none;
@@ -70,8 +66,8 @@
     padding: 9px 0px 9px 48px;
     
     &:hover{
-        background: #ECE9FF;
-        border-right: 3px solid #4F478F;
+        background: $sidebar-color;
+        border-right: 3px solid $primary-color;
     }
 }
 
@@ -83,16 +79,16 @@
 }
 
 .sidebar__link{
-    color: rgba(0, 0, 0, 0.86);
+    color: $text-color;
     
     &:hover{
-        color: #4F478F;
+        color: $primary-color;
     }
 }
 
 .sidebar__self-link:hover{
-    color: #4F478F;
-    background: #ECE9FF;
+    color: $primary-color;
+    background: $sidebar-color;
 }
 /*Sidebar styles end*/
 
@@ -107,10 +103,10 @@
 }
 
 .about__title{
-    font-weight: map-get($font-weights, bold);
-    font-size: 2.5em; /*40px / 16*/
-    line-height: 1.2; /*48px / 40px*/
-    color: #3D3866;
+    font-weight: weight(bold);
+    font-size: size(title-lg);
+    line-height: line(title-lg);
+    color: $title-color;
     margin-bottom: 32px;
 }
 
@@ -132,16 +128,16 @@
     line-height: 33px;
     
     &-lato{
-        font-family: 'Lato', sans-serif;
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.6666667; /*30px / 18px*/
+        font-family: $font-family-lato;
+        font-size: size(medium-flexible);
+        line-height: line(medium-flexible);
     }
     
     &-list{
-        font-family: 'Open Sans',sans-serif;
-        font-weight: map-get($font-weights, regular);
-        font-size: 18px;
-        line-height: 33px;
+        font-family: $font-family-base;
+        font-weight: weight(regular);
+        font-size: size(medium);
+        line-height: line(middle);
     }
     &-item{
         text-indent: 30px;
@@ -167,10 +163,10 @@
     
     &-info{
         max-width: 478px;
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.6666667; /*30px / 18px*/
-        color: #000000;
-        background: #FFFFFF;
+        font-size: size(medium-flexible);
+        line-height: line(medium-flexible);
+        color: $dark;
+        background: $light;
         box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.15);
         border-radius: 12px;
         padding: 32px 32px 40px 32px;
@@ -233,29 +229,29 @@
 }
 
 .professors__card-title{
-    font-weight: map-get($font-weights, bold);
-    font-size: 4em; /*64px / 16*/
-    line-height: 1.21875; /*78px / 64px*/
-    color: #786CD9;
+    font-weight: weight(bold);
+    font-size: size(title-xxlg);
+    line-height: line(title-xxlg);
+    color: $secondary-color;
 }
 
 .professors__card-subtitle {
-    font-weight: map-get($font-weights, regular);
-    font-size: 1em; /*16px / 16*/
-    line-height: 1.5;/* 24px / 16px*/
+    font-weight: weight(regular);
+    font-size: size(regular-flexible);
+    line-height: line(regular-flexible);
 }
 
 .professors__text{
-    font-size: 1.125em; /*18px / 16*/
-    line-height: 1.6666667; /*30px / 18px*/
+    font-size: size(medium-flexible);
+    line-height: line(medium-flexible);
 }
 
 .professors__list-header,
 .professors__list{
     list-style: disc inside;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: map-get($font-weights, regular);
-    font-size: 1.125em; /*18px / 16*/
+    font-family: $font-family-base;
+    font-weight: weight(regular);
+    font-size: size(medium-flexible);
     line-height: 2.222222222; /*40px / 18px*/
 }
 .professors__list-header{
@@ -274,7 +270,7 @@
 .quote{
     min-height: 471px;
     grid-area: quote;
-    background: #F2F5F9;
+    background: $bg-section;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 135px 300px 1fr 135px;
@@ -291,11 +287,11 @@
 }
 
 .quote__desc{
-    font-family: 'Montserrat',sans-serif;
-    font-weight: map-get($font-weights, semi-bold);
-    font-size: 1.25em; /*20px / 16*/
-    line-height: 1.5; /*30px / 20px*/
-    color: #232040;
+    font-family: $font-family-secondary;
+    font-weight: weight(semi-bold);
+    font-size: size(middle-flexible);
+    line-height: line(regular-flexible);
+    color: $base-color;
     position: relative;
     padding-top: 50px;
     z-index: 1;
@@ -322,14 +318,14 @@
 }
 
 .quote__author{
-    font-size: 1.125em; /*18px / 16*/
-    line-height: 1.333333333333; /*24px / 18px*/
+    font-size: size(medium);
+    line-height: line(regular);
     margin-bottom: 8px;
     
     &-position{
-        font-weight: map-get($font-weights, medium);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.375;/* 22px / 16px*/
+        font-weight: weight(medium);
+        font-size: size(regular);
+        line-height: line(base-second);
     }
     
     &-img{
@@ -388,8 +384,8 @@
     column-gap: 24px;
     
     &-desc{
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.6666667; /*30px / 18px*/
+        font-size: size(medium);
+        line-height: line(medium);
         margin-top: 32px;
     }
 }

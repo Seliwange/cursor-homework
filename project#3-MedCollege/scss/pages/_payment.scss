@@ -1,7 +1,7 @@
 /*Payment page styles start*/
 /*Cost styles start*/
 .cost{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-secondary;
     margin-bottom: 64px;
 }
 
@@ -19,10 +19,10 @@
 }
 
 .cost__table{
-    font-size: 1em; /*16px / 16*/
-    line-height: 1.5;/* 24px / 16px*/
+    font-size: size(regular);
+    line-height: size(regular);
     width: 100%;
-    background: #FFFFFF;
+    background: $light;
     border-spacing: 0;
     border-radius: 8px;
     margin-bottom: 24px;
@@ -32,25 +32,25 @@
     }
     
     &-body{
-        border: 1px solid #E0E0E0;
+        border: 1px solid $border-light;
     }
 }
 
 .cost__table-head .cost__table-column {
     text-align: left;
-    font-weight: map-get($font-weights, medium);
+    font-weight: weight(medium);
     padding: 13px 8px 13px 16px;
 }
 
 .cost__table-body .cost__table-column{
-    border-right: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid $border-light;
+    border-bottom: 1px solid $border-light;
     text-align: left;
     padding: 13px 8px 13px 16px;
 }
 
 .cost__table-body .cost__table-column:first-child{
-    border-left: 1px solid #E0E0E0;
+    border-left: 1px solid $border-light;
 }
 
 .cost__table-head .cost__table-column:first-child{
@@ -75,19 +75,19 @@
 }
 
 .cost__text{
-    font-size: 1.125em; /*18px / 16*/
-    line-height: 1.8333333333; /*33px / 18px*/
+    font-size: size(medium-flexible);
+    line-height: line(middle-flexible);
     
     &:not(:last-child){
         margin-bottom: 24px;
     }
     
     &--dark{
-        color: #1F3841;
+        color: $text-accent;
     }
     
     &-link{
-        color: #786CD9;
+        color: $secondary-color;
     }
 }
 /*Cost styles end*/
@@ -115,42 +115,42 @@
 .payment__body{
     max-width: 720px;
     width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background: $light;
+    border: 1px solid $border-light;
     border-radius: 8px;
     padding: 48px 48px 56px;
 }
 
 .payment__form{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-secondary;
     font-style: normal;
-    font-weight: map-get($font-weights, medium);
-    font-size: 14px;
-    line-height: 24px;
+    font-weight: weight(medium);
+    font-size: size(base);
+    line-height: line(regular);
     color: #7D7D7D;
 }
 
 .payment__input{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-roboto;
     font-style: normal;
-    font-weight: map-get($font-weights, regular);
-    font-size: 14px;
-    line-height: 20px;
-    border: 1px solid #E0E0E0;
+    font-weight: weight(regular);
+    font-size: size(base);
+    line-height: line(small);
+    border: 1px solid $border-light;
     margin-bottom: 16px;
     
     &-wrap{
-        color: rgba(0, 0, 0, 0.5);
+        color: $input-color;
         margin-bottom: 16px;
     }
 }
 
 .payment__label{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-roboto;
     font-style: normal;
-    font-weight: map-get($font-weights, regular);
-    font-size: 13px;
-    line-height: 20px;
+    font-weight: weight(regular);
+    font-size: size(small);
+    line-height: line(small);
 }
 
 .payment__specialty-wrap{
@@ -164,7 +164,7 @@
 }
 
 .payment__title-radio{
-    font-weight: map-get($font-weights, semi-bold);
+    font-weight: weight(semi-bold);
     margin-bottom: 8px;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .payment__radio-label .payment__radio-input:checked ~ .checkmark{
-    border: 1px solid #4F478F;
+    border: 1px solid $primary-color;
 }
 
 .payment__radio-label .payment__radio-input:checked ~ .checkmark::after{
@@ -185,7 +185,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #4F478F;
+    background: $primary-color;
 }
 
 .payment__radio-input{
@@ -203,8 +203,8 @@
     left: 0;
     height: 16px;
     width: 16px;
-    background-color: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background-color: $light;
+    border: 1px solid $border-light;
     border-radius: 50%;
 }
 
@@ -227,17 +227,16 @@
     }
     
     &-price{
-        font-weight: map-get($font-weights, bold);
-        font-size: 2em; /*32px / 16*/
-        line-height: 1.21875; /*39px / 32px*/
-        color: #786CD9;
+        font-weight: weight(bold);
+        font-size: size(title-base);
+        line-height: line(title-xxlg);
+        color: $secondary-color;
     }
 }
 
 .payment__form-btns{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .payment__btn{

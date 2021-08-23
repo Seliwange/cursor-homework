@@ -6,7 +6,7 @@
 /*Hero styles start*/
 .hero{
     background: url(../assets/college.jpg) no-repeat;
-    background-color: #232040;
+    background-color: $base-color;
     background-position: center right;
     background-size: contain;
     
@@ -30,8 +30,8 @@
         }
 
         &-text{
-            font-weight: map-get($font-weights, light);
-            color: rgba(255, 255, 255, 0.86);
+            font-weight: weight(light);
+            color: $text-color-light;
         }
 
         &-link{
@@ -41,10 +41,10 @@
     }
     
     &__title{
-        font-weight: map-get($font-weights, bold);
-        font-size: 2.125rem; /*34px / 16*/
-        line-height: 1.2352941; /*42px / 34px*/
-        color: #FFFFFF;
+        font-weight: weight(bold);
+        font-size: size(title-medium);
+        line-height: line(title-medium);
+        color: $light;
         margin-bottom: 57px;
     }
     
@@ -59,15 +59,11 @@
     }
     
     &__link-text{
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: map-get($font-weights, bold);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.5; /*24px / 16px*/
-        color: #FFFFFF;
+        @extend %type-style-link;
+        color: $light;
         
         &:hover{
-            color: #786CD9;
+            color: $secondary-color;
         }
     }
 }
@@ -75,7 +71,7 @@
 
 /*Programs styles start*/
 .programs{
-    background: #F2F5F9;
+    background: $bg-section;
     margin-bottom: 80px;
     
     &__inner{
@@ -83,9 +79,9 @@
     }
     
     &__title{
-        font-weight: map-get($font-weights, bold);
-        font-size: 2.5em; /*40px / 16*/
-        line-height: 1.2; /*48px / 40px*/
+        font-weight: weight(bold);
+        font-size: size(title-lg);
+        line-height: line(title-lg);
         margin-bottom: 42px;
     }
     
@@ -104,13 +100,13 @@
     &-nursing{
         background: url(../assets/Illustration_nurse.png) no-repeat;
         background-position: right bottom;
-        background-color: #FFFFFF;
+        background-color: $light;
     }
     
     &-pharmacy{
         background: url(../assets/Illustration_pharmacy.png) no-repeat;
         background-position: right bottom;
-        background-color: #FFFFFF;
+        background-color: $light;
     }
     
     &-inner{
@@ -118,22 +114,22 @@
     }
     
     &-btn{
-        font-family: 'Comfortaa', cursive;
+        font-family: $font-family-comforta;
         font-style: normal;
-        font-weight: map-get($font-weights, bold);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.5; /*24px / 16px*/
-        color: #4D4680;
+        font-weight: weight(bold);
+        font-size: size(regular);
+        line-height: line(regular);
+        color: $accent-color;
         padding: 8px 24px;
         border-radius: 8px;
         background: none;
-        border: 2px solid #4D4680;
+        border: 2px solid $accent-color;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         transition: all 0.4s ease;
         
         &:hover{
-            background-color: #4D4680;
-            color: #FFFFFF;
+            background-color: $accent-color;
+            color: $light;
         }
     }
 }
@@ -146,16 +142,16 @@
     margin-bottom: 40px;
     
     &-title{
-        font-size: 1.5em; /*24px / 16*/
-        line-height: 1.58333333333; /*38px / 24px*/
+        font-size: size(title-small);
+        line-height: line(title-small);
         text-align: left;
         margin-bottom: 8px;
     }
     
     &-head{
-        font-weight: map-get($font-weights, semi-bold);
-        font-size: 0.75em; /*12px / 16*/
-        line-height: 2; /*24px / 12px*/
+        font-weight: weight(semi-bold);
+        font-size: size(thin);
+        line-height: line(regular);
         opacity: 0.6;
         text-align: left;
     }
@@ -181,7 +177,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
     justify-content: space-between;
-    color: rgba(255, 255, 255, 0.85);
+    color: $text-color-light;
 }
 
 .info__card{
@@ -207,26 +203,26 @@
     }
     
     &-title{
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(bold);
         line-height: 0.75; /*24px / 32px*/
-        color: rgba(255, 255, 255, 0.85);
+        color: $text-color-light;
         margin-bottom: 8px;
     }
     
     &-desc{
-        font-weight: map-get($font-weights, light);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.5; /*24px / 16px*/
+        font-weight: weight(light);
+        font-size: size(regular-flexible);
+        line-height: line(regular-flexible);
         margin-bottom: 24px;
     }
     
     &-link{
-        font-family: 'Comfortaa', cursive;
+        font-family: $font-family-comforta;
         font-style: normal;
-        font-weight: map-get($font-weights, bold);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.5; /*24px / 16px*/
-        color: rgba(255, 255, 255, 0.85);
+        font-weight: weight(bold);
+        font-size: size(regular);
+        line-height: line(regular);
+        color: $text-color-light;
         display: flex;
         align-items: center;
         
@@ -274,9 +270,9 @@
     }
     
     &__pagination{
-        font-family: 'Roboto Mono', monospace;
+        font-family: $font-family-roboto-mono;
         font-style: normal;
-        font-weight: map-get($font-weights, regular);
+        font-weight: weight(regular);
         font-size: 28px;
         line-height: 38px;
         padding-top: 29px;
@@ -286,10 +282,10 @@
         align-items: center;
 
         &--active span{
-            font-weight: map-get($font-weights, bold);
+            font-weight: weight(bold);
             font-size: 28px;
             line-height: 38px;
-            color: #4F478F;
+            color: $primary-color;
         }
     }
     
@@ -303,7 +299,7 @@
     
     &__info{
         max-width: 652px;
-        background: #FFFFFF;
+        background: $light;
         box-shadow: 0px 2px 12px 2px rgba(37, 51, 66, 0.12);
         filter: drop-shadow(0px 2px 12px rgba(10, 30, 52, 0.08));
         border-radius: 12px;
@@ -311,14 +307,14 @@
     }
     
     &__title{
-        font-size: 1.75em; /*28px / 16*/
-        line-height: 1.42857142; /*40px / 28px*/
+        font-size: size(title-regular);
+        line-height: line(title-regular);
         margin-bottom: 16px;
     }
     
     &__desc{
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.833333333; /*33px / 18px*/
+        font-size: size(medium-flexible);
+        line-height: line(middle-flexible);
         margin-bottom: 24px;
     }
     
@@ -366,7 +362,7 @@
     }
     
     &__info{
-        background: #F2F5F9;
+        background: $bg-section;
         border-radius: 8px 0 0 8px;
         padding: 32px;
         
@@ -381,9 +377,9 @@
     }
     
     &__desc{
-        font-weight: map-get($font-weights, light);
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.5; /*27px / 18px*/
+        font-weight: weight(light);
+        font-size: size(medium-flexible);
+        line-height: line(regular-flexible);
         margin-bottom: 52px;
     }
     
@@ -393,15 +389,15 @@
     }
     
     &__link-text{
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-family-secondary;
         font-style: normal;
-        font-weight: map-get($font-weights, semi-bold);
-        font-size: 1.125em; /*18px / 16*/
-        line-height: 1.33333333;/* 24px / 18px */
-        color: #4F478F;
+        font-weight: weight(semi-bold);
+        font-size: size(medium);
+        line-height: line(regular);
+        color: $primary-color;
         
         &:hover{
-            color: #786CD9;
+            color: $secondary-color;
         }
     }
     
@@ -418,9 +414,9 @@
     
     &__title{
         text-align: center;
-        font-weight: map-get($font-weights, bold);
-        font-size: 2.5em; /*40px / 16*/
-        line-height: 1.2; /*48px / 40px*/
+        font-weight: weight(bold);
+        font-size: size(title-lg);
+        line-height: line(title-lg);
         margin-bottom: 48px;
     }
     
@@ -445,8 +441,8 @@
 
 
 .news__article{
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
+    background: $light;
+    border: 1px solid $article-border;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
@@ -467,9 +463,9 @@
     }
     
     &-title{
-        font-size: 1.5em; /*24px / 16*/
-        line-height: 1.33333333;/*32px / 24px*/
-        color: rgba(0, 0, 0, 0.86);
+        font-size: size(title-small);
+        line-height: line(title-thin);
+        color: $text-color;
         margin-bottom: 16px;
     }
     
@@ -478,17 +474,17 @@
     }
     
     &-link{
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-family-secondary;
         font-style: normal;
-        font-weight: map-get($font-weights, semi-bold);
-        font-size: 1em; /*16px / 16*/
-        line-height: 1.5;/*24px / 16px*/
-        color: #4D4680;
+        font-weight: weight(semi-bold);
+        font-size: size(regular);
+        line-height: line(regular);
+        color: $accent-color;
         display: flex;
         align-items: center;
         
         &:hover{
-            color: #786CD9;
+            color: $secondary-color;
         }
         
         i{
@@ -509,8 +505,8 @@
 }
 
 .news__article-main{
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
+    background: $light;
+    border: 1px solid $article-border;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
@@ -532,12 +528,12 @@
 
 /*Consultation styles start*/
 .consultation__info{
-    background: #F2F5F9;
+    background: $bg-section;
     border-radius: 8px 8px 0 0;
     padding: 32px 40px 90px;
     
     &-title{
-        color: #3D3866;
+        color: $title-color;
         margin-bottom: 72px;
         text-align: center;
     }
@@ -574,9 +570,9 @@
 }
 
 .consultation__card-title{
-    font-size: 1.5em; /*24px / 16*/
-    line-height: 1.3333333333333; /*32px / 24px*/
-    color: rgba(0, 0, 0, 0.85);
+    font-size: size(title-small);
+    line-height: line(title-thin);
+    color: $text-color-brighter;
 }
 
 .consultation__form{
@@ -585,29 +581,29 @@
     justify-content: center;
     
     &-inner{
-        background: linear-gradient(0deg, #7CACB3, #7CACB3), #786CD9;
+        background: linear-gradient(0deg, #7CACB3, #7CACB3), $secondary-color;
         border-radius: 0 0 8px 8px;
         padding: 40px 46px 72px;
     }
     
     &-title{
-        color: #FFFFFF;
+        color: $light;
         text-align: center;
         margin-bottom: 24px;
     }
     
     &-input{
         min-width: 250px;
-        background: #FFFFFF;
-        border: 1px solid #FFFFFF;
+        background: $light;
+        border: 1px solid $light;
         border-radius: 5px;
         padding: 21px 24px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $font-family-base;
         font-style: normal;
-        font-weight: map-get($font-weights, regular);
-        font-size: 14px;
-        line-height: 22px;
-        color: rgba(0, 0, 0, 0.5);
+        font-weight: weight(regular);
+        font-size: size(base);
+        line-height: line(base-second);
+        color: $input-color;
         margin-right: 24px;
     }
     

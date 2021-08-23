@@ -1,0 +1,53 @@
+@import "variables";
+
+@function weight($weight-name){
+    @return map-get($font-weight, $weight-name);
+}
+
+@function size($size-name){
+    @return map-get($font-size, $size-name);
+}
+
+@function line($line-name){
+    @return map-get($line-height, $line-name);
+}
+
+%type-style-body{
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: weight(regular);
+    font-size: size(base-flexible);
+    line-height: line(base-flexible);
+}
+
+%type-style-heading{
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: weight(bold);
+    font-size: size(title-base);
+    line-height: line(title-base);
+}
+
+%type-style-list{
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: weight(medium);
+    font-size: size(base);
+    line-height: line(base-second);
+}
+
+%type-style-link{
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: weight(bold);
+    font-size: size(regular);
+    line-height: line(regular);
+}
+
+%type-style-button{
+    font-family: $font-family-secondary;
+    font-style: normal;
+    font-weight: weight(bold);
+    font-size: size(btn-base);
+    line-height: line(btn-base);
+}

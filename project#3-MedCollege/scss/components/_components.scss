@@ -12,21 +12,13 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: map-get($font-weights, regular);
-    font-size: 0.875em; /*14px / 16*/
-    line-height: 1.5; /*21px / 14px*/
-    color: rgba(0, 0, 0, 0.86);
+    @extend %type-style-body;
+    color: $text-color;
 }
 
 ul{
     list-style: none;
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: map-get($font-weights, medium);
-    font-size: 14px;
-    line-height: 22px;
+    @extend %type-style-list;
 }
 
 a{
@@ -40,40 +32,32 @@ a{
 }
 
 .title{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: map-get($font-weights, bold);
-    font-size: 2rem; /*32px / 16*/
-    line-height: 1.1875; /*38px / 32px*/
-    color: #232040;
+    @extend %type-style-heading;
+    color: $base-color;
 }
 
 .btn {
-	background: #4F478F;
-	border: 1px solid #4D4680;
+	background: $primary-color;
+	border: 1px solid $accent-color;
 	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 	border-radius: 6px;
 	min-width: max-content;
 	cursor: pointer;
-	font-family: 'Montserrat', sans-serif;
-	font-style: normal;
-	font-weight: map-get($font-weights, bold);
-	font-size: 18px;
-	line-height: 24px;
-	color: #FFFFFF;
+    @extend %type-style-button;
+	color: $light;
 	transition: all 0.5s linear;
 
 	&:hover,
     &:focus,
     &:active{
-		background: #332E5C;
-		border: 1px solid #332E5C;
+		background: $btn-hover;
+		border: 1px solid $btn-hover;
 	}
 }
 
 .border-img{
     height: 1px;
-    background: linear-gradient(90deg, #4D4680 0.18%, #786CD9 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
+    background: linear-gradient(90deg, $accent-color 0.18%, $secondary-color 26.49%, rgba(210, 206, 242, 0.335219) 75.36%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.3);
     border-radius: 4px;
 }
 
@@ -81,23 +65,23 @@ a{
     max-width: 373px;
     width: 100%;
     height: 40px;
-    color: rgba(0, 0, 0, 0.5);
-    background: #FFFFFF;
+    color: $input-color;
+    background: $light;
     border-radius: 5px;
     padding: 10px 25px;
     font-style: normal;
-    font-weight: map-get($font-weights, regular);
-    font-size: 14px;
-    line-height: 20px;
+    font-weight: weight(regular);
+    font-size: size(base);
+    line-height: line(small);
 }
 
 .label{
     display: block;
-    font-style: map-get($font-weights, regular);
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+    font-weight: weight(regular);
+    font-size: size(small);
+    line-height: line(small);
+    color: $input-color;
 }
 
 .logo{

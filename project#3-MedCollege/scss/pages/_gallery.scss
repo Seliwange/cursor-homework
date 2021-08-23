@@ -14,10 +14,10 @@
 
 .gallery__title{
     max-width: 483px;
-    font-weight: map-get($font-weights, black);
-    font-size: 3.5em; /*56px / 16*/
-    line-height: 1.107142857;/*62px / 56px*/
-    color: #FFFFFF;
+    font-weight: weight(large);
+    font-size: size(title-xlg);
+    line-height: line(title-xlg);
+    color: $light;
     margin-top: 77px;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .gallery__img-desc{
-    line-height: 22px;
-    color: #000000;
+    line-height: line(base-second);
+    color: $dark;
     grid-column: 1;
     justify-self: start;
 }

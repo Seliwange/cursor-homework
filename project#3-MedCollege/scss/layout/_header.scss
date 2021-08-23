@@ -21,9 +21,9 @@
     
     &__btn{
         box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
-        font-weight: map-get($font-weights, medium);
-        font-size: 0.875em; /*14px / 16*/
-        line-height: 1.57142857; /*22px / 14px*/
+        font-weight: weight(medium);
+        font-size: size(base);
+        line-height: line(base-second);
         padding: 6px 8px;
         margin-right: 27px;
     }
@@ -34,7 +34,7 @@
     
     &__border-img{
         height: 1px;
-        background: #E0E0E0;
+        background: $border-light;
     }
 }
 
@@ -50,12 +50,8 @@
         }
     }
     &-list-btn{
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: map-get($font-weights, medium);
-        font-size: 14px;
-        line-height: 22px;
-        color: rgba(0, 0, 0, 0.86);
+        @extend %type-style-list;
+        color: $text-color;
         display: flex;
         align-items: center;
         border: none;
@@ -64,7 +60,7 @@
         transition: all 0.5s ease;
 
         &:focus{
-            color: #4F478F;
+            color: $primary-color;
             svg{
                 transform: rotate(180deg);
             }
@@ -79,7 +75,7 @@
     &-list{
         min-width: 250px;
         position: absolute;
-        background-color: #FFFFFF;
+        background-color: $light;
         margin-top: 10px;
         border-radius: 0px 0px 8px 8px;
         display: flex;
@@ -104,12 +100,12 @@
     }
 
     &-link{
-        color: rgba(0, 0, 0, 0.86);
+        color: $text-color;
     }
 }
 
 .arrow-down:focus{
-    fill: #4F478F;
+    fill: $primary-color;
 }
 
 .lang__select{
@@ -142,8 +138,8 @@
         flex-wrap: wrap;
 
         &-link:hover{
-            color: #4F478F;
-            border-bottom: 1px solid #786CD9;
+            color: $primary-color;
+            border-bottom: 1px solid $secondary-color;
         }
     }
 }

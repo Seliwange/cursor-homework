@@ -1,14 +1,88 @@
 $primary-color: #4F478F;
 $accent-color: #4D4680;
 $base-color: #232040;
+$btn-hover: #332E5C;
+$title-color: #3D3866;
+$secondary-color: #786CD9;
+$text-accent: #1F3841;
 $text-color: rgba(0, 0, 0, 0.86);
-$white: #FFFFFF;
+$text-color-brighter: rgba(0, 0, 0, 0.85);
+$text-color-light: rgba(255, 255, 255, 0.86);
+$text-color-lighter: rgba(255, 255, 255, 0.85);
+$input-color: rgba(0, 0, 0, 0.5);
+$hover-light: rgba(255, 255, 255, 0.72);
+$light: #FFFFFF;
+$dark: #000000;
+$bg-light: #FAFAFA;
+$bg-section: #F2F5F9;
+$border-light: #E0E0E0;
+$input-border: #C4C4C4;
+$sidebar-color: #ECE9FF;
+$article-border: #E5E5E5;
+$table-bg: #FCFCFC;
+$table-border: #DADADA;
+$accordion-color: #D9D9D9;
 
-$font-weights: (
+$font-family-base: 'Open Sans', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-roboto-mono: 'Roboto Mono', monospace;
+$font-family-lato: 'Lato', sans-serif;
+$font-family-comforta: 'Comfortaa', cursive;
+
+$font-weight: (
     "light": 300,
     "regular": 400,
     "medium": 500,
     "semi-bold": 600,
     "bold": 700,
-    "black": 900
+    "large": 900
+);
+
+$font-size: (
+    "thin": 12px,
+    "small": 13px,
+    "base": 14px,
+    "base-flexible": 0.875em, /*14px*/
+    "regular": 16px,
+    "regular-flexible": 1em, /*16px*/
+    "medium": 18px,
+    "medium-flexible": 1.125em, /*18px*/
+    "middle-flexible": 1.25em, /*20px*/
+    "large": 24px,
+    "title-small": 1.5em, /*24px*/
+    "title-regular": 1.75em, /*28px*/
+    "title-base": 2rem, /*32px*/
+    "title-medium": 2.125rem, /*34px*/
+    "title-lg": 2.5em, /*40px*/
+    "title-xlg": 3.5em, /*56px*/
+    "title-xxlg": 4em, /*64px*/
+    "btn-base": 18px
+);
+
+$line-height: (
+    "thin": 16px,
+    "light": 19px,
+    "small": 20px,
+    "base": 21px,
+    "base-flexible": 1.5, /*21px*/
+    "base-second": 22px,
+    "base-second-flexible": 1.57142857, /*22px*/
+    "regular": 24px,
+    "regular-flexible": 1.5, /*24px*/
+    "normal": 28px,
+    "medium": 30px,
+    "medium-flexible": 1.6666667, /*30px*/
+    "middle": 33px,
+    "middle-flexible": 1.833333333, /*33px*/
+    "large": 38px,
+    "title-thin": 1.33333333, /*32px*/
+    "title-small": 1.58333333333, /*38px*/
+    "title-regular": 1.42857142, /*40px*/
+    "title-base": 1.1875, /*38px*/
+    "title-medium": 1.2352941, /*42px*/
+    "title-lg": 1.2, /*48px*/
+    "title-xlg": 1.107142857, /*62px*/
+    "title-xxlg": 1.21875, /*78px*/
+    "btn-base": 24px
 );

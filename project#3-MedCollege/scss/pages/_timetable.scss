@@ -6,9 +6,9 @@
     }
     
     &__title{
-        font-weight: map-get($font-weights, bold);
-        font-size: 2.5em; /*40px / 16*/
-        line-height: 1.2; /*48px / 40px*/
+        font-weight: weight(bold);
+        font-size: size(title-lg);
+        line-height: line(title-lg);
         margin-bottom: 32px;
         text-align: center;
     }
@@ -23,15 +23,15 @@
 }
 
 .course__header{
-    background: #4F478F;
+    background: $primary-color;
     border-radius: 8px 8px 0px 0px;
     padding: 12px 0;
 }
 
 .course__title{
-    font-size: 1.125em; /*18px / 16*/
-    line-height: 1.3333333333; /*24px / 18px*/
-    color: rgba(255, 255, 255, 0.85);
+    font-size: size(medium-flexible);
+    line-height: line(title-thin);
+    color: $text-color-lighter;
     text-align: center;
 }
 
@@ -40,13 +40,13 @@
 }
 
 .timetable__accordion{
-    background: #FFFFFF;
-    border: 1px solid #D9D9D9;
+    background: $light;
+    border: 1px solid $accordion-color;
     border-radius: 0px 0px 8px 8px;
 }
 
 .accordion__item:not(:first-child){
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid $accordion-color;
 }
 
 .accordion__header{
@@ -59,12 +59,12 @@
     }
 }
 .accordion__button{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family-base;
     font-style: normal;
-    font-weight: map-get($font-weights, semi-bold);
-    font-size: 1em; /*16px / 16*/
-    line-height: 1.375; /*22px / 16px*/
-    color: rgba(0, 0, 0, 0.86);
+    font-weight: weight(semi-bold);
+    font-size: size(regular);
+    line-height: line(base-second);
+    color: $text-color;
     border: none;
     background-color: transparent;
     display: flex;
@@ -81,13 +81,13 @@
     transition: all 0.4s ease-in-out;
 }
 .accordion__header--active .accordion__arrow{
-    fill: #4F478F;
+    fill: $primary-color;
 }
 .accordion__link{
-    font-family: 'Lato', sans-serif;
-    font-weight: map-get($font-weights, regular);
-    line-height: 1.57142857; /*22px / 14px*/
-    color: rgba(0, 0, 0, 0.86);
+    font-family: $font-family-lato;
+    font-weight: weight(regular);
+    line-height: line(base-second);
+    color: $text-color;
     display: flex;
     align-items: center;
 }
@@ -111,8 +111,8 @@
 }
 
 .timetable__calendar{
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background: $light;
+    border: 1px solid $border-light;
     border-radius: 6px;
     padding: 8px;
     display: flex;
@@ -126,12 +126,8 @@
 }
 
 .calendar__date{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: map-get($font-weights, medium);
-    font-size: 14px;
-    line-height: 22px;
-    color: #1F3841;
+    @extend %type-style-list;
+    color: $text-accent;
     margin-right: 16px;
 }
 
@@ -149,8 +145,8 @@
 }
 
 .timetable__group-item{
-    background: #FFFFFF;
-    box-shadow: inset -1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;
+    background: $light;
+    box-shadow: inset -1px 0px 0px $accordion-color, inset 0px 1px 0px $accordion-color, inset 0px -1px 0px $accordion-color;
     padding: 5px 16px;
     
     &:first-child{
@@ -162,13 +158,13 @@
     }
     
     &--active{
-        border: 1px solid #4F478F;
+        border: 1px solid $primary-color;
     }
 }
 
 .timetable__table{
     width: 100%;
-    background: #FCFCFC;
+    background: $table-bg;
     border-collapse: collapse;
     margin-bottom: 16px;
     
@@ -180,12 +176,12 @@
 
 .timetable__table-head .timetable__table-column{
     text-align: left;
-    font-weight: map-get($font-weights, semi-bold);
+    font-weight: weight(semi-bold);
     padding: 13px 8px 13px 16px;
 }
 
 .timetable__table-body .timetable__table-column{
-    border: 1px solid #DADADA;
+    border: 1px solid $table-border;
     padding: 13px 8px 13px 16px;
     text-align: left;
     border-left: none;

@@ -16,7 +16,7 @@ dialog::backdrop{
     width: 100%;
     background: url(../assets/illustration_cross.png) no-repeat;
     background-position: left top;
-    background-color: #FAFAFA;
+    background-color: $bg-light;
     border-radius: 8px;
     padding: 40px 100px 48px;
     position: relative;
@@ -37,22 +37,22 @@ dialog::backdrop{
 }
 
 .modal__entry{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: map-get($font-weights, regular);
-    font-size: 14px;
-    line-height: 20px;
+    font-family: $font-family-secondary;
+    font-weight: weight(regular);
+    font-size: size(base);
+    line-height: line(small);
     text-align: right;
     margin-bottom: 24px;
     
     &-link{
-        font-weight: map-get($font-weights, medium);
-        color: #4F478F;
+        font-weight: weight(medium);
+        color: $primary-color;
     }
 }
 
 .modal__input{
-    font-family: 'Open Sans', sans-serif;
-    border: 1px solid #C4C4C4;
+    font-family: $font-family-base;
+    border: 1px solid $input-border;
     margin-bottom: 24px;
     
     &-wrap{
@@ -61,7 +61,7 @@ dialog::backdrop{
 }
 
 .modal__label{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-family-base;
 }
 
 .password{
