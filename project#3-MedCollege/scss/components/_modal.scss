@@ -6,9 +6,11 @@ dialog::backdrop{
 
 .modal{
     position: fixed;
-    top: 192px;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
 }
 
 .modal__holder{
