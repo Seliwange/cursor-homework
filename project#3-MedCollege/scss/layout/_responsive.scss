@@ -107,6 +107,10 @@
 }
 
 @media (max-width: 916px){
+    .modal__holder{
+        padding: 40px 60px 48px;
+    }
+    
     .logo{
         margin-right: 0;
         margin-left: 20px;
@@ -564,6 +568,7 @@
     }
 }
 @media (max-width: 768px){
+
     .consultation__info-cards::before{
         width: 592px;
         top: 66px;
@@ -749,7 +754,6 @@
 @media (max-width: 540px){
 
     .modal{
-        top: 112px;
         left: 5px;
         right: 5px;
         transform: translateX(0px);
